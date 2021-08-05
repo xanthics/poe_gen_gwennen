@@ -137,7 +137,7 @@ def scrape_ninja(league='tmpstandard'):
 			for i in data['lines']:
 				if (('links' in i and i['links']) or 'relic' in i['icon']) and i['name'] != 'Tabula Rasa':
 					continue
-				elif any(x in i['baseType'] for x in ['Synthesised ', ' Talisman', "Runic ", 'Timeless Jewel', 'Eye Jewel']) or 'Replica' in i['name'] or i['name'] in bad_names:
+				elif any(x in i['baseType'] for x in ['Synthesised ', ' Talisman', "Runic ", 'Timeless Jewel', 'Eye Jewel', 'Cluster Jewel']) or 'Replica' in i['name'] or i['name'] in bad_names:
 					continue
 				price_val[i['baseType']].append([i['name'], int(i['chaosValue']), i['icon']])
 
