@@ -139,7 +139,7 @@ def scrape_ninja(league='tmpstandard'):
 					continue
 				elif any(x in i['baseType'] for x in ['Synthesised ', ' Talisman', "Runic ", 'Timeless Jewel', 'Eye Jewel', 'Cluster Jewel']) or 'Replica' in i['name'] or i['name'] in bad_names:
 					continue
-				price_val[i['baseType']].append([i['name'], int(i['chaosValue']), i['icon']])
+				price_val[i['baseType'].lower()].append([i['name'], int(i['chaosValue']), i['icon']])
 
 		else:
 			print('Unhandled key: "{}"'.format(key))

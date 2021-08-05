@@ -13,14 +13,14 @@ def init_page():
 	t = TABLE(TR(TH() + TH('Selection')))
 	t <= TR(TD("Minimum Chaos value to show:") + TD(min_val))
 	t <= TR(TD("Show low value items in row:") + TD(cst))
-	doc['show_hide'] <= t
+	doc['show_hide'] <= t + BUTTON("Generate string", Id='generate')
 	t = TABLE(TR(TH("Selected") + TH("Base") + TH("Item(s)")), Class="borders")
 	with open('unique.json') as f:
 		data = load(f)
 
 	for base in data:
 		v = (DIV(IMG(src=x[2], alt=x[0], title=x[0], Class='item_icon') + DIV(x[1], Class='bottom-right'), Class='container', data_value=x[1]) for x in data[base])
-		t <= TR(TD(INPUT(Id=f"check-{base}", type='checkbox', data_id=f"check-{base}", Class='save')) + TD(base) + TD(v), data_id=base, data_value=data[base][0][1])
+		t <= TR(TD(INPUT(Id=f"check-{base.replace(' ', '_')}", type='checkbox', data_id=base, Class='save')) + TD(base.title()) + TD(v), data_id=base, data_value=data[base][0][1])
 
 	doc['items'] <= t
 
