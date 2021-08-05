@@ -5,15 +5,22 @@ from json import load
 
 # Create the static elements of the home page
 def init_page():
-	min_val = INPUT(Type='number', min='0', step="1", value='0', Id="chaos_filter", Class='save')
-	doc['show_hide'] <= DIV("Minimum Chaos Value to Show:" + min_val)
+	# selected
+	cst = SELECT(Id=f"hide_low_value", Class=f"save onehundred")
+	for s in ['show', 'hide']:
+		cst <= OPTION(s.capitalize(), value=s)
+	min_val = INPUT(Type='number', min='0', step="1", value='0', Id="chaos_filter", Class='save onehundred')
+	t = TABLE(TR(TH() + TH('Selection')))
+	t <= TR(TD("Minimum Chaos value to show:") + TD(min_val))
+	t <= TR(TD("Show low value items in row:") + TD(cst))
+	doc['show_hide'] <= t
 	t = TABLE(TR(TH("Selected") + TH("Base") + TH("Item(s)")), Class="borders")
 	with open('unique.json') as f:
 		data = load(f)
 
 	for base in data:
-		v = (DIV(IMG(src=x[2], alt=x[0], title=x[0], Class='item_icon') + DIV(x[1], Class='bottom-right'), Class='container') for x in data[base])
-		t <= TR(TD(INPUT(Id=f"check-{base}", type='checkbox', data_id=f"check-{base}", Class='save')) + TD(base) + TD(v), data_id=data[base][0][0], data_value=data[base][0][1])
+		v = (DIV(IMG(src=x[2], alt=x[0], title=x[0], Class='item_icon') + DIV(x[1], Class='bottom-right'), Class='container', data_value=x[1]) for x in data[base])
+		t <= TR(TD(INPUT(Id=f"check-{base}", type='checkbox', data_id=f"check-{base}", Class='save')) + TD(base) + TD(v), data_id=base, data_value=data[base][0][1])
 
 	doc['items'] <= t
 

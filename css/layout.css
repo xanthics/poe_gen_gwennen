@@ -6,6 +6,10 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
+.hidden_class {
+    display: none !important;
+}
+
 .item_icon {
   display: block;
   max-width:75px;
