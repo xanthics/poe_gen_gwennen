@@ -1,0 +1,6 @@
+.idea*
+/__pycache__*
+auto_gen/__pycache__/
+/tmp
+/tmp.py
+/last_ninja_check

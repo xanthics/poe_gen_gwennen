@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="robots" content="noindex" />
+        <meta charset="UTF-8">
+        <title>Genshin Impact Grind Target Tracker</title>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.3/brython.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.3/brython_stdlib.js"></script>
+        <link href="css/layout.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body onload="brython(1)">
+        <section class="main">
+            <p>This page is in development and does not yet have any logic attached.</p>
+            <p><strong>This page requires local storage to save state.</strong></p>
+            <div id="show_hide"></div>
+            <div id="loading">
+                This page requires javascript in order to work correctly.
+                <br><br>
+                This page may take a moment to load.
+            </div>
+            <div id="regex_box"></div>
+            <div id="items"></div>
+            <p><a href="https://github.com/xanthics/genshin_grind_planner/discussions" target="_blank">Suggestions</a><br /><a href="https://github.com/xanthics/genshin_grind_planner/issues" target="_blank">Bugs</a></p>
+            <h3>Notice of Non-Affiliation</h3>
+            <p>This site is not affiliated, associated, authorized, endorsed by, or in any way officially connected with any other company, agency or government agency.  The information on this website is provided “as is” without any representations or warranties, express or implied.</p>
+            <p>All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.</p>
+            <div id="sponsor">
+                <div id="github_image"><a href="https://github.com/sponsors/xanthics"><img alt="Sponsor me on Github!" src="img/github_sponsor.png" class="sponsor_img"></a></div>
+                <div id="patreon_image"><a href="https://www.patreon.com/xanthics"><img alt="Become a Patron!" src="img/become_a_patron_button@2x.png" class="sponsor_img"></a></div>
+            </div>
+        </section>
+        <script type="text/python" src="gen_page.py"></script>
+    </body>
+</html>
