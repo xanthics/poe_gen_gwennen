@@ -30,6 +30,7 @@ def message(evt):
 			table = {}
 			for base in good_ngrams:
 				if not good_ngrams[base]:
+					self.send(('debug', f"{base} has no suitable substring"))
 					good_ngrams.pop(base)
 					continue
 				for ng in good_ngrams[base]:
@@ -46,6 +47,11 @@ def message(evt):
 				good_ngrams.pop(base)
 		self.send(('update', "Building knapsacked strings"))
 		builder = sorted(greedy_choice, key=len, reverse=True)
+		for ng in builder[:-1]:
+			self.send(('debug', f"{repr(ng)}: '{greedy_choice[ng]}'"))
+		if len(builder) > 1:
+			self.send(('debug', f"{repr(builder[-1])}: '{greedy_choice[builder[-1]]}'"))
+
 		k_bag_str = []
 		while builder:
 			current_k_str = f'"{builder[0]}'

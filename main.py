@@ -38,6 +38,9 @@ def onmessage(evt):
 			doc['generated_strings'] <= (P(f'{c}: {x}') for c, x in enumerate(evt.data[1], start=1))
 	elif evt.data[0] == 'update':
 		doc['updates'].text = evt.data[1]
+	elif evt.data[0] == 'debug':
+		pass
+		# print(evt.data[1])
 
 
 def select_visible(ev):
