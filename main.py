@@ -1,6 +1,7 @@
 from browser import document as doc
 from browser import bind
 from ngram_generated import ngrams, subnames
+from browser.html import P, BR
 
 
 # Function for saving changes
@@ -35,6 +36,7 @@ def save_state(ev):
 
 
 def generate_string(ev):
+	doc['generated_strings'].text = ''
 	good_bases = set()
 	for el in doc.get(selector="input[type=checkbox"):
 		if el.checked:
@@ -58,7 +60,7 @@ def generate_string(ev):
 		table = {}
 		for base in good_ngrams:
 			if not good_ngrams[base]:
-				print(f"{base} has no suitable substring")
+				doc['generated_strings'] <= P(f"{base} has no suitable substring")
 				good_ngrams.pop(base)
 				continue
 			for ng in good_ngrams[base]:
@@ -74,10 +76,24 @@ def generate_string(ev):
 		for base in mychoice[2]:
 			good_ngrams.pop(base)
 	#  Max length example " jew|rq|hon|d d|ecy| e le|r be|ge a|lk g|lth b|e"
-	for ng in greedy_choice:
-		print(f"{repr(ng)}: '{greedy_choice[ng]}'")
+	# max len = 48
+	builder = sorted(greedy_choice, key=len, reverse=True)
+	info_str = P()
+	for ng in builder[:-1]:
+		info_str <= f"{repr(ng)}: '{greedy_choice[ng]}'" + BR()
+	info_str <= f"{repr(ng)}: '{greedy_choice[builder[-1]]}'"
+	k_bag_str = []
+	while builder:
+		current_k_str = f'"{builder[0]}'
+		builder.pop(0)
+		for s in builder[:]:
+			if len(current_k_str) + len(s) < 47:
+				current_k_str += '|' + s
+				builder.remove(s)
+		k_bag_str.append(current_k_str + '"')
 
-	print('"' + '|'.join(greedy_choice) + '"')
+	doc['generated_strings'] <= (P(f'{c}: {x}') for c, x in enumerate(k_bag_str))
+	doc['generated_strings'] <= info_str
 
 
 doc["generate"].bind("click", generate_string)
