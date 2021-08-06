@@ -40,7 +40,22 @@ def main():
 							continue
 						if ch[0] != ' ' and ch[-1] != ' ':
 							ngrams[base].add(ch.lower())
-
+	# remove all ngrams that are too common
+	threshold = 5
+	counts = defaultdict(int)
+	for base in ngrams:
+		for gram in ngrams[base]:
+			counts[gram] += 1
+	common_grams = set()
+	for item in counts:
+		if counts[item] >= threshold:
+			common_grams.add(item)
+	for base in ngrams.copy():
+		ngrams[base] -= common_grams
+		if not ngrams[base]:
+			print(f"removing {base} because it is empty")
+			del ngrams[base]
+	ngrams['sai'] = {'sai'}
 	# find all bases that are a substring of other base(s)
 	searchpool = sorted(ngrams, key=len)
 	child = {}
