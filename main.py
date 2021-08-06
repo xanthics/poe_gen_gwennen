@@ -1,7 +1,10 @@
 from browser import document as doc
-from browser import bind
+from browser import bind, worker
 from ngram_generated import ngrams, subnames
 from browser.html import P, BR
+
+
+myWorker = worker.Worker("myworker")
 
 
 # Function handling filtering changes
@@ -35,71 +38,16 @@ def save_state(ev):
 				el.attrs['class'] = "container"
 
 
-# TODO: move to web worker
-def generate_string(ev):
-	doc['generated_strings'].text = ''
-	good_bases = set()
-	for el in doc.get(selector="input[type=checkbox]"):
-		if el.checked:
-			good_bases.add(el.attrs['data-id'])
-	if good_bases:
-		overlap_bases = []
-		for base in good_bases:
-			if base in subnames:
-				t_str = ' and '.join(subnames[base])
-				doc['generated_strings'] <= P(f"{base} will also match {t_str} due to being an unavoidable substring match")
-				overlap_bases.extend(subnames[base])
-		bad_bases = set(ngrams.keys()) - good_bases
-		for base in bad_bases.copy():
-			if base in overlap_bases or '§' in base and base.split('§')[1] not in overlap_bases:
-				bad_bases.discard(base)
-		bad_ngrams = set()
-		bad_ngrams.update(*[ngrams[base] for base in bad_bases])
-		good_ngrams = {}
-		for base in good_bases:
-			good_ngrams[base] = ngrams[base] - bad_ngrams
-
-		greedy_choice = {}
-		while good_ngrams:
-			table = {}
-			for base in good_ngrams:
-				if not good_ngrams[base]:
-					doc['generated_strings'] <= P(f"{base} has no suitable substring")
-					good_ngrams.pop(base)
-					continue
-				for ng in good_ngrams[base]:
-					if ng not in table:
-						table[ng] = []
-					table[ng].append(base)
-			ranking = []
-			for ng in table:
-				ranking.append([len(ng)/len(table[ng]), ng, table[ng]])
-			ranking = sorted(ranking, key=lambda x: x[0])
-			mychoice = ranking[0]
-			greedy_choice[mychoice[1]] = mychoice[2]
-			for base in mychoice[2]:
-				good_ngrams.pop(base)
-		builder = sorted(greedy_choice, key=len, reverse=True)
-		info_str = P()
-		for ng in builder[:-1]:
-			info_str <= f"{repr(ng)}: '{greedy_choice[ng]}'" + BR()
-		if len(builder) > 1:
-			info_str <= f"{repr(builder[-1])}: '{greedy_choice[builder[-1]]}'"
-		k_bag_str = []
-		while builder:
-			current_k_str = f'"{builder[0]}'
-			builder.pop(0)
-			for s in builder[:]:
-				if len(current_k_str) + len(s) < 49:
-					current_k_str += '|' + s
-					builder.remove(s)
-			k_bag_str.append(current_k_str + '"')
-
-		if k_bag_str:
-			doc['generated_strings'] <= (P(f'{c}: {x}') for c, x in enumerate(k_bag_str, start=1))
-			doc['generated_strings'] <= info_str
-	else:
-		doc['generated_strings'] <= P("No bases were selected, so no result to return.")
+@bind(myWorker, 'message')
+def onmessage(evt):
+	if evt.data[0] == 'overlap':
+		doc['generated_strings'] <= P(f"{evt.data[1]} will also match {evt.data[2]} due to being an unavoidable substring match")
+	elif evt.data[0] == 'done':
+		if evt.data[1]:
+			del doc['updates']
+			doc['generated_strings'] <= (P(f'{c}: {x}') for c, x in enumerate(evt.data[1], start=1))
+	elif evt.data[0] == 'update':
+		doc['updates'].text = evt.data[1]
 
 
 def select_visible(ev):
@@ -109,6 +57,20 @@ def select_visible(ev):
 			doc[check_id].checked = False
 		else:
 			doc[check_id].checked = True
+
+
+def generate_string(ev):
+	doc['generated_strings'].text = ''
+	good_bases = []
+	for el in doc.get(selector="input[type=checkbox]"):
+		if el.checked:
+			good_bases.append(el.attrs['data-id'])
+
+	if good_bases:
+		doc['generated_strings'] <= P('Starting web worker', Id='updates')
+		myWorker.send(("init", good_bases))
+	else:
+		doc['generated_strings'] <= P("No bases were selected, so no result to return.")
 
 
 doc["generate"].bind("click", generate_string)
