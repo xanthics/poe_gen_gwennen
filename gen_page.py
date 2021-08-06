@@ -15,7 +15,7 @@ def init_page():
 	t = TABLE(TR(TH() + TH('Selection')))
 	t <= TR(TD("Minimum Chaos value to show:") + TD(min_val))
 	t <= TR(TD("Show low value items in row:") + TD(cst))
-	doc['show_hide'] <= t + DIV(BUTTON("Generate string", Id='generate') + "This will cause many calculations and may take a bit to return a result") + DIV("No strings generated yet.", Id="generated_strings", Class='sec_div grind') + BUTTON("Select All Visible Only", Id='select_visible')
+	doc['show_hide'] <= t + DIV(BUTTON("Generate String", Id='generate') + "This will cause many calculations and may take a bit to return a result") + DIV("No strings generated yet.", Id="generated_strings", Class='sec_div grind') + BUTTON("Select All Visible Only", Id='select_visible')
 	t = TABLE(TR(TH("Selected", Class='col_1') + TH("Base", Class='col_2') + TH("Item(s)")), Class="borders onehundred")
 	with open('unique.json') as f:
 		data = load(f)
