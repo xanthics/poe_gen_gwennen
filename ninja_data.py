@@ -6,10 +6,12 @@
 import json
 import requests
 from collections import defaultdict
+from gen_items import gen_bases
 
 
 # get price data from poe.ninja
 def scrape_ninja(league='tmpstandard'):
+	good_bases = [x['name'] for x in gen_bases]
 	# List of items that cannot be gambled
 	bad_names = {
 		# Quest Items
@@ -135,9 +137,10 @@ def scrape_ninja(league='tmpstandard'):
 
 		if key in ['UniqueJewel', 'UniqueWeapon', 'UniqueArmour', 'UniqueAccessory']:
 			for i in data['lines']:
-				if (('links' in i and i['links']) or 'relic' in i['icon']) and i['name'] != 'Tabula Rasa':
+				if ((('links' in i and i['links']) or 'relic' in i['icon']) and i['name'] != 'Tabula Rasa') or 'Replica' in i['name'] or i['name'] in bad_names:
 					continue
-				elif any(x in i['baseType'] for x in ['Synthesised ', ' Talisman', "Runic ", 'Timeless Jewel', 'Eye Jewel', 'Cluster Jewel']) or 'Replica' in i['name'] or i['name'] in bad_names:
+				elif i['baseType'] not in good_bases:
+					print(f"Skipping due to basetype: {i}")
 					continue
 				price_val[i['baseType']].append([i['name'], int(i['chaosValue']), i['icon']])
 
