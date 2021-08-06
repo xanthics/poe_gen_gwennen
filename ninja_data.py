@@ -19,7 +19,11 @@ def scrape_ninja(league='tmpstandard'):
 	# List of items that cannot be gambled
 	bad_names = {
 		# Quest Items
-		"Survival Instincts", "Survival Secrets", "Survival Skills",
+		"Survival Instincts", "Survival Secrets", "Survival Skills", "Conqueror's Longevity", "Conqueror's Potency", "Conqueror's Efficiency",
+		# Corruption only jewels
+		"Ancient Waystones", "Atziri's Reign", "Blood Sacrifice", "Brittle Barrier", "Chill of Corruption", "Combustibles", "Corrupted Energy",
+		"Fragility", "Hungry Abyss", "Mutated Growth", "Pacifism", "Powerlessness", "Sacrificial Harvest", "Self-Flagellation", "Vaal Sentencing",
+		"Weight of Sin",
 		# Divination card only item
 		'Maw of Mischief',
 		# Fated Uniques
