@@ -95,7 +95,7 @@ def generate_string(ev):
 			k_bag_str.append(current_k_str + '"')
 
 		if k_bag_str:
-			doc['generated_strings'] <= (P(f'{c}: {x}') for c, x in enumerate(k_bag_str))
+			doc['generated_strings'] <= (P(f'{c}: {x}') for c, x in enumerate(k_bag_str, start=1))
 			doc['generated_strings'] <= info_str
 	else:
 		doc['generated_strings'] <= P("No bases were selected, so no result to return.")
