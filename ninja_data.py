@@ -20,10 +20,11 @@ def scrape_ninja(league='tmpstandard'):
 	bad_names = {
 		# Quest Items
 		"Survival Instincts", "Survival Secrets", "Survival Skills", "Conqueror's Longevity", "Conqueror's Potency", "Conqueror's Efficiency",
+		"Assassin's Haste", "Poacher's Aim", "Warlord's Reach",
 		# Corruption only jewels
 		"Ancient Waystones", "Atziri's Reign", "Blood Sacrifice", "Brittle Barrier", "Chill of Corruption", "Combustibles", "Corrupted Energy",
 		"Fragility", "Hungry Abyss", "Mutated Growth", "Pacifism", "Powerlessness", "Sacrificial Harvest", "Self-Flagellation", "Vaal Sentencing",
-		"Weight of Sin",
+		"Weight of Sin", "Fevered Mind"
 		# Divination card only item
 		'Maw of Mischief',
 		# Fated Uniques
@@ -102,7 +103,7 @@ def scrape_ninja(league='tmpstandard'):
 		# Conqueror
 		'Booming Populace', 'Hands of the High Templar', 'Irresistable Temptation', 'Misinformation', 'Stalwart Defenders', 'Territories Unknown', 'Terror', 'The Saviour', 'Thread of Hope', 'War Among the Stars',
 		# Delirium
-		'One With Nothing', 'The Interrogation', "Kitava's Teachings", 'Voices',
+		'One With Nothing', 'The Interrogation', "Kitava's Teachings", 'Voices', 'Split Personality',
 		# Harvest
 		'Abhorrent Interrogation', "Bear's Girdle", 'Forbidden Shako', 'Law of the Wilds', 'Plume of Pursuit', 'The Felbog Fang', 'The Immortal Will', 'The Shattered Divinity', 'The Surging Thoughts', "The Tempest's Liberation", "The Torrent's Reclamation", 'The Yielding Mortality',
 		"Witchhunter's Judgment",
