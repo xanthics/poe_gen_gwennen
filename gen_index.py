@@ -19,10 +19,12 @@ import minify_html
 # load the page in firefox-selenium and return the html
 def load_page_firefox(page_name):
 	from selenium.webdriver.firefox.options import Options
+	profile = webdriver.FirefoxProfile()
+	profile.set_preference("permissions.default.image", 2)
 	options = Options()
 	options.headless = True
 	options.log.level = "fatal"
-	driver = webdriver.Firefox(options=options, executable_path=getcwd() + '\\geckodriver.exe')
+	driver = webdriver.Firefox(options=options, executable_path=getcwd() + '\\geckodriver.exe', firefox_profile=profile)
 	driver.get(page_name)
 	try:
 		WebDriverWait(driver, 30).until(EC.presence_of_element_located((By.ID, "prerendered")))
