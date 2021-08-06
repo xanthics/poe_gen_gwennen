@@ -89,7 +89,7 @@ def generate_string(ev):
 			current_k_str = f'"{builder[0]}'
 			builder.pop(0)
 			for s in builder[:]:
-				if len(current_k_str) + len(s) < 47:
+				if len(current_k_str) + len(s) < 49:
 					current_k_str += '|' + s
 					builder.remove(s)
 			k_bag_str.append(current_k_str + '"')
