@@ -35,6 +35,7 @@ def save_state(ev):
 				el.attrs['class'] = "container"
 
 
+# TODO: move to web worker
 def generate_string(ev):
 	doc['generated_strings'].text = ''
 	good_bases = set()
@@ -49,11 +50,11 @@ def generate_string(ev):
 				doc['generated_strings'] <= P(f"{base} will also match {t_str} due to being an unavoidable substring match")
 				overlap_bases.extend(subnames[base])
 		bad_bases = set(ngrams.keys()) - good_bases
-		bad_ngrams = set()
-		for base in bad_bases:
+		for base in bad_bases.copy():
 			if base in overlap_bases or '§' in base and base.split('§')[1] not in overlap_bases:
-				continue
-			bad_ngrams.update(ngrams[base])
+				bad_bases.discard(base)
+		bad_ngrams = set()
+		bad_ngrams.update(*[ngrams[base] for base in bad_bases])
 		good_ngrams = {}
 		for base in good_bases:
 			good_ngrams[base] = ngrams[base] - bad_ngrams
