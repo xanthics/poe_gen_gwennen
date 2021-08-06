@@ -10,10 +10,11 @@ myWorker = worker.Worker("myworker")
 # Function handling filtering changes
 @bind('.save', 'change')
 def save_state(ev):
-	if ev.target.id == 'chaos_filter':
+	if ev.target.id in ['chaos_filter', 'hide_low_value']:
 		c = True if doc['hide_low_value'].value == 'hide' else False
+		value = int(doc['chaos_filter'].value)
 		for el in doc.get(selector="[data-value]"):
-			if int(el.attrs['data-value']) >= int(ev.target.value):
+			if int(el.attrs['data-value']) >= value:
 				if 'container' in el.class_name:
 					el.attrs['class'] = "container"
 				elif 'hidden' in el.attrs:
@@ -24,18 +25,6 @@ def save_state(ev):
 						el.attrs['class'] = "container hidden_class"
 				else:
 					el.attrs['hidden'] = ''
-	elif ev.target.id == 'hide_low_value':
-		c = True if doc['hide_low_value'].value == 'hide' else False
-		value = int(doc['chaos_filter'].value)
-		for el in doc.get(selector="div[data-value]"):
-			if c:
-				if int(el.attrs['data-value']) >= value:
-					if 'container' in el.class_name:
-						el.attrs['class'] = "container"
-				else:
-					el.attrs['class'] = "container hidden_class"
-			else:
-				el.attrs['class'] = "container"
 
 
 @bind(myWorker, 'message')
@@ -73,6 +62,24 @@ def generate_string(ev):
 		doc['generated_strings'] <= P("No bases were selected, so no result to return.")
 
 
+def init_page():
+	value = int(doc['chaos_filter'].value)
+	c = True if doc['hide_low_value'].value == 'hide' else False
+	for el in doc.get(selector="[data-value]"):
+		if int(el.attrs['data-value']) >= value:
+			if 'container' in el.class_name:
+				el.attrs['class'] = "container"
+			elif 'hidden' in el.attrs:
+				del el.attrs['hidden']
+		else:
+			if 'container' in el.class_name:
+				if c:
+					el.attrs['class'] = "container hidden_class"
+			else:
+				el.attrs['hidden'] = ''
+
+
 doc["generate"].bind("click", generate_string)
 doc["select_visible"].bind("click", select_visible)
+init_page()
 del doc['loading']

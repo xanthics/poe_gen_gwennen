@@ -4,7 +4,6 @@ from ngram_generated import ngrams, subnames
 
 @bind(self, "message")
 def message(evt):
-	print('Hi')
 	if evt.data[0] == 'init':
 		good_bases = set(evt.data[1])
 		overlap_bases = []

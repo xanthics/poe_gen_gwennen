@@ -9,9 +9,9 @@ def init_page():
 	doc['time'].text = f"poe.ninja data last updated at {time} PST"
 	# selected
 	cst = SELECT(Id=f"hide_low_value", Class=f"save onehundred")
-	for s in ['show', 'hide']:
+	for s in ['hide', 'show']:
 		cst <= OPTION(s.capitalize(), value=s)
-	min_val = INPUT(Type='number', min='0', step="1", value='0', Id="chaos_filter", Class='save onehundred')
+	min_val = INPUT(Type='number', min='0', step="1", value='20', Id="chaos_filter", Class='save onehundred')
 	t = TABLE(TR(TH() + TH('Selection')))
 	t <= TR(TD("Minimum Chaos value to show:") + TD(min_val))
 	t <= TR(TD("Show low value items in row:") + TD(cst))
