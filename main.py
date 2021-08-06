@@ -45,6 +45,8 @@ def generate_string(ev):
 		overlap_bases = []
 		for base in good_bases:
 			if base in subnames:
+				t_str = ' and '.join(subnames[base])
+				doc['generated_strings'] <= P(f"{base} will also match {t_str} due to being an unavoidable substring match")
 				overlap_bases.extend(subnames[base])
 		bad_bases = set(ngrams.keys()) - good_bases
 		bad_ngrams = set()
@@ -102,7 +104,6 @@ def generate_string(ev):
 
 
 def select_visible(ev):
-	good_bases = set()
 	for el in doc.get(selector="tr[data-id]"):
 		check_id = f'check-{el.attrs["data-id"].replace(" ", "_")}'
 		if 'hidden' in el.attrs:
