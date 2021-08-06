@@ -38,7 +38,7 @@ def save_state(ev):
 def generate_string(ev):
 	doc['generated_strings'].text = ''
 	good_bases = set()
-	for el in doc.get(selector="input[type=checkbox"):
+	for el in doc.get(selector="input[type=checkbox]"):
 		if el.checked:
 			good_bases.add(el.attrs['data-id'])
 	if good_bases:
@@ -101,5 +101,16 @@ def generate_string(ev):
 		doc['generated_strings'] <= P("No bases were selected, so no result to return.")
 
 
+def select_visible(ev):
+	good_bases = set()
+	for el in doc.get(selector="tr[data-id]"):
+		check_id = f'check-{el.attrs["data-id"].replace(" ", "_")}'
+		if 'hidden' in el.attrs:
+			doc[check_id].checked = False
+		else:
+			doc[check_id].checked = True
+
+
 doc["generate"].bind("click", generate_string)
+doc["select_visible"].bind("click", select_visible)
 del doc['loading']
