@@ -61,6 +61,7 @@ def generate_string(ev):
 		doc['generated_strings'] <= P("No bases were selected, so no result to return.")
 
 
+# Set the initial page state
 def init_page():
 	value = int(doc['chaos_filter'].value)
 	c = True if doc['hide_low_value'].value == 'hide' else False
@@ -76,6 +77,7 @@ def init_page():
 					el.attrs['class'] = "container hidden_class"
 			else:
 				el.attrs['hidden'] = ''
+	select_visible(None)
 
 
 doc["generate"].bind("click", generate_string)
