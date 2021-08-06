@@ -24,7 +24,7 @@ def scrape_ninja(league='tmpstandard'):
 		# Corruption only jewels
 		"Ancient Waystones", "Atziri's Reign", "Blood Sacrifice", "Brittle Barrier", "Chill of Corruption", "Combustibles", "Corrupted Energy",
 		"Fragility", "Hungry Abyss", "Mutated Growth", "Pacifism", "Powerlessness", "Sacrificial Harvest", "Self-Flagellation", "Vaal Sentencing",
-		"Weight of Sin", "Fevered Mind"
+		"Weight of Sin", "Fevered Mind",
 		# Divination card only item
 		'Maw of Mischief',
 		# Fated Uniques
