@@ -22,7 +22,7 @@ def init_page():
 
 	for base in data:
 		base_l = base.lower()
-		v = (DIV(IMG(src=x[2], alt=x[0], title=x[0], Class='item_icon') + DIV(x[1], Class='bottom-right'), Class='container', data_value=x[1]) for x in data[base])
+		v = (DIV(IMG(src=x[2], alt=x[0], title=x[0], Class='item_icon', loading="lazy") + DIV(x[1], Class='bottom-right'), Class='container', data_value=x[1]) for x in data[base])
 		t <= TR(TD(INPUT(Id=f"check-{base_l.replace(' ', '_')}", type='checkbox', data_id=base_l, Class='save')) + TD(base) + TD(v), data_id=base_l, data_value=data[base][0][1])
 
 	doc['items'] <= t
