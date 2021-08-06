@@ -4,7 +4,24 @@ from gen_items import gen_bases
 
 
 def main():
+	# generate all possible ngrams
 	ngrams = defaultdict(set)
+	# seed gen_bases with bad words to match on
+	gen_bases.extend([
+		{'name': 'Implicit Modifier'},
+		{'name': 'Evasion Rating'},
+		{'name': "Energy Shield"},
+		{'name': "Armour"},
+		{'name': 'Physical Damage'},
+		{'name': 'Critical Strike Chance'},
+		{'name': 'Attacks per Second'},
+		{'name': 'Weapon Range'},
+		{'name': 'Item Level'},
+		{'name': 'Requires'},
+		{'name': 'Str'},
+		{'name': 'Dex'},
+		{'name': 'Int'}
+	])
 	for item in gen_bases:
 		base = item['name'].lower()
 		for i in range(len(base)):
@@ -24,6 +41,7 @@ def main():
 						if ch[0] != ' ' and ch[-1] != ' ':
 							ngrams[base].add(ch.lower())
 
+	# find all bases that are a substring of other base(s)
 	searchpool = sorted(ngrams, key=len)
 	child = {}
 	for c, base in enumerate(searchpool):
@@ -36,12 +54,14 @@ def main():
 	with open('ngram_generated.py', 'w', encoding='utf-8') as f:
 		f.write('subnames = {\n')
 		for base in child:
-			f.write(f'\t"{base}": {child[base]},\n')
+			f.write(f'\t"{base}": {sorted(child[base])},\n')
 		f.write('}\n\n')
 
 		f.write('ngrams = {\n')
 		for base in sorted(ngrams):
-			f.write(f'\t"{base}": {ngrams[base]},\n')
+			# to keep the order stable for spotting differences
+			n_sort = '", "'.join(sorted(ngrams[base]))
+			f.write(f'\t"{base}": {{"{n_sort}"}},\n')
 		f.write('}')
 
 
