@@ -1,10 +1,12 @@
 from browser import document as doc
 from browser.html import TABLE, TR, TH, TD, INPUT, SELECT, OPTION, DIV, BUTTON, SPAN, LI, H2, H3, IMG, COLGROUP, COL, P, SECTION, BR
 from json import load
+from last_update import time
 
 
 # Create the static elements of the home page
 def init_page():
+	doc['time'].text = f"poe.ninja data last updated at {time} PST"
 	# selected
 	cst = SELECT(Id=f"hide_low_value", Class=f"save onehundred")
 	for s in ['show', 'hide']:

@@ -7,10 +7,14 @@ import json
 import requests
 from collections import defaultdict
 from gen_items import gen_bases
+from datetime import datetime
 
 
 # get price data from poe.ninja
 def scrape_ninja(league='tmpstandard'):
+	now = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
+	with open('last_update.py', 'w') as f:
+		f.write(f'time = "{now}"')
 	good_bases = [x['name'] for x in gen_bases]
 	# List of items that cannot be gambled
 	bad_names = {

@@ -4,7 +4,7 @@ from ngram_generated import ngrams, subnames
 from browser.html import P, BR
 
 
-# Function for saving changes
+# Function handling filtering changes
 @bind('.save', 'change')
 def save_state(ev):
 	if ev.target.id == 'chaos_filter':
@@ -78,8 +78,6 @@ def generate_string(ev):
 			greedy_choice[mychoice[1]] = mychoice[2]
 			for base in mychoice[2]:
 				good_ngrams.pop(base)
-		#  Max length example " jew|rq|hon|d d|ecy| e le|r be|ge a|lk g|lth b|e"
-		# max len = 48
 		builder = sorted(greedy_choice, key=len, reverse=True)
 		info_str = P()
 		for ng in builder[:-1]:
