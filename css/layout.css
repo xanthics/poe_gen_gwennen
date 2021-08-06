@@ -22,6 +22,7 @@ body {
     width: 100%;
 }
 
+.sec_div,
 section {
 	text-align: justify;
 	color: rgb(200, 200, 200);
@@ -167,6 +168,15 @@ button.current_tab {
 
 table {
 	border-collapse: collapse;
+	table-layout: fixed
+}
+
+.col_1 {
+    width: 10em;
+}
+
+.col_2 {
+    width: 15em;
 }
 
 table.borders th,

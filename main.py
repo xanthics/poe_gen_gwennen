@@ -81,7 +81,8 @@ def generate_string(ev):
 	info_str = P()
 	for ng in builder[:-1]:
 		info_str <= f"{repr(ng)}: '{greedy_choice[ng]}'" + BR()
-	info_str <= f"{repr(builder[-1])}: '{greedy_choice[builder[-1]]}'"
+	if len(builder) > 1:
+		info_str <= f"{repr(builder[-1])}: '{greedy_choice[builder[-1]]}'"
 	k_bag_str = []
 	while builder:
 		current_k_str = f'"{builder[0]}'
