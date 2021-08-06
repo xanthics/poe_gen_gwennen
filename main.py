@@ -1,6 +1,5 @@
 from browser import document as doc
 from browser import bind, worker
-from ngram_generated import ngrams, subnames
 from browser.html import P, BR
 
 
