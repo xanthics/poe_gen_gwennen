@@ -10,18 +10,20 @@ myWorker = worker.Worker("myworker")
 @bind('.save', 'change')
 def save_state(ev):
 	if ev.target.id in ['chaos_filter', 'hide_low_value']:
-		c = True if doc['hide_low_value'].value == 'hide' else False
+		hide_low = True if doc['hide_low_value'].value == 'hide' else False
 		value = int(doc['chaos_filter'].value)
 		for el in doc.get(selector="[data-value]"):
 			if int(el.attrs['data-value']) >= value:
-				if 'container' in el.class_name:
+				if 'hidden_class' in el.class_name:
 					el.attrs['class'] = "container"
 				elif 'hidden' in el.attrs:
 					del el.attrs['hidden']
 			else:
 				if 'container' in el.class_name:
-					if c:
+					if hide_low:
 						el.attrs['class'] = "container hidden_class"
+					else:
+						el.attrs['class'] = "container"
 				else:
 					el.attrs['hidden'] = ''
 
