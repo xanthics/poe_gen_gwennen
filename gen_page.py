@@ -11,13 +11,17 @@ def init_page():
 	cst = SELECT(Id=f"hide_low_value", Class=f"save onehundred")
 	for s in ['hide', 'show']:
 		cst <= OPTION(s.capitalize(), value=s)
+	always_show = SELECT(Id=f"always_show", Class=f"save onehundred")
+	for s in ['show', 'hide']:
+		always_show <= OPTION(s.capitalize(), value=s)
 	min_val = INPUT(Type='number', min='0', step="1", value='20', Id="chaos_filter", Class='save')
 	t = TABLE(TR(TH() + TH('Selection')))
+	t <= TR(TD("Always show selected:", Class="right_text") + TD(always_show))
 	t <= TR(TD("Minimum Chaos value to show:", Class="right_text") + TD(min_val))
 	t <= TR(TD("Show low value items in row:", Class="right_text") + TD(cst))
 	t <= TR(TD("Keyword(s) Search:", Class="right_text") + TD(INPUT(Type='text', Id="keywords", Class='save')))
 	doc['show_hide'] <= t + P("Hit enter or click outside the inputs to update the page.")
-	doc['show_hide'] <= P("Note that the keyword search overrides min chaos and low value filter settings.  Clear keyword search to use them.  Search will display an empty row if it's the combination of the base + a unique that matches the search terms.  EG gold rim will show Viridian Jewel base because 2 separate uniques partially match the search.")
+	doc['show_hide'] <= P("Note that the keyword search overrides all other filter settings.  Clear keyword search to use them.  Search will display an empty row if it's the combination of the base + a unique that matches the search terms.  EG gold rim will show Viridian Jewel base because 2 separate uniques partially match the search.")
 	doc['show_hide'] <= DIV(BUTTON("Generate String", Id='generate') + "This will cause many calculations and may take a bit to return a result")
 	doc['show_hide'] <= DIV("No strings generated yet.", Id="generated_strings", Class='sec_div grind') + BUTTON("Select All Visible Only", Id='select_visible')
 

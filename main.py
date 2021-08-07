@@ -9,11 +9,12 @@ myWorker = worker.Worker("myworker")
 # Function handling filtering changes
 @bind('.save', 'change')
 def save_state(ev):
-	if (ev.target.id in ['chaos_filter', 'hide_low_value'] and not doc['keywords'].value) or (ev.target.id == 'keywords' and not ev.target.value):
+	if ((ev.target.id in ['chaos_filter', 'hide_low_value', 'always_show'] or ev.target.type == 'checkbox') and not doc['keywords'].value) or (ev.target.id == 'keywords' and not ev.target.value):
+		always_show = True if doc['always_show'].value == 'show' else False
 		hide_low = True if doc['hide_low_value'].value == 'hide' else False
 		value = int(doc['chaos_filter'].value)
 		for el in doc.get(selector="[data-value]"):
-			if int(el.attrs['data-value']) >= value:
+			if int(el.attrs['data-value']) >= value or (always_show and 'container' not in el.class_name and doc[f'check-{el.attrs["data-id"].replace(" ", "_")}'].checked):
 				if 'hidden_class' in el.class_name:
 					el.attrs['class'] = "container"
 				elif 'hidden' in el.attrs:
