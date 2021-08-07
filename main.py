@@ -9,7 +9,7 @@ myWorker = worker.Worker("myworker")
 # Function handling filtering changes
 @bind('.save', 'change')
 def save_state(ev):
-	if ev.target.id in ['chaos_filter', 'hide_low_value']:
+	if (ev.target.id in ['chaos_filter', 'hide_low_value'] and not doc['keywords'].value) or (ev.target.id == 'keywords' and not ev.target.value):
 		hide_low = True if doc['hide_low_value'].value == 'hide' else False
 		value = int(doc['chaos_filter'].value)
 		for el in doc.get(selector="[data-value]"):
@@ -26,6 +26,20 @@ def save_state(ev):
 						el.attrs['class'] = "container"
 				else:
 					el.attrs['hidden'] = ''
+	elif ev.target.id == 'keywords':
+		search_terms = ev.target.value.lower().split()
+		for el in doc.get(selector="[data-search]"):
+			terms = el.attrs['data-search']
+			if all(x in terms for x in search_terms):
+				if 'hidden_class' in el.class_name:
+					el.attrs['class'] = "container"
+				elif 'hidden' in el.attrs:
+					del el.attrs['hidden']
+			else:
+				if 'container' in el.class_name:
+					el.attrs['class'] = "container hidden_class"
+				else:
+					el.attrs['hidden'] = ''
 
 
 @bind(myWorker, 'message')
@@ -39,8 +53,7 @@ def onmessage(evt):
 	elif evt.data[0] == 'update':
 		doc['updates'].text = evt.data[1]
 	elif evt.data[0] == 'debug':
-		pass
-		# print(evt.data[1])
+		print(evt.data[1])
 
 
 def select_visible(ev):
