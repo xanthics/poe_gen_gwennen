@@ -41,7 +41,7 @@ def scrape_ninja():
 		'The Vinktar Square', 'Loreweave',
 		#  incursion uniques from upgrades
 		'Transcendent Flesh', 'Transcendent Mind', 'Transcendent Spirit', 'Soul Ripper', 'Slavedriver\'s Hand', 'Coward\'s Legacy', 'Omeyocan', 'Fate of the Vaal', 'Mask of the Stitched Demon',
-		'Apep\'s Supremacy', 'Zerphi\'s Heart', 'Shadowstitch',
+		'Apep\'s Supremacy', 'Zerphi\'s Heart',
 		# incursion uniques
 		'Sacrificial Heart', 'String of Servitude', 'Tempered Flesh', 'Tempered Mind', 'Tempered Spirit',
 		'Shadowstitch', "Apep's Slumber", "Architect's Hand", "Coward's Chains", 'Dance of the Offered', 'Mask of the Spirit Drinker', 'Story of the Vaal',
@@ -67,7 +67,7 @@ def scrape_ninja():
 		"Atziri's Step", "Doryani's Catalyst", "Doryani's Invitation", "Atziri's Promise",
 		"The Vertex", "Atziri's Splendour", "Atziri's Acuity", "Atziri's Disfavour",
 		# Maven
-		"Arn's Anguish", "Graven's Secret", "Olesya's Delight", "Viridi's Veil", 'The Walls', 'The Claim', 'The Closest Peak', 'Atop the Atlas', 'The Vast Horizon', 'The Builder', 'Restless Cycles', 'The False Hope',
+		"Arn's Anguish", "Graven's Secret", "Olesya's Delight", "Viridi's Veil", 'The Walls', 'The Claim', 'The Closest Peak', 'Atop the Atlas', 'The Vast Horizon', 'The Builder', 'Restless Cycles', 'The False Hope', 'Legacy of Fury',
 		# Bestiary League
 		"Saqawal's Flock", "Saqawal's Nest", "Saqawal's Talons", "Saqawal's Winds",
 		"Fenumus' Toxins", "Fenumus' Shroud", "Fenumus' Spinnerets", "Fenumus' Weave",
@@ -81,23 +81,23 @@ def scrape_ninja():
 		# Doryani's Machinarium
 		"Doryani's Delusion",
 		# Synthesis League
-		"Bottled Faith", "Perepiteia", "Mask of the Tribunal", "Garb of the Ephemeral", "Offering to the Serpent", "Storm's Gift", "Nebulis", "Circle of Guilt", "Circle of Regret", "Circle of Fear", "Circle of Anguish", "Circle of Nostalgia", "Maloney's Mechanism",
+		"Bottled Faith", "Perepiteia", "Mask of the Tribunal", "Garb of the Ephemeral", "Offering to the Serpent", "Storm's Gift", "Nebulis", "Circle of Guilt", "Circle of Regret", "Circle of Fear", "Circle of Anguish", "Circle of Nostalgia",
 		# Labyrinth
 		"Glitterdisc", "Viper's Scales", "Death's Door", "Winds of Change", "Izaro's Dilemma", "Chitus' Needle", "Spine of the First Claimant", "Xirgil's Crank", "Izaro's Turmoil",
 		"Emperor's Might", "Emperor's Cunning", "Emperor's Wit", "Emperor's Mastery",
 		# Breach League
-		"The Anticipation", "Esh's Mirror", "The Formless Flame", "Skin of the Loyal", "The Snowblind Grace", "The Infinite Pursuit", "The Infinite Pursuit", "	Hand of Thought and Motion", "Severed in Sleep", "Xoph's Inception", "Uul-Netol's Kiss", "Xoph's Heart", "The Halcyon", "Voice of the Storm",
+		"The Anticipation", "Esh's Mirror", "The Formless Flame", "Skin of the Loyal", "The Snowblind Grace", "The Infinite Pursuit", "Hand of Thought and Motion", "Severed in Sleep", "Xoph's Inception", "Uul-Netol's Kiss", "Xoph's Heart", "The Halcyon", "Voice of the Storm",
 		"The Red Dream", "The Green Dream", "The Blue Dream",
 		# Abyss League
 		"Lightpoacher", "Shroud of the Lightless", "Bubonic Trail", "Tombfist", "Darkness Enthroned",
 		# Delve League
-		"Command of the Pit", "Crown of the Tyrant", "Cerberus Limb", "Aul's Uprising", "Doryani's Machinarium",
+		"Command of the Pit", "Crown of the Tyrant", "Cerberus Limb", "Aul's Uprising", "Doryani's Machinarium", 'Hale Negator',
 		"Putembo's Valley", "Putembo's Mountain", "Putembo's Meadow",
 		"Uzaza's Meadow", "Uzaza's Mountain", "Uzaza's Valley",
 		"Ahkeli's Mountain", "Ahkeli's Meadow", "Ahkeli's Valley",
 		"Precursor's Emblem",
 		# Betrayal League
-		"Bitterbind Point", "The Devouring Diadem", "The Queen's Hunger", "Cinderswallow", "Paradoxica", "The Crimson Storm", "The Crimson Storm", "Hyperboreus", "Cane of Kulemak", 'Vivinsect', "Cloak of Tawm'r Isley",
+		"Bitterbind Point", "The Devouring Diadem", "The Queen's Hunger", "Cinderswallow", "Paradoxica", "The Crimson Storm", "Hyperboreus", 'Vivinsect', "Cloak of Tawm'r Isley",
 		# Perandus League
 		"Seven-League Step", "Trypanon", "Umbilicus Immortalis", "Varunastra", "Zerphi's Last Breath",
 		# Blight League
@@ -107,12 +107,16 @@ def scrape_ninja():
 		# Delirium
 		'One With Nothing', 'The Interrogation', "Kitava's Teachings", 'Voices', 'Split Personality',
 		# Harvest
-		'Abhorrent Interrogation', "Bear's Girdle", 'Forbidden Shako', 'Law of the Wilds', 'Plume of Pursuit', 'The Felbog Fang', 'The Immortal Will', 'The Shattered Divinity', 'The Surging Thoughts', "The Tempest's Liberation", "The Torrent's Reclamation", 'The Yielding Mortality',
+		'Abhorrent Interrogation', "Bear's Girdle", 'Forbidden Shako', 'Law of the Wilds', 'Plume of Pursuit', 'The Felbog Fang',
 		"Witchhunter's Judgment",
 		# Heist
 		'Fated End', "Leadership's Price", "The Admiral", "Chains of Emancipation", "The Fledgling", "Nadir Mode", "Apex Mode", "Font of Thunder", "Actum", "The Iron Mass", "The Hidden Blade", "The Fulcrum", "Expedition's End", "Crest of Desire", "Shattershard",
 		# Warbands League
 		"Brinerot Flag", "Brinerot Mark", "Brinerot Whalers", "Broken Faith", "Mutewind Pennant", "Mutewind Seal", "Mutewind Whispersteps", "Redblade Band", "Redblade Banner", "Redblade Tramplers", "Steppan Eard", "The Pariah",
+		# Ritual
+		"Blackflame", "Qotra's Regulator", "Rotblood Promise", "Survivor's Guilt", "Hands of the Fervent",
+		# Ultimatum
+		"Atziri's Rule", "Cane of Kulemak", "Glimpse of Chaos", "Hateforge", "Mahuxotl's Machination", "Relic of the Pact", "Steelworm", "Temptation Step", "The Scales of Justice", "Triumvirate Authority", "Yaomac's Accord",
 	}
 
 	keys = [
@@ -130,6 +134,13 @@ def scrape_ninja():
 
 	for l_str, league in [('sc', 'Expedition'), ('hc', 'Hardcore Expedition')]:
 		price_val = defaultdict(list)
+		# add atlas bases as possible purchase targets for influence
+		for base in [
+			"Apothecary's Gloves", "Fingerless Silk Gloves", "Fugitive Boots", "Gripped Gloves", "Spiked Gloves", "Two-Toned Boots", "Convoking Wand", "Bone Helmet", "Artillery Quiver", "Marble Amulet",
+			"Seaglass Amulet", "Blue Pearl Amulet", "Iolite Ring", "Vanguard Belt", "Crystal Belt", "Cerulean Ring", "Opal Ring", "Steel Ring", "Vermillion Ring"
+		]:
+			price_val[base].append(['Influenced Rare', 0, 'img/influenced_base.png'])
+
 		for key in keys:
 			missing_unhandled = []
 			request = f'https://poe.ninja/api/data/itemoverview?league={league}&type={key}'
