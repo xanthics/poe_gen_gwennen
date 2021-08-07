@@ -41,11 +41,11 @@ def update_page(soup, softcore=True):
 	nav_link['target'] = "_blank"
 	if softcore:
 		soup.find('title').string = "Softcore Gwennen Regex Generator"
-		nav_link['href'] = '/index_hc.html'
+		nav_link['href'] = '/poe_gen_gwennen/index_hc.html'
 		nav_link.string = "Hardcore Market here"
 	else:
 		soup.find('title').string = "Hardcore Gwennen Regex Generator"
-		nav_link['href'] = '/'
+		nav_link['href'] = '/poe_gen_gwennen/'
 		nav_link.string = "Softcore Market here"
 	soup.find('p', {'id': 'otherversion'}).append(nav_link)
 
