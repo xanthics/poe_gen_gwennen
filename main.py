@@ -10,23 +10,7 @@ myWorker = worker.Worker("myworker")
 @bind('.save', 'change')
 def save_state(ev):
 	if ((ev.target.id in ['chaos_filter', 'hide_low_value', 'always_show'] or ev.target.type == 'checkbox') and not doc['keywords'].value) or (ev.target.id == 'keywords' and not ev.target.value):
-		always_show = True if doc['always_show'].value == 'show' else False
-		hide_low = True if doc['hide_low_value'].value == 'hide' else False
-		value = int(doc['chaos_filter'].value)
-		for el in doc.get(selector="[data-value]"):
-			if int(el.attrs['data-value']) >= value or (always_show and 'container' not in el.class_name and doc[f'check-{el.attrs["data-id"].replace(" ", "_")}'].checked):
-				if 'hidden_class' in el.class_name:
-					el.attrs['class'] = "container"
-				elif 'hidden' in el.attrs:
-					del el.attrs['hidden']
-			else:
-				if 'container' in el.class_name:
-					if hide_low:
-						el.attrs['class'] = "container hidden_class"
-					else:
-						el.attrs['class'] = "container"
-				else:
-					el.attrs['hidden'] = ''
+		init_page()
 	elif ev.target.id == 'keywords':
 		search_terms = ev.target.value.lower().split()
 		for el in doc.get(selector="[data-search]"):
@@ -66,12 +50,14 @@ def select_visible(ev):
 			doc[check_id].checked = False
 		else:
 			doc[check_id].checked = True
+	init_page()
 
 
 def clear_selected(ev):
 	for el in doc.get(selector="tr[data-id]"):
 		check_id = f'check-{el.attrs["data-id"].replace(" ", "_")}'
 		doc[check_id].checked = False
+	init_page()
 
 
 def generate_string(ev):
@@ -88,27 +74,30 @@ def generate_string(ev):
 		doc['generated_strings'] <= P("No bases were selected, so no result to return.")
 
 
-# Set the initial page state
+# Set the page visibility state
 def init_page():
+	always_show = True if doc['always_show'].value == 'show' else False
+	hide_low = True if doc['hide_low_value'].value == 'hide' else False
 	value = int(doc['chaos_filter'].value)
-	c = True if doc['hide_low_value'].value == 'hide' else False
 	for el in doc.get(selector="[data-value]"):
-		if int(el.attrs['data-value']) >= value:
-			if 'container' in el.class_name:
+		if int(el.attrs['data-value']) >= value or (always_show and 'container' not in el.class_name and doc[f'check-{el.attrs["data-id"].replace(" ", "_")}'].checked):
+			if 'hidden_class' in el.class_name:
 				el.attrs['class'] = "container"
 			elif 'hidden' in el.attrs:
 				del el.attrs['hidden']
 		else:
 			if 'container' in el.class_name:
-				if c:
+				if hide_low:
 					el.attrs['class'] = "container hidden_class"
+				else:
+					el.attrs['class'] = "container"
 			else:
 				el.attrs['hidden'] = ''
-	select_visible(None)
 
 
 doc["generate"].bind("click", generate_string)
 doc["select_visible"].bind("click", select_visible)
 doc["clear_selected"].bind("click", clear_selected)
 init_page()
+select_visible(None)
 del doc['loading']
