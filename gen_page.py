@@ -17,9 +17,10 @@ def init_page():
 	t <= TR(TD("Show low value items in row:") + TD(cst))
 	doc['show_hide'] <= t + DIV(BUTTON("Generate String", Id='generate') + "This will cause many calculations and may take a bit to return a result") + DIV("No strings generated yet.", Id="generated_strings", Class='sec_div grind') + BUTTON("Select All Visible Only", Id='select_visible')
 	t = TABLE(TR(TH("Selected", Class='col_1') + TH("Base", Class='col_2') + TH("Item(s)")), Class="borders onehundred")
-	with open('unique.json') as f:
-		data = load(f)
 
+	# Load league specific unique data
+	with open(f'{doc.query.getvalue("league", "sc")}_unique.json') as f:
+		data = load(f)
 	for base in data:
 		base_l = base.lower()
 		v = (DIV(IMG(src=x[2], alt=x[0], title=x[0], Class='item_icon', loading="lazy") + DIV(x[1], Class='bottom-right'), Class='container', data_value=x[1]) for x in data[base])

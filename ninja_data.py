@@ -11,7 +11,7 @@ from datetime import datetime
 
 
 # get price data from poe.ninja
-def scrape_ninja(league='tmpstandard'):
+def scrape_ninja():
 	now = datetime.now().strftime("%m/%d/%Y, %H:%M:%S")
 	with open('last_update.py', 'w') as f:
 		f.write(f'time = "{now}"')
@@ -97,7 +97,7 @@ def scrape_ninja(league='tmpstandard'):
 		"Ahkeli's Mountain", "Ahkeli's Meadow", "Ahkeli's Valley",
 		"Precursor's Emblem",
 		# Betrayal League
-		"Bitterbind Point", "The Devouring Diadem", "The Queen's Hunger", "Cinderswallow", "Paradoxica", "The Crimson Storm", "The Crimson Storm", "Hyperboreus", "Cane of Kulemak", 'Vivinsect',
+		"Bitterbind Point", "The Devouring Diadem", "The Queen's Hunger", "Cinderswallow", "Paradoxica", "The Crimson Storm", "The Crimson Storm", "Hyperboreus", "Cane of Kulemak", 'Vivinsect', "Cloak of Tawm'r Isley",
 		# Perandus League
 		"Seven-League Step", "Trypanon", "Umbilicus Immortalis", "Varunastra", "Zerphi's Last Breath",
 		# Blight League
@@ -115,13 +115,6 @@ def scrape_ninja(league='tmpstandard'):
 		"Brinerot Flag", "Brinerot Mark", "Brinerot Whalers", "Broken Faith", "Mutewind Pennant", "Mutewind Seal", "Mutewind Whispersteps", "Redblade Band", "Redblade Banner", "Redblade Tramplers", "Steppan Eard", "The Pariah",
 	}
 
-	leaguelookup = {
-		"Standard": "Standard",
-		"Hardcore": "Hardcore",
-		"tmpstandard": "Expedition",
-		"tmphardcore": "Hardcore Expedition",
-	}
-
 	keys = [
 		'UniqueJewel',
 		'UniqueWeapon',
@@ -134,39 +127,40 @@ def scrape_ninja(league='tmpstandard'):
 		'User-Agent': 'xan.filter',
 		'From': 'xanthics on discord'
 	}
-	price_val = defaultdict(list)
 
-	for key in keys:
-		missing_unhandled = []
-		request = f'https://poe.ninja/api/data/itemoverview?league={leaguelookup[league]}&type={key}'
-		req = requester.get(request, headers=header)
-		print(f"{league} {key} Status code: {req.status_code}")
-		if req.status_code == 204:
-			print("No {} data for {}".format(key, league))
-			continue
-		data = req.json()
+	for l_str, league in [('sc', 'Expedition'), ('hc', 'Hardcore Expedition')]:
+		price_val = defaultdict(list)
+		for key in keys:
+			missing_unhandled = []
+			request = f'https://poe.ninja/api/data/itemoverview?league={league}&type={key}'
+			req = requester.get(request, headers=header)
+			print(f"{league} {key} Status code: {req.status_code}")
+			if req.status_code == 204:
+				print("No {} data for {}".format(key, league))
+				continue
+			data = req.json()
 
-		if key in ['UniqueJewel', 'UniqueWeapon', 'UniqueArmour', 'UniqueAccessory']:
-			for i in data['lines']:
-				if ((('links' in i and i['links']) or 'relic' in i['icon']) and i['name'] != 'Tabula Rasa') or 'Replica' in i['name'] or i['name'] in bad_names:
-					continue
-				elif i['baseType'] not in good_bases:
-					print(f"Skipping due to basetype: {i}")
-					continue
-				price_val[i['baseType']].append([i['name'], int(i['chaosValue']), i['icon']])
+			if key in ['UniqueJewel', 'UniqueWeapon', 'UniqueArmour', 'UniqueAccessory']:
+				for i in data['lines']:
+					if ((('links' in i and i['links']) or 'relic' in i['icon']) and i['name'] != 'Tabula Rasa') or 'Replica' in i['name'] or i['name'] in bad_names:
+						continue
+					elif i['baseType'] not in good_bases:
+						print(f"Skipping due to basetype: {i}")
+						continue
+					price_val[i['baseType']].append([i['name'], int(i['chaosValue']), i['icon']])
 
-		else:
-			print('Unhandled key: "{}"'.format(key))
+			else:
+				print('Unhandled key: "{}"'.format(key))
 
-		if missing_unhandled:
-			missing_str = '\n\t'.join(missing_unhandled)
-			print(f"{key} is missing presets for the following items:\n\t{missing_str}")
+			if missing_unhandled:
+				missing_str = '\n\t'.join(missing_unhandled)
+				print(f"{key} is missing presets for the following items:\n\t{missing_str}")
 
-	# sort by value decending
-	for base in price_val:
-		price_val[base] = sorted(price_val[base], key=lambda x: x[1], reverse=True)
-	with open(f'unique.json', 'w') as f:
-		json.dump(price_val, f, sort_keys=True, indent=2)
+		# sort by value decending
+		for base in price_val:
+			price_val[base] = sorted(price_val[base], key=lambda x: x[1], reverse=True)
+		with open(f'{l_str}_unique.json', 'w') as f:
+			json.dump(price_val, f, sort_keys=True, indent=2)
 
 
 if __name__ == '__main__':
