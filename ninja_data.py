@@ -21,10 +21,12 @@ def scrape_ninja(league='tmpstandard'):
 		# Quest Items
 		"Survival Instincts", "Survival Secrets", "Survival Skills", "Conqueror's Longevity", "Conqueror's Potency", "Conqueror's Efficiency",
 		"Assassin's Haste", "Poacher's Aim", "Warlord's Reach",
-		# Corruption only jewels
+		# Corruption only
 		"Ancient Waystones", "Atziri's Reign", "Blood Sacrifice", "Brittle Barrier", "Chill of Corruption", "Combustibles", "Corrupted Energy",
 		"Fragility", "Hungry Abyss", "Mutated Growth", "Pacifism", "Powerlessness", "Sacrificial Harvest", "Self-Flagellation", "Vaal Sentencing",
-		"Weight of Sin", "Fevered Mind",
+		"Weight of Sin", "Fevered Mind", 'Blood of Corruption', "Malachai's Vision",
+		# Prophecy drop only
+		'Kintsugi', "Hinekora's Sight", "Ascent From Flesh", 'The Ascetic',
 		# Divination card only item
 		'Maw of Mischief',
 		# Fated Uniques
