@@ -76,23 +76,25 @@ def generate_string(ev):
 
 # Set the page visibility state
 def init_page():
-	always_show = True if doc['always_show'].value == 'show' else False
-	hide_low = True if doc['hide_low_value'].value == 'hide' else False
-	value = int(doc['chaos_filter'].value)
-	for el in doc.get(selector="[data-value]"):
-		if int(el.attrs['data-value']) >= value or (always_show and 'container' not in el.class_name and doc[f'check-{el.attrs["data-id"].replace(" ", "_")}'].checked):
-			if 'hidden_class' in el.class_name:
-				el.attrs['class'] = "container"
-			elif 'hidden' in el.attrs:
-				del el.attrs['hidden']
-		else:
-			if 'container' in el.class_name:
-				if hide_low:
-					el.attrs['class'] = "container hidden_class"
-				else:
+	# Only update visibility if keywords is empty
+	if not doc['keywords'].value:
+		always_show = True if doc['always_show'].value == 'show' else False
+		hide_low = True if doc['hide_low_value'].value == 'hide' else False
+		value = int(doc['chaos_filter'].value)
+		for el in doc.get(selector="[data-value]"):
+			if int(el.attrs['data-value']) >= value or (always_show and 'container' not in el.class_name and doc[f'check-{el.attrs["data-id"].replace(" ", "_")}'].checked):
+				if 'hidden_class' in el.class_name:
 					el.attrs['class'] = "container"
+				elif 'hidden' in el.attrs:
+					del el.attrs['hidden']
 			else:
-				el.attrs['hidden'] = ''
+				if 'container' in el.class_name:
+					if hide_low:
+						el.attrs['class'] = "container hidden_class"
+					else:
+						el.attrs['class'] = "container"
+				else:
+					el.attrs['hidden'] = ''
 
 
 doc["generate"].bind("click", generate_string)
