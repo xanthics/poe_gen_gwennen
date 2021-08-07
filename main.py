@@ -68,6 +68,12 @@ def select_visible(ev):
 			doc[check_id].checked = True
 
 
+def clear_selected(ev):
+	for el in doc.get(selector="tr[data-id]"):
+		check_id = f'check-{el.attrs["data-id"].replace(" ", "_")}'
+		doc[check_id].checked = False
+
+
 def generate_string(ev):
 	doc['generated_strings'].text = ''
 	good_bases = []
@@ -103,5 +109,6 @@ def init_page():
 
 doc["generate"].bind("click", generate_string)
 doc["select_visible"].bind("click", select_visible)
+doc["clear_selected"].bind("click", clear_selected)
 init_page()
 del doc['loading']
