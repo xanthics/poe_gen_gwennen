@@ -139,7 +139,7 @@ def scrape_ninja():
 			"Apothecary's Gloves", "Fingerless Silk Gloves", "Fugitive Boots", "Gripped Gloves", "Spiked Gloves", "Two-Toned Boots", "Convoking Wand", "Bone Helmet", "Artillery Quiver", "Marble Amulet",
 			"Seaglass Amulet", "Blue Pearl Amulet", "Iolite Ring", "Vanguard Belt", "Crystal Belt", "Cerulean Ring", "Opal Ring", "Steel Ring", "Vermillion Ring"
 		]:
-			price_val[base].append(['Influenced Rare', 0, 'img/influenced_base.png'])
+			price_val[base].append(['Influenced Base', 0, 'img/influenced_base.png'])
 
 		for key in keys:
 			missing_unhandled = []
