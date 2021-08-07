@@ -36,7 +36,19 @@ def load_page_firefox(page_name):
 
 
 # make some modifications to the page
-def update_page(soup):
+def update_page(soup, softcore=True):
+	nav_link = soup.new_tag('a')
+	nav_link['target'] = "_blank"
+	if softcore:
+		soup.find('title').string = "Softcore Gwennen Regex Generator"
+		nav_link['href'] = '/index_hc.html'
+		nav_link.string = "Hardcore Market here"
+	else:
+		soup.find('title').string = "Hardcore Gwennen Regex Generator"
+		nav_link['href'] = '/'
+		nav_link.string = "Softcore Market here"
+	soup.find('p', {'id': 'otherversion'}).append(nav_link)
+
 	meta1 = soup.new_tag('meta')
 	meta1['name'] = 'description'
 	meta1['content'] = 'PoE Gwennen regex generator.'
@@ -67,7 +79,7 @@ def main():
 	local_page = f'http://localhost:{port}/dynamic_page.html?league=hc'
 	html = load_page_firefox(local_page)
 	hc_soup = bs(html, "html.parser")
-	update_page(hc_soup)
+	update_page(hc_soup, False)
 
 	server.shutdown()  # kill the server since we are done with it
 	try:

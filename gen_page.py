@@ -16,7 +16,7 @@ def init_page():
 		always_show <= OPTION(s.capitalize(), value=s)
 	min_val = INPUT(Type='number', min='0', step="1", value='20', Id="chaos_filter", Class='save')
 	t = TABLE(TR(TH() + TH('Selection')))
-	t <= TR(TD("Always show selected:", Class="right_text") + TD(always_show))
+	t <= TR(TD("Always show selected rows:", Class="right_text") + TD(always_show))
 	t <= TR(TD("Minimum Chaos value to show:", Class="right_text") + TD(min_val))
 	t <= TR(TD("Show low value items in row:", Class="right_text") + TD(cst))
 	t <= TR(TD("Keyword(s) Search:", Class="right_text") + TD(INPUT(Type='text', Id="keywords", Class='save')))
