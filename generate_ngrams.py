@@ -41,14 +41,14 @@ def main():
 						if ch[0] != ' ' and ch[-1] != ' ':
 							ngrams[base].add(ch.lower())
 	# remove all ngrams that are too common
-	threshold = 5
+	threshold = 3
 	counts = defaultdict(int)
 	for base in ngrams:
 		for gram in ngrams[base]:
 			counts[gram] += 1
 	common_grams = set()
 	for item in counts:
-		if counts[item] >= threshold:
+		if counts[item] > threshold:
 			common_grams.add(item)
 	for base in ngrams.copy():
 		ngrams[base] -= common_grams
