@@ -18,6 +18,10 @@ body {
   height: auto;
 }
 
+.monospace {
+    font-family: monospace;
+}
+
 .onehundred{
     width: 100%;
 }

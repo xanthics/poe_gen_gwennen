@@ -1,6 +1,6 @@
 from browser import document as doc
 from browser import bind, worker
-from browser.html import P, BR
+from browser.html import P, BR, INPUT
 
 
 myWorker = worker.Worker("myworker")
@@ -49,11 +49,13 @@ def onmessage(evt):
 	elif evt.data[0] == 'done':
 		if evt.data[1]:
 			del doc['updates']
-			doc['generated_strings'] <= (P(f'{c}: {x}') for c, x in enumerate(evt.data[1], start=1))
+			# input size uses 'M' * size to figure out width.  Only correct with fixed width font.
+			doc['generated_strings'] <= (P(f'{c}: ' + INPUT(value=x, size=len(x)+1, readonly='', Class='monospace', type="text", Id=f"{c}_search", onClick=f'document.getElementById("{c}_search").select(); document.execCommand("copy");')) for c, x in enumerate(evt.data[1], start=1))
 	elif evt.data[0] == 'update':
 		doc['updates'].text = evt.data[1]
 	elif evt.data[0] == 'debug':
-		print(evt.data[1])
+		# print(evt.data[1])
+		pass
 
 
 def select_visible(ev):
