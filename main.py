@@ -97,9 +97,13 @@ def init_page():
 					el.attrs['hidden'] = ''
 
 
-doc["generate"].bind("click", generate_string)
-doc["select_visible"].bind("click", select_visible)
-doc["clear_selected"].bind("click", clear_selected)
+def first_load():
+	doc["generate"].bind("click", generate_string)
+	doc["select_visible"].bind("click", select_visible)
+	doc["clear_selected"].bind("click", clear_selected)
+	del doc['loading']
+
+
+first_load()
 init_page()
 select_visible(None)
-del doc['loading']
