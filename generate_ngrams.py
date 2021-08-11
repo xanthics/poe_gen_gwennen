@@ -1,11 +1,17 @@
 from collections import defaultdict
-
+from json import load
 from gen_items import gen_bases
 
 
 def main():
 	# generate all possible ngrams
 	ngrams = defaultdict(set)
+	bad_ngrams = set()
+	with open('sc_unique.json') as f:
+		sc_bases = load(f)
+	with open('hc_unique.json') as f:
+		hc_bases = load(f)
+	good_bases = {x for x in sc_bases | hc_bases}
 	# seed gen_bases with bad words to match on
 	gen_bases.extend([
 		{'name': 'Implicit Modifier'},
@@ -22,12 +28,34 @@ def main():
 		{'name': 'Dex'},
 		{'name': 'Int'}
 	])
+	max_ngram_len = 8  # all good bases can generate a unique ngram within 8 characters
 	for item in gen_bases:
+		if item['name'] in good_bases:
+			continue
 		base = item['name'].lower()
 		for i in range(len(base)):
 			for j in range(i+1, len(base) + 1):
 				ch = base[i:j]
-				if len(ch) > 46:
+				if len(ch) > max_ngram_len:
+					continue
+				if ch[0] != ' ' and ch[-1] != ' ':
+					bad_ngrams.add(ch.lower())
+		if 'implicit' in item:
+			for x in item['implicit']:
+				for i in range(len(x)):
+					for j in range(i + 1, len(x) + 1):
+						ch = x[i:j]
+						if len(ch) > max_ngram_len:
+							continue
+						bad_ngrams.add(ch.lower())
+	for item in gen_bases:
+		if item['name'] not in good_bases:
+			continue
+		base = item['name'].lower()
+		for i in range(len(base)):
+			for j in range(i+1, len(base) + 1):
+				ch = base[i:j]
+				if len(ch) > max_ngram_len:
 					continue
 				if ch[0] != ' ' and ch[-1] != ' ':
 					ngrams[base].add(ch.lower())
@@ -36,10 +64,10 @@ def main():
 				for i in range(len(x)):
 					for j in range(i + 1, len(x) + 1):
 						ch = x[i:j]
-						if len(ch) > 46:
+						if len(ch) > max_ngram_len:
 							continue
-						if ch[0] != ' ' and ch[-1] != ' ':
-							ngrams[base].add(ch.lower())
+						ngrams[base].add(ch.lower())
+		ngrams[base] -= bad_ngrams
 	# remove all ngrams that are too common
 	threshold = 3
 	counts = defaultdict(int)
@@ -55,7 +83,7 @@ def main():
 		if not ngrams[base]:
 			print(f"removing {base} because it is empty")
 			del ngrams[base]
-	ngrams['sai'] = {'sai'}
+	ngrams['tricorne'] = {'tricorne'}
 	# find all bases that are a substring of other base(s)
 	searchpool = sorted(ngrams, key=len)
 	child = {}
