@@ -7,7 +7,7 @@ myWorker = worker.Worker("myworker")
 
 
 # Function handling filtering changes
-@bind('.save', 'change')
+@bind('.save', 'input')
 def save_state(ev):
 	if ((ev.target.id in ['chaos_filter', 'hide_low_value', 'always_show'] or ev.target.type == 'checkbox') and not doc['keywords'].value) or (ev.target.id == 'keywords' and not ev.target.value):
 		init_page()
