@@ -720,7 +720,7 @@ gen_bases = [
 	{'name': 'Fire Arrow Quiver', 'implicit': ['Added Fire Damage with Bow Attacks']},
 	{'name': 'Broadhead Arrow Quiver', 'implicit': ['Added Physical Damage with Bow Attacks']},
 	{'name': 'Penetrating Arrow Quiver', 'implicit': ['Arrows Pierce an additional Target']},
-	{'name': 'Ornate Quiver', 'implicit': ['Has', 'Socket']},
+#	{'name': 'Ornate Quiver', 'implicit': ['Has', 'Socket']},
 	{'name': 'Spike-Point Arrow Quiver', 'implicit': ['increased Global Critical Strike Chance']},
 	{'name': 'Artillery Quiver', 'implicit': ['increased Totem Placement speed']},
 
