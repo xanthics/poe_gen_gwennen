@@ -1,5 +1,5 @@
 from browser import document as doc
-from browser import bind, worker
+from browser import bind, worker, window
 from browser.html import P, BR, INPUT
 
 
@@ -46,7 +46,8 @@ def onmessage(evt):
 # Clear keyword box
 def clear_keywords(ev):
 	doc['keywords'].value = ''
-	init_page()
+	event = window.Event.new('input')
+	doc['keywords'].dispatchEvent(event)
 
 
 def select_visible(ev):
