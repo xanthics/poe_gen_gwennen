@@ -43,6 +43,12 @@ def onmessage(evt):
 		pass
 
 
+# Clear keyword box
+def clear_keywords(ev):
+	doc['keywords'].value = ''
+	init_page()
+
+
 def select_visible(ev):
 	for el in doc.get(selector="tr[data-id]"):
 		check_id = f'check-{el.attrs["data-id"].replace(" ", "_")}'
@@ -101,6 +107,7 @@ def first_load():
 	doc["generate"].bind("click", generate_string)
 	doc["select_visible"].bind("click", select_visible)
 	doc["clear_selected"].bind("click", clear_selected)
+	doc["clear_keywords"].bind("click", clear_keywords)
 	del doc['loading']
 
 

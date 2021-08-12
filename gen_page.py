@@ -19,7 +19,7 @@ def init_page():
 	t <= TR(TD("Always show selected rows:", Class="right_text") + TD(always_show))
 	t <= TR(TD("Show low value items in row:", Class="right_text") + TD(cst))
 	t <= TR(TD("Minimum Chaos value to show:", Class="right_text") + TD(min_val))
-	t <= TR(TD("Keyword(s) Search:", Class="right_text") + TD(INPUT(Type='text', Id="keywords", Class='save')))
+	t <= TR(TD("Keyword(s) Search:", Class="right_text") + TD(INPUT(Type='text', Id="keywords", Class='save') + BUTTON('x', Id='clear_keywords')))
 	doc['show_hide'] <= t + P("Hit enter or click outside the inputs to update the page.  Items that are selected are only changed by using either button at the top of the list or clicking the box in the list.")
 	doc['show_hide'] <= P("Note that the keyword search overrides all other filter settings.  Clear keyword search to use them.  Search can display an empty row if it's the combination of two or more uniques on a base that matches the search terms.  EG gold rim will show Viridian Jewel base because 2 separate uniques partially match the search.")
 	doc['show_hide'] <= DIV(BUTTON("Generate String", Id='generate') + " Will generate search strings based on all selected rows.  This will cause many calculations and may take a bit to return a result")
