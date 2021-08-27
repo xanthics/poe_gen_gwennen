@@ -53,18 +53,6 @@ section {
     width: auto;
 }
 
-span {
-    height: 1.5em;
-    display: inline-block;
-    vertical-align: middle;
-    background-size: 1.5em 1.5em;
-}
-
-.weapon {
-    width: 10em;
-    max-width: 10em;
-}
-
 select {
     text-align-last: right;
     -webkit-appearance: none;
@@ -100,23 +88,6 @@ img {
 	border-color: rgb(20,20,20);
 }
 
-#vertical-menu {
-    z-index: 99;
-    max-width: 20em;
-    padding: 2px;
-    position: absolute;
-    color: rgb(200, 200, 200);
-	background-color: rgb(20,20,20);
-}
-#vertical-menu div {
-    display: block;
-	background-color: rgb(20,20,20);
-}
-
-#vertical-menu div:hover {
-	background-color: rgb(100,100,100);
-}
-
 button {
     padding: .25em .5em;
     white-space: nowrap;
@@ -131,25 +102,6 @@ button:hover {
     color: rgb(255, 255, 255);
 }
 
-button.current_tab {
-    color: rgb(220,220,220);
-    background-color: rgb(70,70,70);
-}
-
-.text_button {
-    border-style: solid;
-    margin: 0 2px;
-    cursor: pointer;
-    display: inline-block;
-}
-
-.arti_span {
-    width: 20em;
-    white-space: nowrap;
-    overflow-x: auto;
-    overflow-y: hidden;
-}
-
 #sponsor {
     display: flex;
     justify-content: space-between;
@@ -160,7 +112,7 @@ button.current_tab {
 
 .sponsor_img {
     height: auto;
-    width: 100%
+    width: 100%;
 }
 
 #github_image{
@@ -173,7 +125,7 @@ button.current_tab {
 
 table {
 	border-collapse: collapse;
-	table-layout: fixed
+	table-layout: fixed;
 }
 
 .col_1 {
@@ -189,11 +141,6 @@ table.borders td {
     border: 1px solid black;
 }
 
-table.body {
-    border: 1px solid black;
-	width: 100%;
-}
-
 /* Alternating list background Styles */
 
 tr {
@@ -201,7 +148,7 @@ tr {
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	padding:6px;
-	margin: 1px
+	margin: 1px;
 	line-height: 1em;
 }
 
@@ -211,84 +158,6 @@ tr:nth-child(even)  {
 
 tr:nth-child(odd) {
 	background-color: rgb(45,45,45);
-}
-
-/* Override odd/even rules because table has invisible rows */
-
-tr.tr_even {
-	background-color: rgb(35,35,35) !important;
-}
-
-tr.tr_odd {
-	background-color: rgb(45,45,45) !important;
-}
-
-tr.unchecked {
-	opacity: 0.25;}
-
-tr.checked {
-	opacity: 1.0;
-}
-
-/* Set up color variables */
-:root {
-    --pyro-color: rgb(102,68,44);
-    --hydro-color: rgb(4,91,102);
-    --electro-color: rgb(89,75,101);
-    --cryo-color: rgb(90,110,115);
-    --anemo-color: rgb(60,102,75);
-    --geo-color: rgb(98,86,39);
-}
-
-tr[data-color].checked {
-   border: 1px solid rgb(0,0,0);
-    margin: 0px 2px;
-}
-tr[data-color='pyro'].checked {
-    background-color: var(--pyro-color);
-}
-tr[data-color='hydro'].checked {
-    background-color: var(--hydro-color);
-}
-tr[data-color='electro'].checked {
-    background-color: var(--electro-color);
-}
-tr[data-color='cryo'].checked {
-    background-color: var(--cryo-color);
-}
-tr[data-color='anemo'].checked {
-    background-color: var(--anemo-color);
-}
-tr[data-color='geo'].checked {
-    background-color: var(--geo-color);
-}
-
-.bad {
-	color: rgb(200, 200, 200);
-    background-color: rgb(75, 0, 0);
-}
-
-.good {
-	color: rgb(200, 200, 200);
-    background-color: rgb(0, 75, 0);
-}
-
-.convert {
-	color: rgb(200, 200, 200);
-    background-color: rgb(125, 70, 0);
-}
-
-.selected {
-	color: rgb(200, 200, 200);
-    background-color: rgba(0, 0, 0, .5);
-}
-
-.left_border {
-    border-left: 3px double black;
-}
-
-.left_dotted {
-    border-left: 1px dashed rgba(0,0,0,.8);
 }
 
 /* link legibility tweak */
@@ -341,10 +210,6 @@ input[type=checkbox]:checked:after {
 	color: rgb(0, 0, 0);
 }
 
-.location {
-    font-family: "Arial Black", Gadget, sans-serif;
-}
-
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -357,36 +222,4 @@ option {
 
 .right_text {
     text-align: right;
-}
-
-.center {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.spacer {
-    margin-top: 7px;
-}
-
-table.spacer th:nth-child(5),
-table.spacer td:nth-child(5),
-table.spacer th:nth-child(10),
-table.spacer td:nth-child(10),
-.empty_row,
-.empty_row > td,
-.notvis {
-    visibility: hidden !important;
-    border: 0 !important;
-}
-
-.empty_row {
-    height: 6px !important;
-}
-
-
-table.spacer th:nth-child(5),
-table.spacer td:nth-child(5),
-table.spacer th:nth-child(10),
-table.spacer td:nth-child(10){
-    width: 3px !important;
 }
