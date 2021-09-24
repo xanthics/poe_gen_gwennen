@@ -12,7 +12,7 @@ from datetime import datetime
 
 # get price data from poe.ninja
 def scrape_ninja():
-	now = datetime.now().strftime("%m/%d/%Y, %H:%M")
+	now = datetime.now().strftime("%Y/%m/%d, %H:%M")
 	with open('last_update.py', 'w') as f:
 		f.write(f'time = "{now}"')
 	good_bases = [x['name'] for x in gen_bases]
