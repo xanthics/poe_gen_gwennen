@@ -132,7 +132,7 @@ def scrape_ninja():
 		'From': 'xanthics on discord'
 	}
 
-	for l_str, league in [('sc', 'Expedition'), ('hc', 'Hardcore Expedition')]:
+	for l_str, league in [('sc', 'Scourge'), ('hc', 'Hardcore Scourge')]:
 		price_val = defaultdict(list)
 		# add atlas bases as possible purchase targets for influence
 		for base in [
