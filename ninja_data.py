@@ -117,6 +117,8 @@ def scrape_ninja():
 		"Blackflame", "Qotra's Regulator", "Rotblood Promise", "Survivor's Guilt", "Hands of the Fervent",
 		# Ultimatum
 		"Atziri's Rule", "Cane of Kulemak", "Glimpse of Chaos", "Hateforge", "Mahuxotl's Machination", "Relic of the Pact", "Steelworm", "Temptation Step", "The Scales of Justice", "Triumvirate Authority", "Yaomac's Accord",
+		# Scourge
+		"Strangegrasp", "Uul-Netol's Vow", "Stasis Prison",
 	}
 
 	keys = [
