@@ -121,6 +121,26 @@ def scrape_ninja():
 		"Stranglegasp", "Uul-Netol's Vow", "Stasis Prison",
 	}
 
+	# for when people pull stuff out of remove only tabs in league
+	legacy_base = {
+		'Pillar of the Caged God': ['Long Staff'],
+		'Dying Breath': ['Coiled Staff'],
+		'Dusktoe': ['Leatherscale Boots'],
+		'Duskblight': ['Leatherscale Boots'],
+		'Blackgleam': ['Cured Quiver'],
+		'The Signal Fire': ['Cured Quiver'],
+		'The Searing Touch': ['Long Staff'],
+		'Wings of Entropy': ['Sundering Axe'],
+		'Infernal Mantle': ['Widowsilk Robe'],
+		'Essentia Sanguis': ['Eye Gouger'],
+		'Auxium': ['Chain Belt'],
+		"Architect's Hand": ['Strapped Mitts'],
+		'Dance of the Offered': ['Shackled Boots'],
+		'Story of the Vaal': ['Variscite Blade'],
+		'Mask of the Spirit Drinker': ['Crusader Helmet'],
+		"Apep's Slumber": ['Ancient Spirit Shield']
+	}
+
 	keys = [
 		'UniqueJewel',
 		'UniqueWeapon',
@@ -135,6 +155,9 @@ def scrape_ninja():
 	}
 
 	for l_str, league in [('sc', 'Scourge'), ('hc', 'Hardcore Scourge')]:
+		# keep track of uniques we have seen so variants can be noticed
+		seen = set()
+		seen_all = set()
 		price_val = defaultdict(list)
 		# add atlas bases as possible purchase targets for influence
 		for base in [
@@ -155,12 +178,15 @@ def scrape_ninja():
 
 			if key in ['UniqueJewel', 'UniqueWeapon', 'UniqueArmour', 'UniqueAccessory']:
 				for i in data['lines']:
-					if ((('links' in i and i['links']) or 'relic' in i['icon']) and i['name'] != 'Tabula Rasa') or 'Replica' in i['name'] or i['name'] in bad_names:
+					if ((('links' in i and i['links']) or 'relic' in i['icon']) and i['name'] != 'Tabula Rasa') or 'Replica' in i['name'] or i['name'] in bad_names or (i['name'] in legacy_base and i['baseType'] in legacy_base[i['name']]):
 						continue
 					elif i['baseType'] not in good_bases:
 						print(f"Skipping due to basetype: {i}")
 						continue
 					price_val[i['baseType']].append([i['name'], int(i['chaosValue']), i['icon']])
+					if i['name'] in seen:
+						seen_all.add(i['name'])
+					seen.add(i['name'])
 
 			else:
 				print('Unhandled key: "{}"'.format(key))
@@ -175,8 +201,13 @@ def scrape_ninja():
 		with open(f'{l_str}_unique.json', 'w') as f:
 			json.dump(price_val, f, sort_keys=True, indent=2)
 
+		if seen_all:
+			print(f"Variants found for the following uniques: {seen_all}")
+
 
 if __name__ == '__main__':
 	scrape_ninja()
+	import generate_ngrams
+	generate_ngrams.main()
 	import gen_index
 	gen_index.main()
