@@ -36,7 +36,7 @@ def onmessage(evt):
 			del doc['updates']
 			# input size uses 'M' * size to figure out width.  Only correct with fixed width font.
 			doc['generated_strings'] <= (P(f'{c}: ' + INPUT(value=x, size=len(x)+1, readonly='', Class='monospace', type="text", Id=f"{c}_search", onClick=f'document.getElementById("{c}_search").select(); document.execCommand("copy");')) for c, x in enumerate(evt.data[1], start=1))
-			doc['generated_strings'] <= P(STRONG("Usage Note:") + " The quotes at the beginning and end of the string are important.  These won't work without them.")
+			doc['generated_strings'] <= P(STRONG("Usage Note:") + " The quotes at the beginning and end of the string are important.  The strings are copy on click.")
 	elif evt.data[0] == 'update':
 		doc['updates'].text = evt.data[1]
 	elif evt.data[0] == 'debug':

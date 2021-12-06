@@ -26,7 +26,7 @@ def init_page():
 
 	ul = UL()
 	ul <= LI("Remove some items that you are looking for until the string is short enough.")
-	ul <= LI("Paste each line for each page of items. Awakened PoE Trade, or win 10 multi-clipboard(built in) make it a lot less painful. The strings are also copy on click.")
+	ul <= LI("Paste each line for each page of items. Awakened PoE Trade, or win 10 multi-clipboard(built in) make it a lot less painful.")
 	help_file <= ul
 
 	help_file <= HR()
@@ -63,7 +63,7 @@ def init_page():
 		data = load(f)
 	for base in data:
 		base_l = base.lower()
-		v = (DIV(IMG(src=x[2], alt=x[0], title=x[0], Class='item_icon', loading="lazy") + DIV(x[1], Class='bottom-right'), Class='container', data_value=x[1], data_search=f"{base_l}, {x[0].lower()}") for x in data[base])
+		v = (SPAN(IMG(src=x[2], alt=x[0], title=x[0], Class='item_icon', loading="lazy") + SPAN(x[1], Class='bottom-right'), Class='container', data_value=x[1], data_search=f"{base_l}, {x[0].lower()}") for x in data[base])
 		searchstring = ', '.join([base_l] + [x[0].lower() for x in data[base]])
 		t <= TR(TD(INPUT(Id=f"check-{base_l.replace(' ', '_')}", type='checkbox', data_id=base_l, Class='save')) + TD(base) + TD(v), data_id=base_l, data_value=data[base][0][1], data_search=searchstring)
 

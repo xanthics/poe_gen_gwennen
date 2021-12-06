@@ -176,6 +176,7 @@ a:visited {
     position: relative;
     display: inline-block;
     text-align: center;
+    margin: 2px;
 }
 
 .bottom-right {
@@ -225,4 +226,8 @@ option {
 
 .right_text {
     text-align: right;
+}
+
+.disclaimer {
+    font-size: small;
 }
