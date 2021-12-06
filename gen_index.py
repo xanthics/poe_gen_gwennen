@@ -38,8 +38,7 @@ def load_page_firefox(page_name):
 
 
 # make some modifications to the page
-def update_page(soup, show_10, softcore=True):
-	soup.find('input', {'id': 'chaos_filter'})['value'] = show_10
+def update_page(soup, softcore=True):
 	nav_link = soup.new_tag('a')
 	nav_link['target'] = "_blank"
 	if softcore:
@@ -65,9 +64,6 @@ def update_page(soup, show_10, softcore=True):
 
 # SimpleHTTPRequestHandler does some funky things with caching, start a separate instance to avoid
 def main():
-	# load half exa values
-	with open('show_10.json') as f:
-		show_10 = json.load(f)
 	# where is the server
 	port = 62435
 	handler = http.server.SimpleHTTPRequestHandler
@@ -79,13 +75,13 @@ def main():
 	local_page = f'http://localhost:{port}/dynamic_page.html?league=sc'
 	html = load_page_firefox(local_page)
 	sc_soup = bs(html, "html.parser")
-	update_page(sc_soup, show_10['sc'])
+	update_page(sc_soup)
 
 	# Generate the hc page
 	local_page = f'http://localhost:{port}/dynamic_page.html?league=hc'
 	html = load_page_firefox(local_page)
 	hc_soup = bs(html, "html.parser")
-	update_page(hc_soup, show_10['hc'], False)
+	update_page(hc_soup, False)
 
 	server.shutdown()  # kill the server since we are done with it
 	try:

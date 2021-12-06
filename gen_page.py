@@ -6,6 +6,11 @@ from last_update import time
 
 # Create the static elements of the home page
 def init_page():
+	# load league specific value(s)
+	with open('show_10.json') as f:
+		show_10 = load(f)
+	league = doc.query.getvalue("league", "sc")
+
 	# header
 	doc['time'].text = f"poe.ninja data last updated at {time} PST"
 	# help
@@ -45,7 +50,7 @@ def init_page():
 	always_show = SELECT(Id=f"always_show", Class=f"save onehundred")
 	for s in ['show', 'hide']:
 		always_show <= OPTION(s.capitalize(), value=s)
-	min_val = INPUT(Type='number', min='0', step="1", value='20', Id="chaos_filter", Class='save')
+	min_val = INPUT(Type='number', min='0', step="1", value=show_10[league], Id="chaos_filter", Class='save')
 	t = TABLE(TR(TH() + TH('Selection')))
 	t <= TR(TD("Always show selected rows:", Class="right_text") + TD(always_show))
 	t <= TR(TD("Show low value items in row:", Class="right_text") + TD(cst))
@@ -68,6 +73,17 @@ def init_page():
 		t <= TR(TD(INPUT(Id=f"check-{base_l.replace(' ', '_')}", type='checkbox', data_id=base_l, Class='save')) + TD(base) + TD(v), data_id=base_l, data_value=data[base][0][1], data_search=searchstring)
 
 	doc['items'] <= t
+
+	# Initialize page to match first visit
+	doc['help'].style.display = 'none'
+
+	value = int(show_10[league])
+	for el in doc.get(selector="[data-value]"):
+		if int(el.attrs['data-value']) < value:
+			if 'container' in el.class_name:
+				el.attrs['class'] = "container hidden_class"
+			else:
+				el.attrs['hidden'] = ''
 
 
 init_page()

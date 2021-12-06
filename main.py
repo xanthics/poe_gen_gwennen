@@ -125,7 +125,6 @@ def init_page():
 
 
 def first_load():
-	doc['help'].style.display = 'none'
 	doc["generate"].bind("click", generate_string)
 	doc["select_matching"].bind("click", select_matching)
 	doc["select_visible"].bind("click", select_visible)
@@ -136,5 +135,4 @@ def first_load():
 
 
 first_load()
-init_page()
 select_visible(None)
