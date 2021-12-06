@@ -10,29 +10,33 @@
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
     <body onload="brython(1)">
+        <script type="text/python" src="ngram_generated.py"></script>
         <section class="main">
-            <script type="text/python" src="ngram_generated.py"></script>
-            <p id="otherversion"></p>
-            <p><strong>Usage Note:</strong> The quotes at the beginning and end of the string are important.  These won't work without them.</p>
-            <p>2021/11/22: Filter added for uniques who have legacy variants on another base, EG POTCG.</p>
-            <p id="time"></p>
-            <div id="show_hide"></div>
             <div id="loading">
                 This page requires javascript in order to work correctly.
                 <br><br>
                 This page may take a moment to load.
             </div>
+            <h2>Gwennen Search String Generator</h2>
             <div id="regex_box"></div>
+            <div id="show_hide"></div>
             <div id="items"></div>
+        </section>
+        <footer>
+            <div id="helpsection"></div>
+            <p id="otherversion"></p>
             <p><a href="https://github.com/xanthics/poe_gen_gwennen/discussions" target="_blank">Suggestions</a><br /><a href="https://github.com/xanthics/poe_gen_gwennen/issues" target="_blank">Bugs</a></p>
-            <h3>Notice of Non-Affiliation</h3>
-            <p>This site is not affiliated, associated, authorized, endorsed by, or in any way officially connected with any other company, agency or government agency.  The information on this website is provided “as is” without any representations or warranties, express or implied.</p>
-            <p>All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.</p>
+            <p id="time"></p>
+            <section>
+                <h3>Notice of Non-Affiliation</h3>
+                <p>This site is not affiliated, associated, authorized, endorsed by, or in any way officially connected with any other company, agency or government agency.  The information on this website is provided “as is” without any representations or warranties, express or implied.</p>
+                <p>All product and company names are trademarks™ or registered® trademarks of their respective holders. Use of them does not imply any affiliation with or endorsement by them.</p>
+            </section>
             <div id="sponsor">
                 <div id="github_image"><a href="https://github.com/sponsors/xanthics" target="_blank"><img alt="Sponsor me on Github!" src="img/github_sponsor.png" class="sponsor_img"></a></div>
                 <div id="patreon_image"><a href="https://www.patreon.com/xanthics" target="_blank"><img alt="Become a Patron!" src="img/become_a_patron_button@2x.png" class="sponsor_img"></a></div>
             </div>
-        </section>
+        </footer>
         <script type="text/python" class="webworker" id="myworker" src="web_worker.py"></script>
         <script type="text/python" src="gen_page.py"></script>
     </body>

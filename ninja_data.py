@@ -151,10 +151,13 @@ def scrape_ninja():
 	requester = requests.session()
 	header = {
 		'User-Agent': 'xan.filter',
-		'From': 'xanthics on discord'
+		'From': 'xanthics on poe discord'
 	}
 
+	show_10 = {}
 	for l_str, league in [('sc', 'Scourge'), ('hc', 'Hardcore Scourge')]:
+		show_10[l_str] = 0
+		vals = defaultdict(int)
 		# keep track of uniques we have seen so variants can be noticed
 		seen = set()
 		seen_all = set()
@@ -183,6 +186,9 @@ def scrape_ninja():
 					elif i['baseType'] not in good_bases:
 						print(f"Skipping due to basetype: {i}")
 						continue
+					# keep track of the 10 most expensive bases
+					if vals[i['baseType']] < i['chaosValue']:
+						vals[i['baseType']] = i['chaosValue']
 					price_val[i['baseType']].append([i['name'], int(i['chaosValue']), i['icon']])
 					if i['name'] in seen:
 						seen_all.add(i['name'])
@@ -203,6 +209,11 @@ def scrape_ninja():
 
 		if seen_all:
 			print(f"Variants found for the following uniques: {seen_all}")
+
+		# set devault value to show the 10 most valuable bases
+		show_10[l_str] = int(sorted(vals.values(), reverse=True)[9])
+	with open('show_10.json', 'w') as f:
+		json.dump(show_10, f, sort_keys=True, indent=2)
 
 
 if __name__ == '__main__':

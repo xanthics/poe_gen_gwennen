@@ -1,12 +1,43 @@
 from browser import document as doc
-from browser.html import TABLE, TR, TH, TD, INPUT, SELECT, OPTION, DIV, BUTTON, SPAN, LI, H2, H3, IMG, COLGROUP, COL, P, SECTION, BR
+from browser.html import TABLE, TR, TH, TD, INPUT, SELECT, OPTION, DIV, BUTTON, SPAN, LI, H2, H3, IMG, COLGROUP, COL, P, SECTION, BR, STRONG, HR, UL
 from json import load
 from last_update import time
 
 
 # Create the static elements of the home page
 def init_page():
+	# header
 	doc['time'].text = f"poe.ninja data last updated at {time} PST"
+	# help
+	help_file = SECTION(Id="help")
+	help_file <= P("This page generates simple regex search strings that are compatible with Path of Exile.  It uses price data from poe.ninja to present an initial selection that you can then personalize by changing the search filters and changing which item bases are selected.  This tool does a lot of work behind the scene to generate compact search strings while staying within PoE's character limit.")
+
+	help_file <= HR()
+
+	help_file <= P("Atlas bases are available to select via 'Influenced Base', they have chaos value set to 0.")
+
+	help_file <= HR()
+
+	help_file <= P("Default Minimum Chaos is initialized to show 10 bases for the current league.  If you would like to select other bases, use the selection filters to change what is visible.")
+	help_file <= P(STRONG("Keyword(s) search") + " overrides all other filter settings.  Clear keyword search to use them.  Search can display an empty row if it's the combination of two or more uniques on a base that matches the search terms.  EG 'gold rim' will show Viridian Jewel base because 2 separate uniques partially match the search.")
+
+	help_file <= P("Clicking " + STRONG("Generate String") + " will generate search strings based on all selected rows.  This can cause many calculations and may take a bit to return a result")
+	help_file <= P("Due to limitations on the size of the search box in game you may be given more than 1 search string.  If this happens you have 2 choices.")
+
+	ul = UL()
+	ul <= LI("Remove some items that you are looking for until the string is short enough.")
+	ul <= LI("Paste each line for each page of items. Awakened PoE Trade, or win 10 multi-clipboard(built in) make it a lot less painful. The strings are also copy on click.")
+	help_file <= ul
+
+	help_file <= HR()
+
+	help_file <= P(STRONG("Select Matching Only") + " selects only rows that match current Keyword(s) Search or Minimum Chaos settings and deselects all others.")
+	help_file <= P(STRONG("Select Visible") + " adds all rows that match current Keyword(s) Search or Minimum Chaos to current selection.")
+	help_file <= P(STRONG("Clear Selected") + " deselects all rows.")
+	doc['helpsection'] <= BUTTON("Show Help and About", Id='toggle_help') + help_file
+	# regex result
+	doc['regex_box'] <= DIV(BUTTON("Generate String", Id='generate'))
+	doc['regex_box'] <= DIV("No strings generated yet.", Id="generated_strings", Class='sec_div grind')
 	# selected
 	cst = SELECT(Id=f"hide_low_value", Class=f"save onehundred")
 	for s in ['hide', 'show']:
@@ -20,12 +51,11 @@ def init_page():
 	t <= TR(TD("Show low value items in row:", Class="right_text") + TD(cst))
 	t <= TR(TD("Minimum Chaos value to show:", Class="right_text") + TD(min_val))
 	t <= TR(TD("Keyword(s) Search:", Class="right_text") + TD(INPUT(Type='text', Id="keywords", Class='save') + BUTTON('x', Id='clear_keywords')))
-	doc['show_hide'] <= t + P("Hit enter or click outside the inputs to update the page.  Items that are selected are only changed by using either button at the top of the list or clicking the box in the list.")
-	doc['show_hide'] <= P("Note that the keyword search overrides all other filter settings.  Clear keyword search to use them.  Search can display an empty row if it's the combination of two or more uniques on a base that matches the search terms.  EG gold rim will show Viridian Jewel base because 2 separate uniques partially match the search.")
-	doc['show_hide'] <= DIV(BUTTON("Generate String", Id='generate') + " Will generate search strings based on all selected rows.  This will cause many calculations and may take a bit to return a result")
-	doc['show_hide'] <= DIV("No strings generated yet.", Id="generated_strings", Class='sec_div grind')
-	doc['show_hide'] <= DIV(BUTTON("Select All Visible Only", Id='select_visible') + " This will deselect all hidden rows and select all visible rows.")
-	doc['show_hide'] <= BUTTON("Clear Selected", Id='clear_selected')
+	doc['show_hide'] <= t + BR()
+	# item table buttons
+	doc['show_hide'] <= DIV(BUTTON("Select Matching Only", Id='select_matching'))
+	doc['show_hide'] <= DIV(BUTTON("Select Visible", Id='select_visible'))
+	doc['show_hide'] <= DIV(BUTTON("Clear Selected", Id='clear_selected'))
 
 	# Load and display league specific unique data
 	t = TABLE(TR(TH("Selected", Class='col_1') + TH("Base", Class='col_2') + TH("Item(s)")), Class="borders onehundred")

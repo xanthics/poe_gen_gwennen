@@ -1,6 +1,6 @@
 from browser import document as doc
 from browser import bind, worker, window
-from browser.html import P, BR, INPUT
+from browser.html import P, BR, INPUT, STRONG
 
 
 myWorker = worker.Worker("myworker")
@@ -36,6 +36,7 @@ def onmessage(evt):
 			del doc['updates']
 			# input size uses 'M' * size to figure out width.  Only correct with fixed width font.
 			doc['generated_strings'] <= (P(f'{c}: ' + INPUT(value=x, size=len(x)+1, readonly='', Class='monospace', type="text", Id=f"{c}_search", onClick=f'document.getElementById("{c}_search").select(); document.execCommand("copy");')) for c, x in enumerate(evt.data[1], start=1))
+			doc['generated_strings'] <= P(STRONG("Usage Note:") + " The quotes at the beginning and end of the string are important.  These won't work without them.")
 	elif evt.data[0] == 'update':
 		doc['updates'].text = evt.data[1]
 	elif evt.data[0] == 'debug':
@@ -48,6 +49,18 @@ def clear_keywords(ev):
 	doc['keywords'].value = ''
 	event = window.Event.new('input')
 	doc['keywords'].dispatchEvent(event)
+
+
+def select_matching(ev):
+	for el in doc.get(selector="tr[data-id]"):
+		check_id = f'check-{el.attrs["data-id"].replace(" ", "_")}'
+		doc[check_id].checked = False
+	init_page()
+	for el in doc.get(selector="tr[data-id]"):
+		check_id = f'check-{el.attrs["data-id"].replace(" ", "_")}'
+		if 'hidden' not in el.attrs:
+			doc[check_id].checked = True
+	init_page()
 
 
 def select_visible(ev):
@@ -65,6 +78,13 @@ def clear_selected(ev):
 		check_id = f'check-{el.attrs["data-id"].replace(" ", "_")}'
 		doc[check_id].checked = False
 	init_page()
+
+
+def toggle_help(ev):
+	if doc['help'].style.display == 'none':
+		doc['help'].style.display = 'block'
+	else:
+		doc['help'].style.display = 'none'
 
 
 def generate_string(ev):
@@ -105,10 +125,13 @@ def init_page():
 
 
 def first_load():
+	doc['help'].style.display = 'none'
 	doc["generate"].bind("click", generate_string)
+	doc["select_matching"].bind("click", select_matching)
 	doc["select_visible"].bind("click", select_visible)
 	doc["clear_selected"].bind("click", clear_selected)
 	doc["clear_keywords"].bind("click", clear_keywords)
+	doc["toggle_help"].bind("click", toggle_help)
 	del doc['loading']
 
 

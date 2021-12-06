@@ -26,6 +26,7 @@ body {
     width: 100%;
 }
 
+header, footer,
 .sec_div,
 section {
 	text-align: justify;
@@ -40,6 +41,7 @@ section {
 	border-width:1px;
 	border-color: rgb(75,75,75);}
 
+header, footer,
 .main {
 	z-index: 1;
 	width: 1100px;
@@ -90,6 +92,7 @@ img {
 
 button {
     padding: .25em .5em;
+    margin: 0 0 5px 0;
     white-space: nowrap;
     width: fit-content;
     border: 1px solid rgb(0,0,0);
