@@ -28,6 +28,7 @@ def main():
 		{'name': 'Dex'},
 		{'name': 'Int'}
 	])
+	# Todo: add proper support for items with base types that have multiple implicits.  EG two-stone and Call of the Brotherhood
 	for item in gen_bases:
 		base = item['name'].lower()
 		if item['name'] in good_bases:
@@ -44,7 +45,8 @@ def main():
 				for i in range(len(x)):
 					for j in range(i + 1, len(x) + 1):
 						ch = x[i:j]
-						key.add(ch.lower())
+						if ch[0] != ' ' and ch[-1] != ' ':
+							bad_ngrams.add(ch.lower())
 	# keep the shortest gram for pairs that have multiple matches
 	counts = defaultdict(int)
 	base_pairs = defaultdict(str)
