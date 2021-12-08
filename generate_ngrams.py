@@ -28,62 +28,45 @@ def main():
 		{'name': 'Dex'},
 		{'name': 'Int'}
 	])
-	max_ngram_len = 8  # all good bases can generate a unique ngram within 8 characters
 	for item in gen_bases:
+		base = item['name'].lower()
 		if item['name'] in good_bases:
-			continue
-		base = item['name'].lower()
+			key = ngrams[base]
+		else:
+			key = bad_ngrams
 		for i in range(len(base)):
-			for j in range(i+1, len(base) + 1):
+			for j in range(i + 1, len(base) + 1):
 				ch = base[i:j]
-				if len(ch) > max_ngram_len:
-					continue
 				if ch[0] != ' ' and ch[-1] != ' ':
-					bad_ngrams.add(ch.lower())
+					key.add(ch.lower())
 		if 'implicit' in item:
 			for x in item['implicit']:
 				for i in range(len(x)):
 					for j in range(i + 1, len(x) + 1):
 						ch = x[i:j]
-						if len(ch) > max_ngram_len:
-							continue
-						bad_ngrams.add(ch.lower())
-	for item in gen_bases:
-		if item['name'] not in good_bases:
-			continue
-		base = item['name'].lower()
-		for i in range(len(base)):
-			for j in range(i+1, len(base) + 1):
-				ch = base[i:j]
-				if len(ch) > max_ngram_len:
-					continue
-				if ch[0] != ' ' and ch[-1] != ' ':
-					ngrams[base].add(ch.lower())
-		if 'implicit' in item:
-			for x in item['implicit']:
-				for i in range(len(x)):
-					for j in range(i + 1, len(x) + 1):
-						ch = x[i:j]
-						if len(ch) > max_ngram_len:
-							continue
-						ngrams[base].add(ch.lower())
-		ngrams[base] -= bad_ngrams
-	# remove all ngrams that are too common
-	threshold = 3
+						key.add(ch.lower())
+	# keep the shortest gram for pairs that have multiple matches
 	counts = defaultdict(int)
+	base_pairs = defaultdict(str)
 	for base in ngrams:
+		# first remove all bad ngrams
+		ngrams[base] -= bad_ngrams
 		for gram in ngrams[base]:
 			counts[gram] += 1
-	common_grams = set()
-	for item in counts:
-		if counts[item] > threshold:
-			common_grams.add(item)
+			base_pairs[gram] += base
 	for base in ngrams.copy():
-		ngrams[base] -= common_grams
+		seen_combo = set()
+		# only need to keep track of 1 unique key per base
+		for key in sorted(ngrams[base], key=len):
+			if base_pairs[key] in seen_combo:
+				ngrams[base].discard(key)
+			else:
+				seen_combo.add(base_pairs[key])
 		if not ngrams[base]:
 			print(f"removing {base} because it is empty")
 			del ngrams[base]
-	ngrams['tricorne'] = {'tricorne'}
+	# because noble tricorne does not have a chanceable unique (yet)
+	ngrams['tricorne'] = {'tric'}
 	# find all bases that are a substring of other base(s)
 	searchpool = sorted(ngrams, key=len)
 	child = {}
