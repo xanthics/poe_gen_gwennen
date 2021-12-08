@@ -59,7 +59,8 @@ def main():
 	for base in ngrams.copy():
 		seen_combo = set()
 		# only need to keep track of 1 unique key per base
-		for key in sorted(ngrams[base], key=len):
+		# double sorted for stable results
+		for key in sorted(sorted(ngrams[base]), key=len):
 			if base_pairs[key] in seen_combo:
 				ngrams[base].discard(key)
 			else:
