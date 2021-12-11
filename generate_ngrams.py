@@ -57,9 +57,9 @@ def main():
 			counts[gram] += 1
 			base_pairs[gram] += base
 	for base in ngrams.copy():
-		seen_combo = set()
 		# only need to keep track of 1 unique key per base
 		# double sorted for stable results
+		seen_combo = set()
 		for key in sorted(sorted(ngrams[base]), key=len):
 			if base_pairs[key] in seen_combo:
 				ngrams[base].discard(key)
