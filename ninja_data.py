@@ -25,10 +25,13 @@ def scrape_ninja():
 		"Ancient Waystones", "Atziri's Reign", "Blood Sacrifice", "Brittle Barrier", "Chill of Corruption", "Combustibles", "Corrupted Energy",
 		"Fragility", "Hungry Abyss", "Mutated Growth", "Pacifism", "Powerlessness", "Sacrificial Harvest", "Self-Flagellation", "Vaal Sentencing",
 		"Weight of Sin", "Fevered Mind", 'Blood of Corruption', "Malachai's Vision",
-		# Prophecy drop only
-		'Kintsugi', "Hinekora's Sight", "Ascent From Flesh", 'The Ascetic',
 		# Divination card only item
 		'Maw of Mischief',
+		# Prophecy drop only
+		'Kintsugi', "Hinekora's Sight", "Ascent From Flesh", 'The Ascetic',
+		# Pale Court
+		"Mind of the Council", "Grip of the Council", "Breath of the Council", "Reach of the Council",
+		"Eber's Unification", "Yriel's Fostering", "Inya's Epiphany", "Volkuur's Guidance",
 		# Fated Uniques
 		'Kaltensoul', 'Thirst for Horrors', 'Atziri\'s Reflection', 'The Oak', 'Ezomyte Hold', 'Frostferno', 'Martyr\'s Crown', 'Asenath\'s Chant', 'Deidbellow',
 		'Malachai\'s Awakening', 'Wall of Brambles', 'Wildwrap', 'Fox\'s Fortune', 'Crystal Vault', 'Windshriek', 'Greedtrap', 'Shavronne\'s Gambit', 'Duskblight',
@@ -45,7 +48,7 @@ def scrape_ninja():
 		# incursion uniques
 		'Sacrificial Heart', 'String of Servitude', 'Tempered Flesh', 'Tempered Mind', 'Tempered Spirit',
 		'Shadowstitch', "Apep's Slumber", "Architect's Hand", "Coward's Chains", 'Dance of the Offered', 'Mask of the Spirit Drinker', 'Story of the Vaal',
-		# Upgraded Breach Uniques
+		# Breach Uniques
 		'Xoph\'s Nurture', 'The Formless Inferno', 'Xoph\'s Blood', 'Tulfall', 'The Perfect Form', 'The Pandemonius', 'Hand of Wisdom and Action', 'Esh\'s Visage', 'Choir of the Storm',
 		'Uul-Netol\'s Embrace', 'The Red Trail', 'The Surrender', 'United in Dream', 'Skin of the Lords', 'Presence of Chayula', 'The Red Nightmare', 'The Green Nightmare', 'The Blue Nightmare',
 		# Harbinger Uniques -- Currently only drops as pieces
@@ -73,9 +76,6 @@ def scrape_ninja():
 		"Fenumus' Toxins", "Fenumus' Shroud", "Fenumus' Spinnerets", "Fenumus' Weave",
 		"Craiceann's Chitin", "Craiceann's Carapace", "Craiceann's Tracks", "Craiceann's Pincers",
 		"Farrul's Bite", "Farrul's Fur", "Farrul's Chase", "Farrul's Pounce",
-		# Pale Court
-		"Mind of the Council", "Grip of the Council", "Breath of the Council", "Reach of the Council",
-		"Eber's Unification", "Yriel's Fostering", "Inya's Epiphany", "Volkuur's Guidance",
 		# Pillars of Arun
 		"Gorgon's Gaze",
 		# Doryani's Machinarium
@@ -98,8 +98,6 @@ def scrape_ninja():
 		"Precursor's Emblem",
 		# Betrayal League
 		"Bitterbind Point", "The Devouring Diadem", "The Queen's Hunger", "Cinderswallow", "Paradoxica", "The Crimson Storm", "Hyperboreus", 'Vivinsect', "Cloak of Tawm'r Isley",
-		# Perandus League
-		"Seven-League Step", "Trypanon", "Umbilicus Immortalis", "Varunastra", "Zerphi's Last Breath",
 		# Blight League
 		"Breathstealer", "Cowl of the Ceraunophile", "Cowl of the Cryophile", "Cowl of the Thermophile", "Sporeguard", "The Stampede",
 		# Conqueror
