@@ -27,22 +27,15 @@ def scrape_ninja():
 		"Weight of Sin", "Fevered Mind", 'Blood of Corruption', "Malachai's Vision",
 		# Divination card only item
 		'Maw of Mischief',
-		# Prophecy drop only
-		'Kintsugi', "Hinekora's Sight", "Ascent From Flesh", 'The Ascetic',
-		# Pale Court
-		"Mind of the Council", "Grip of the Council", "Breath of the Council", "Reach of the Council",
-		"Eber's Unification", "Yriel's Fostering", "Inya's Epiphany", "Volkuur's Guidance",
 		# Fated Uniques
-		'Kaltensoul', 'Thirst for Horrors', 'Atziri\'s Reflection', 'The Oak', 'Ezomyte Hold', 'Frostferno', 'Martyr\'s Crown', 'Asenath\'s Chant', 'Deidbellow',
-		'Malachai\'s Awakening', 'Wall of Brambles', 'Wildwrap', 'Fox\'s Fortune', 'Crystal Vault', 'Windshriek', 'Greedtrap', 'Shavronne\'s Gambit', 'Duskblight',
-		'Sunspite', 'Hrimburn', 'Doedre\'s Malevolence', 'Amplification Rod', 'Corona Solaris', 'Sanguine Gambol', 'The Gryphon', 'Dreadsurge', 'Dreadbeak', 'Cameria\'s Avarice',
-		'Silverbough', 'The Tempest', 'Doomfletch\'s Prism', 'Death\'s Opus', 'Mirebough', 'Realm Ender', 'The Stormwall', 'The Cauteriser', 'Queen\'s Escape', 'The Dancing Duo',
-		'Hrimnor\'s Dirge', 'Panquetzaliztli', 'Geofri\'s Devotion', 'Voidheart', 'Kaom\'s Way', 'Winterweave', 'Timetwist', 'Ngamahu Tiki', 'Karui Charge', 'The Effigon',
-		'The Tactician', 'The Nomad', 'The Signal Fire', 'Cragfall', 'Hyrri\'s Demise', 'Chaber Cairn', 'Geofri\'s Legacy', 'The Iron Fortress', 'Whakatutuki o Matua',
+		"Amplification Rod", "Asenath's Chant", "Atziri's Reflection", "Cameria's Avarice", "Chaber Cairn", "Cragfall", "Death's Opus", "Doedre's Malevolence", "Doomfletch's Prism",
+		"Dreadbeak", "Duskblight", "Frostferno", "Geofri's Devotion", "Geofri's Legacy", "Hrimburn", "Hyrri's Demise", "Kaom's Way", "Malachai's Awakening", "Queen's Escape",
+		"The Cauteriser", "The Dancing Duo", "The Iron Fortress", "The Nomad", "The Signal Fire", "The Stormwall", "The Tactician", "The Tempest", "Thirst for Horrors", "Timetwist",
+		"Whakatutuki o Matua", "Wildwrap", "Windshriek", "Winterweave",
 		# Vendor recipes
 		'The Anima Stone', 'Arborix', 'Duskdawn', 'The Goddess Scorned', 'The Goddess Unleashed', 'Kingmaker', 'Magna Eclipsis', 'The Retch', 'Star of Wraeclast', 'The Taming',
 		'The Vinktar Square', 'Loreweave',
-		#  incursion uniques from upgrades
+		# incursion uniques from upgrades
 		'Transcendent Flesh', 'Transcendent Mind', 'Transcendent Spirit', 'Soul Ripper', 'Slavedriver\'s Hand', 'Coward\'s Legacy', 'Omeyocan', 'Fate of the Vaal', 'Mask of the Stitched Demon',
 		'Apep\'s Supremacy', 'Zerphi\'s Heart',
 		# incursion uniques
@@ -67,7 +60,7 @@ def scrape_ninja():
 		"Blasphemer's Grasp", "Shimmeron", "Nebuloch", "Hopeshredder", "Impresence", "Cyclopean Coil",
 		"Indigon", "The Eternity Shroud", "Disintegrator", "Voidforge", "Mark of the Elder", "Mark of the Shaper", "Voidfletcher", "Watcher's Eye",
 		# Atziri
-		"Atziri's Step", "Doryani's Catalyst", "Doryani's Invitation", "Atziri's Promise",
+		"Atziri's Step", "Doryani's Catalyst", "Doryani's Invitation", "Atziri's Promise", "Atziri's Reflection",
 		"The Vertex", "Atziri's Splendour", "Atziri's Acuity", "Atziri's Disfavour", "Pledge of Hands",
 		# Maven
 		"Arn's Anguish", "Graven's Secret", "Olesya's Delight", "Viridi's Veil", 'The Walls', 'The Claim', 'The Closest Peak', 'Atop the Atlas', 'The Vast Horizon', 'The Builder', 'Restless Cycles', 'The False Hope', 'Legacy of Fury',  'Doppelgänger Guise',
@@ -117,6 +110,10 @@ def scrape_ninja():
 		"Atziri's Rule", "Cane of Kulemak", "Glimpse of Chaos", "Hateforge", "Mahuxotl's Machination", "Relic of the Pact", "Steelworm", "Temptation Step", "The Scales of Justice", "Triumvirate Authority", "Yaomac's Accord",
 		# Scourge
 		"Stranglegasp", "Uul-Netol's Vow", "Stasis Prison",
+		# Archnemesis
+		# Seige of the Atlas
+		"Melding of the Flesh", "Crystallised Omniscience", "Sudden Dawn", "The Annihilating Light", "Ashes of the Stars", "Dissolution of the Flesh", "Polaric Devastation", "Forbidden Flame",
+		"Forbidden Flesh", "Ceaseless Feast", "Inextricable Fate", "The Gluttonous Tide", "Black Zenith", "Dawnbreaker",
 	}
 
 	# for when people pull stuff out of remove only tabs in league
@@ -125,8 +122,8 @@ def scrape_ninja():
 		'Dying Breath': ['Coiled Staff'],
 		'Dusktoe': ['Leatherscale Boots'],
 		'Duskblight': ['Leatherscale Boots'],
-		'Blackgleam': ['Cured Quiver'],
-		'The Signal Fire': ['Cured Quiver'],
+		'Blackgleam': ['Cured Quiver', "Fire Arrow Quiver"],
+		'The Signal Fire': ['Cured Quiver', "Fire Arrow Quiver"],
 		'The Searing Touch': ['Long Staff'],
 		'Wings of Entropy': ['Sundering Axe'],
 		'Infernal Mantle': ['Widowsilk Robe'],
@@ -136,7 +133,14 @@ def scrape_ninja():
 		'Dance of the Offered': ['Shackled Boots'],
 		'Story of the Vaal': ['Variscite Blade'],
 		'Mask of the Spirit Drinker': ['Crusader Helmet'],
-		"Apep's Slumber": ['Ancient Spirit Shield']
+		"Apep's Slumber": ['Ancient Spirit Shield'],
+		"Asphyxia's Wrath": ["Two-Point Arrow Quiver"],
+		"Saemus' Gift": ["Two-Point Arrow Quiver"],
+		"Steelworm": ["Broadhead Arrow Quiver"],
+		"Rearguard": ["Broadhead Arrow Quiver"],
+		"Maloney's Nightfall": ["Blunt Arrow Quiver"],
+		"Scorpion's Call": ["Broadhead Arrow Quiver"],
+		"Voidfletcher": ["Penetrating Arrow Quiver"],
 	}
 
 	keys = [
@@ -149,16 +153,16 @@ def scrape_ninja():
 	requester = requests.session()
 	header = {
 		'User-Agent': 'xan.filter',
-		'From': 'xanthics on poe discord'
+		'From': 'xanthic42+ninja@gmail.com'
 	}
 
 	show_10 = {}
-	for l_str, league in [('sc', 'Scourge'), ('hc', 'Hardcore Scourge')]:
+	seen_all = set()
+	for l_str, league in [('sc', 'Archnemesis'), ('hc', 'Hardcore Archnemesis')]:
 		show_10[l_str] = 0
 		vals = defaultdict(int)
 		# keep track of uniques we have seen so variants can be noticed
 		seen = set()
-		seen_all = set()
 		price_val = defaultdict(list)
 		# add atlas bases as possible purchase targets for influence
 		for base in [
@@ -205,11 +209,11 @@ def scrape_ninja():
 		with open(f'{l_str}_unique.json', 'w') as f:
 			json.dump(price_val, f, sort_keys=True, indent=2)
 
-		if seen_all:
-			print(f"Variants found for the following uniques: {seen_all}")
-
 		# set devault value to show the 10 most valuable bases
 		show_10[l_str] = int(sorted(vals.values(), reverse=True)[9])
+
+	if seen_all:
+		print(f"Variants found for the following uniques: {seen_all}")
 	with open('show_10.json', 'w') as f:
 		json.dump(show_10, f, sort_keys=True, indent=2)
 
