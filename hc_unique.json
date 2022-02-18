@@ -2,14 +2,14 @@
   "Abyssal Axe": [
     [
       "Ngamahu's Flame",
-      3,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvUmlyaVRlTmdhbWFodSIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/55c2a170af/RiriTeNgamahu.png"
     ]
   ],
   "Agate Amulet": [
     [
       "Voll's Devotion",
-      3,
+      13,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9BZ2F0ZUFtdWxldFVuaXF1ZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/a67e002c89/AgateAmuletUnique.png"
     ],
     [
@@ -37,20 +37,20 @@
   ],
   "Ambusher": [
     [
-      "Goblinedge",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0dvYmxpbkVkZ2UiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/61d1382d07/GoblinEdge.png"
-    ],
-    [
       "Taproot",
       0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL01hcnJvd0dhc2hlciIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/22be181636/MarrowGasher.png"
+    ],
+    [
+      "Goblinedge",
+      0,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0dvYmxpbkVkZ2UiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/61d1382d07/GoblinEdge.png"
     ]
   ],
   "Amethyst Ring": [
     [
       "Death Rush",
-      5,
+      4,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQW1ldGh5c3RSaW5nVW5pcXVlIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/1ade97e0ac/AmethystRingUnique.png"
     ],
     [
@@ -62,7 +62,7 @@
   "Antique Greaves": [
     [
       "Torchoak Step",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy84NTQ4MyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/5d406f4285/85483.png"
     ]
   ],
@@ -97,12 +97,12 @@
   "Archon Kite Shield": [
     [
       "Prism Guardian",
-      21,
+      15,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1RoZUNvcnVuZHVtIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/f9ca50a663/TheCorundum.png"
     ],
     [
       "Unyielding Flame",
-      15,
+      8,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0RhbW5hdGlvQWV0ZXJuYSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/755ec1c5d8/DamnatioAeterna.png"
     ],
     [
@@ -121,7 +121,7 @@
   "Assassin Bow": [
     [
       "Darkscorn",
-      2,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0RhcmtzY29ybiIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/5145b7feef/Darkscorn.png"
     ],
     [
@@ -147,7 +147,7 @@
   "Astral Plate": [
     [
       "Blunderbore",
-      304,
+      260,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9CbHVuZGVyYm9yZSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/4b34ebf3fe/Blunderbore.png"
     ],
     [
@@ -166,7 +166,7 @@
   "Aventail Helmet": [
     [
       "Mindspiral",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL01pbmRzcGlyYWwiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/e4b2c14ad7/Mindspiral.png"
     ]
   ],
@@ -187,7 +187,7 @@
   "Basket Rapier": [
     [
       "Aurumvorax",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9SYXBpZXJzL0F1cnVtdm9yYXgiLCJ3IjoxLCJoIjo0LCJzY2FsZSI6MX1d/64b63c7413/Aurumvorax.png"
     ]
   ],
@@ -234,7 +234,7 @@
   "Bone Circlet": [
     [
       "Wraithlord",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1dyYWl0aGxvcmQiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/090d3d6bb3/Wraithlord.png"
     ]
   ],
@@ -267,7 +267,7 @@
   "Branded Kite Shield": [
     [
       "Saffell's Frame",
-      9,
+      8,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NoaWVsZFN0ckludFVuaXF1ZTYiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/89281a7dc3/ShieldStrIntUnique6.png"
     ]
   ],
@@ -328,14 +328,14 @@
   "Callous Mask": [
     [
       "Eye of Malice",
-      1,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0V5ZU9mRGVzaXJlIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/4218c3cc66/EyeOfDesire.png"
     ]
   ],
   "Cardinal Round Shield": [
     [
       "Vix Lunaris",
-      2,
+      4,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NoaWVsZFN0ckRleFVuaXF1ZTQiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/24175c8ffb/ShieldStrDexUnique4.png"
     ]
   ],
@@ -349,14 +349,14 @@
   "Carnal Boots": [
     [
       "Corpsewalker",
-      5,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9EaXN0dXJiVGhlRGVhZCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/fabb05d84e/DisturbTheDead.png"
     ]
   ],
   "Carnal Mitts": [
     [
       "Algor Mortis",
-      6,
+      8,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvVGFuZ21henVhcm1vdXJnbG92ZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/fff14c8039/Tangmazuarmourgloves.png"
     ],
     [
@@ -375,7 +375,7 @@
   "Carved Wand": [
     [
       "The Poet's Pen",
-      19,
+      37,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9Qb2V0c1BlbiIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/f6f0645739/PoetsPen.png"
     ],
     [
@@ -405,14 +405,14 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvVHVybmNvYXRzZm9ydHVuZSIsInciOjIsImgiOjEsInNjYWxlIjoxfV0/3adba0ad35/Turncoatsfortune.png"
     ],
     [
-      "Maligaro's Restraint",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvTWFsaWdhcm9zUmVzdHJhaW50IiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/17a500cb6f/MaligarosRestraint.png"
+      "Bated Breath",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQmF0ZWRCcmVhdGgiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/0a8cc4529f/BatedBreath.png"
     ],
     [
-      "Bated Breath",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQmF0ZWRCcmVhdGgiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/0a8cc4529f/BatedBreath.png"
+      "Maligaro's Restraint",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvTWFsaWdhcm9zUmVzdHJhaW50IiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/17a500cb6f/MaligarosRestraint.png"
     ]
   ],
   "Chain Gloves": [
@@ -425,7 +425,7 @@
   "Champion Kite Shield": [
     [
       "Aegis Aurora",
-      433,
+      1119,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NoaWVsZFN0ckludFVuaXF1ZTd1bmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/ae1ec0f5d1/ShieldStrIntUnique7unique.png"
     ]
   ],
@@ -439,7 +439,7 @@
   "Citrine Amulet": [
     [
       "Eye of Innocence",
-      17,
+      7,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9FeWVPZklubm9jZW5jZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/9544014b69/EyeOfInnocence.png"
     ],
     [
@@ -454,7 +454,7 @@
     ],
     [
       "Retaliation Charm",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9TaGFyZWRVbnNpZ2h0IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d12260a7ac/SharedUnsight.png"
     ]
   ],
@@ -467,14 +467,14 @@
   ],
   "Clasped Mitts": [
     [
+      "Shadows and Dust",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvU2hhZG93c0FuZER1c3QiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/80cb67dfe9/ShadowsAndDust.png"
+    ],
+    [
       "Aukuna's Will",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQXVrdW5hc1dpbGwiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/b3a94fe874/AukunasWill.png"
-    ],
-    [
-      "Shadows and Dust",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvU2hhZG93c0FuZER1c3QiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/80cb67dfe9/ShadowsAndDust.png"
     ]
   ],
   "Cleaver": [
@@ -503,9 +503,9 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvU291bFRldGhlciIsInciOjIsImgiOjEsInNjYWxlIjoxfV0/a2b7447a4a/SoulTether.png"
     ],
     [
-      "Sunblast",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQmVsdDgiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/c50a807f09/Belt8.png"
+      "The Druggery",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvVGhlRHJ1Z2dlcnkiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/136b59f839/TheDruggery.png"
     ],
     [
       "Perandus Blazon",
@@ -513,31 +513,36 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQnVja2xlZEJlbHRVbmlxdWUyIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/b67e6fa4a9/BuckledBeltUnique2.png"
     ],
     [
-      "The Druggery",
+      "Sunblast",
       0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvVGhlRHJ1Z2dlcnkiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/136b59f839/TheDruggery.png"
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQmVsdDgiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/c50a807f09/Belt8.png"
     ]
   ],
   "Cobalt Jewel": [
     [
       "Dead Reckoning",
-      50,
+      46,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0FkZGl0aW9uYWxTa2VsZXRvbk1hZ2VzTW9kaWZpZXIiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/64b5aa8a03/AdditionalSkeletonMagesModifier.png"
     ],
     [
-      "Unending Hunger",
-      14,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1NwZWN0cmVKZXdlbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/4e2d72df55/SpectreJewel.png"
-    ],
-    [
       "Fortress Covenant",
-      13,
+      30,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JsdWVKZXdlbDQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/5801f4441d/BlueJewel4.png"
     ],
     [
+      "Unending Hunger",
+      12,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1NwZWN0cmVKZXdlbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/4e2d72df55/SpectreJewel.png"
+    ],
+    [
       "Primordial Harmony",
-      13,
+      7,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dvbGVtVGVtcGVzdCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/aac7579ae7/GolemTempest.png"
+    ],
+    [
+      "Energy From Within",
+      3,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JsdWVKZXdlbDYiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/43c313a2c4/BlueJewel6.png"
     ],
     [
       "Anatomical Knowledge",
@@ -545,24 +550,14 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JsdWVKZXdlbDUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/a7bd808903/BlueJewel5.png"
     ],
     [
-      "Energy From Within",
-      2,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JsdWVKZXdlbDYiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/43c313a2c4/BlueJewel6.png"
-    ],
-    [
-      "Grand Spectrum",
-      2,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JsdWVHcmFuZFNwZWN0cnVtIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/b1282ca004/BlueGrandSpectrum.png"
+      "Brute Force Solution",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1NUUnRvSU5UIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d8b66f795b/STRtoINT.png"
     ],
     [
       "Clear Mind",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL3VuaXF1ZTEzIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/9cc73bdf26/unique13.png"
-    ],
-    [
-      "Brute Force Solution",
-      1,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1NUUnRvSU5UIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/d8b66f795b/STRtoINT.png"
     ],
     [
       "Eldritch Knowledge",
@@ -575,9 +570,19 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0RFWHRvSU5UIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/b363fdbd52/DEXtoINT.png"
     ],
     [
+      "Grand Spectrum",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JsdWVHcmFuZFNwZWN0cnVtIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/b1282ca004/BlueGrandSpectrum.png"
+    ],
+    [
       "Healthy Mind",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JsdWVKZXdlbDciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/73584bc29e/BlueJewel7.png"
+    ],
+    [
+      "Malicious Intent",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JsdWVKZXdlbDMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/087fd9ba1c/BlueJewel3.png"
     ],
     [
       "Reckless Defence",
@@ -643,11 +648,6 @@
       "Endless Misery",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0Rpc2NoYXJnZVRocmVzaG9sZEpld2VsIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/c7885d4264/DischargeThresholdJewel.png"
-    ],
-    [
-      "Malicious Intent",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JsdWVKZXdlbDMiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/087fd9ba1c/BlueJewel3.png"
     ]
   ],
   "Colossal Tower Shield": [
@@ -660,7 +660,7 @@
   "Compound Spiked Shield": [
     [
       "Maligaro's Lens",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL01hbGlnYXJvc0xlbnMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/514791cb42/MaligarosLens.png"
     ]
   ],
@@ -681,7 +681,7 @@
   "Conquest Chainmail": [
     [
       "Kingsguard",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9LaW5nc2d1YXJkIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/28d6e7ff11/Kingsguard.png"
     ]
   ],
@@ -695,20 +695,20 @@
   "Copper Plate": [
     [
       "Solaris Lorica",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy90b3JuZmxlc2hvZmdvZHMiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/420988ec91/tornfleshofgods.png"
     ]
   ],
   "Coral Amulet": [
     [
-      "Tavukai",
-      5,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9UYXZ1a2FpIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/86cc756de2/Tavukai.png"
+      "The Primordial Chain",
+      4,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9UaGVQcmltb3JkaWFsQ2hhaW4iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/cd566defdb/ThePrimordialChain.png"
     ],
     [
-      "The Primordial Chain",
-      3,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9UaGVQcmltb3JkaWFsQ2hhaW4iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/cd566defdb/ThePrimordialChain.png"
+      "Tavukai",
+      4,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9UYXZ1a2FpIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/86cc756de2/Tavukai.png"
     ],
     [
       "Araku Tiki",
@@ -745,18 +745,18 @@
   "Crimson Jewel": [
     [
       "Inspired Learning",
-      69,
+      71,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL3VuaXF1ZTciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/05e61f124f/unique7.png"
     ],
     [
-      "Primordial Might",
-      46,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dvbGVtSW5mZXJuYWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/a50b1917f5/GolemInfernal.png"
+      "Rain of Splinters",
+      56,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZEthcnVpIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/283aad3d25/RedKarui.png"
     ],
     [
-      "Rain of Splinters",
+      "Primordial Might",
       36,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZEthcnVpIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/283aad3d25/RedKarui.png"
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dvbGVtSW5mZXJuYWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/a50b1917f5/GolemInfernal.png"
     ],
     [
       "Coated Shrapnel",
@@ -767,6 +767,11 @@
       "Might of the Meek",
       2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1BvdGVuY3lPZlRoZVVucmVtYXJrYWJsZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/10117c9173/PotencyOfTheUnremarkable.png"
+    ],
+    [
+      "Grand Spectrum",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZEdyYW5kU3BlY3RydW0iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/3e6789a065/RedGrandSpectrum.png"
     ],
     [
       "Brawn",
@@ -794,11 +799,6 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL3VuaXF1ZTIwIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f9fae47680/unique20.png"
     ],
     [
-      "Grand Spectrum",
-      1,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZEdyYW5kU3BlY3RydW0iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/3e6789a065/RedGrandSpectrum.png"
-    ],
-    [
       "Inertia",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0RFWHRvU1RSIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/2fc9d85725/DEXtoSTR.png"
@@ -814,9 +814,24 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL3VuaXF1ZTUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/d21c450383/unique5.png"
     ],
     [
+      "Might in All Forms",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZEpld2VsNyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/dd6b13c77c/RedJewel7.png"
+    ],
+    [
+      "Spire of Stone",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZEthcnVpMiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/69449d4b97/RedKarui2.png"
+    ],
+    [
       "The Vigil",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1ZpZ2lsYW50ZU1vZGlmaWVyIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/29c8606595/VigilanteModifier.png"
+    ],
+    [
+      "Wildfire",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL01vbHRlblN0cmlrZVRocmVzaG9sZCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/8afc18e10d/MoltenStrikeThreshold.png"
     ],
     [
       "Combat Focus",
@@ -827,21 +842,6 @@
       "Divine Inferno",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0luZmVybmFsQ3J5VGhyZXNob2xkSmV3ZWwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/7f9f318aa4/InfernalCryThresholdJewel.png"
-    ],
-    [
-      "Spire of Stone",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZEthcnVpMiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/69449d4b97/RedKarui2.png"
-    ],
-    [
-      "Might in All Forms",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1JlZEpld2VsNyIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/dd6b13c77c/RedJewel7.png"
-    ],
-    [
-      "Wildfire",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL01vbHRlblN0cmlrZVRocmVzaG9sZCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/8afc18e10d/MoltenStrikeThreshold.png"
     ]
   ],
   "Crude Bow": [
@@ -854,7 +854,7 @@
   "Crusader Chainmail": [
     [
       "Ambu's Charge",
-      2,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9TdHJJbnQzQVVuaXF1ZTIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/9928614b24/StrInt3AUnique2.png"
     ]
   ],
@@ -868,14 +868,14 @@
   "Crusader Plate": [
     [
       "Lioneye's Vision",
-      2,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9MaW9uZXllc0FybW91ciIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/b6e10a9216/LioneyesArmour.png"
     ]
   ],
   "Crystal Belt": [
     [
       "Auxium",
-      5,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQXV4aXVtIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/acf784e82e/Auxium.png"
     ],
     [
@@ -886,14 +886,14 @@
   ],
   "Crystal Sceptre": [
     [
+      "Nycta's Lantern",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9MeWNobnVzbHlhZWkiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/c69b77ef8a/Lychnuslyaei.png"
+    ],
+    [
       "The Supreme Truth",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9UaGVzdXByZW1ldHJ1dGgiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/1f03434324/Thesupremetruth.png"
-    ],
-    [
-      "Nycta's Lantern",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9MeWNobnVzbHlhZWkiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/c69b77ef8a/Lychnuslyaei.png"
     ]
   ],
   "Crystal Wand": [
@@ -946,7 +946,7 @@
   "Deerskin Gloves": [
     [
       "Maligaro's Virtuosity",
-      33,
+      25,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvTWFsaWdhcm9zVmlydG91c2l0eSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/7cdbba458f/MaligarosVirtousity.png"
     ]
   ],
@@ -960,14 +960,14 @@
   "Demon Dagger": [
     [
       "Vulconus",
-      81,
+      47,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL1Z1bGNvbnVzIiwidyI6MSwiaCI6Mywic2NhbGUiOjF9XQ/aefa0a977b/Vulconus.png"
     ]
   ],
   "Demon's Horn": [
     [
       "Obliteration",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9NYWxlZGljdCIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/2ddc131782/Maledict.png"
     ]
   ],
@@ -1061,7 +1061,7 @@
   "Ebony Tower Shield": [
     [
       "Tukohama's Fortress",
-      72,
+      50,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1R1a29oYW1hc0ZvcnRyZXNzIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/e502c4bcf2/TukohamasFortress.png"
     ],
     [
@@ -1094,7 +1094,7 @@
   "Elegant Round Shield": [
     [
       "The Squire",
-      3758,
+      3852,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0Nhc3Bpcm9zUmVzb25hbmNlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/94531d2461/CaspirosResonance.png"
     ],
     [
@@ -1148,7 +1148,7 @@
   "Eternal Sword": [
     [
       "Grelwood Shank",
-      30,
+      19,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL1ZlcmRhbnRHdWFyZGlhblN3b3JkMSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/b085f741a5/VerdantGuardianSword1.png"
     ],
     [
@@ -1165,7 +1165,7 @@
   "Exquisite Leather": [
     [
       "Kintsugi",
-      5,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9LaW50c3VnaSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/8fcd7ea593/Kintsugi.png"
     ],
     [
@@ -1180,7 +1180,7 @@
     ],
     [
       "Yriel's Fostering",
-      1,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9QYWxlQ291bmNpbEFybW91ciIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/f3c31cf6b4/PaleCouncilArmour.png"
     ]
   ],
@@ -1213,7 +1213,7 @@
   "Ezomyte Dagger": [
     [
       "Cold Iron Point",
-      25,
+      20,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0NvbGRJcm9uUG9pbnQiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/1a4002957b/ColdIronPoint.png"
     ]
   ],
@@ -1231,14 +1231,14 @@
   ],
   "Feathered Arrow Quiver": [
     [
-      "Saemus' Gift",
-      1,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9TZWFtdXNHaWZ0IiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/7da61eeb8e/SeamusGift.png"
-    ],
-    [
       "Asphyxia's Wrath",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9Bc3BoeXhpYXNXcmF0aCIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/e33bd46903/AsphyxiasWrath.png"
+    ],
+    [
+      "Saemus' Gift",
+      0,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9TZWFtdXNHaWZ0IiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/7da61eeb8e/SeamusGift.png"
     ]
   ],
   "Festival Mask": [
@@ -1251,7 +1251,7 @@
   "Fiend Dagger": [
     [
       "Arakaali's Fang",
-      289,
+      348,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0ZhbmdVbmlxdWUiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/de6e51652e/FangUnique.png"
     ],
     [
@@ -1270,7 +1270,7 @@
   "Flaying Knife": [
     [
       "Mightflay",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0RhZ2dlcjJ1bmlxdWUiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/831b56800f/Dagger2unique.png"
     ]
   ],
@@ -1298,7 +1298,7 @@
   "Full Dragonscale": [
     [
       "Daresso's Defiance",
-      4,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9EYXJlc3Nvc0RlZmlhbmNlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/2e5802be5f/DaressosDefiance.png"
     ]
   ],
@@ -1312,7 +1312,7 @@
   "Gavel": [
     [
       "Mj\u00f6lner",
-      5,
+      4,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kTWFjZXMvTWpvbG5lciIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/3e6fc15b26/Mjolner.png"
     ],
     [
@@ -1324,41 +1324,46 @@
   "Gilded Sallet": [
     [
       "Deidbell",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0RlaWRiZWxsIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/fd66b0b28f/Deidbell.png"
     ]
   ],
   "Gladiator Plate": [
     [
       "The Brass Dome",
-      393,
+      507,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Eb21lT2ZCcmFzcyIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/41f06694f2/DomeOfBrass.png"
     ]
   ],
   "Gladius": [
     [
       "Scaeva",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL1NjYWV2YSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/320c7247e3/Scaeva.png"
     ]
   ],
   "Glorious Plate": [
     [
       "Kaom's Heart",
-      45,
+      47,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Cb2R5U3RyM0NVbmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/1027cdf1ad/BodyStr3CUnique.png"
+    ],
+    [
+      "Perfidy",
+      25,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9UYW5nbWF6dWFybW91cmJvZHlhcm1vdXIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/2170370e8f/Tangmazuarmourbodyarmour.png"
     ]
   ],
   "Gnarled Branch": [
     [
-      "Fencoil",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvU3RhZmYxdW5pcXVlIiwidyI6MSwiaCI6NCwic2NhbGUiOjF9XQ/cff9022931/Staff1unique.png"
-    ],
-    [
       "The Blood Thorn",
       0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvVGhlQmxvb2RUaG9ybiIsInciOjEsImgiOjQsInNjYWxlIjoxfV0/3dac5ee34b/TheBloodThorn.png"
+    ],
+    [
+      "Fencoil",
+      0,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvU3RhZmYxdW5pcXVlIiwidyI6MSwiaCI6NCwic2NhbGUiOjF9XQ/cff9022931/Staff1unique.png"
     ]
   ],
   "Goat's Horn": [
@@ -1371,7 +1376,7 @@
   "Goathide Boots": [
     [
       "Abberath's Hooves",
-      27,
+      25,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9BYmJlcmF0aHNIb292ZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/445b84d83c/AbberathsHooves.png"
     ],
     [
@@ -1439,7 +1444,7 @@
     ],
     [
       "The Three Dragons",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RocmVlRHJhZ29ucyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/50afe0768b/ThreeDragons.png"
     ]
   ],
@@ -1473,14 +1478,14 @@
   ],
   "Great Mallet": [
     [
+      "Chober Chaber",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvQ2hvYmVyQ2hhYmVyIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/77d9d3e30a/ChoberChaber.png"
+    ],
+    [
       "Trypanon",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvVHJ5cGFub24iLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/3152ab4124/Trypanon.png"
-    ],
-    [
-      "Chober Chaber",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvQ2hvYmVyQ2hhYmVyIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/77d9d3e30a/ChoberChaber.png"
     ]
   ],
   "Grinning Fetish": [
@@ -1512,7 +1517,7 @@
   "Harbinger Bow": [
     [
       "Slivertongue",
-      1,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL1NpbHZlclRvbmd1ZSIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/15c7237f48/SilverTongue.png"
     ],
     [
@@ -1552,28 +1557,23 @@
   "Heavy Belt": [
     [
       "Mageblood",
-      48131,
+      51308,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvSW5qZWN0b3JCZWx0IiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/21ec0269de/InjectorBelt.png"
     ],
     [
-      "Dyadian Dawn",
-      23,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvTW90aGVyRHlhZHVzIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/ca299e5015/MotherDyadus.png"
+      "Mother's Embrace",
+      32,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvTW90aGVyc0VtYnJhY2UiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/e576fccc3e/MothersEmbrace.png"
     ],
     [
-      "Mother's Embrace",
-      20,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvTW90aGVyc0VtYnJhY2UiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/e576fccc3e/MothersEmbrace.png"
+      "Dyadian Dawn",
+      14,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvTW90aGVyRHlhZHVzIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/ca299e5015/MotherDyadus.png"
     ],
     [
       "Bisco's Leash",
       3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQmlzY29zTGVhc2giLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/87b17c98e7/BiscosLeash.png"
-    ],
-    [
-      "Siegebreaker",
-      2,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvODU0ODIiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/ee893f3cb8/85482.png"
     ],
     [
       "Belt of the Deceiver",
@@ -1584,6 +1584,11 @@
       "Meginord's Girdle",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvQmVsdDdVbmlxdWUiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/59718aca01/Belt7Unique.png"
+    ],
+    [
+      "Siegebreaker",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvODU0ODIiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/ee893f3cb8/85482.png"
     ]
   ],
   "Hellion's Paw": [
@@ -1596,7 +1601,7 @@
   "Highborn Staff": [
     [
       "Martyr of Innocence",
-      23,
+      17,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvTWFydHlySW5ub2NlbmNlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/6fd4eee9df/MartyrInnocence.png"
     ]
   ],
@@ -1617,12 +1622,12 @@
   "Hubris Circlet": [
     [
       "Crown of Eyes",
-      5,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0Nyb3dub2ZFeWVzIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/778182e367/CrownofEyes.png"
     ],
     [
       "Ylfeban's Trickery",
-      4,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1lsZmViYW4iLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/c40f798e46/Ylfeban.png"
     ],
     [
@@ -1634,21 +1639,21 @@
   "Hydrascale Gauntlets": [
     [
       "Gravebind",
-      8,
+      6,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvRGVhdGhHcmlwIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/371752d95c/DeathGrip.png"
     ]
   ],
   "Imbued Wand": [
     [
       "Moonsorrow",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9XYW5kVW5pcXVlMiIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/7a5458ab50/WandUnique2.png"
     ]
   ],
   "Imperial Bow": [
     [
       "Windripper",
-      3,
+      4,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL0VhZ2xlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/01fdf37ac0/Eagle.png"
     ],
     [
@@ -1667,14 +1672,14 @@
   "Imperial Maul": [
     [
       "Tidebreaker",
-      18,
+      14,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvVGlkZWJyZWFrZXIiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/25b69a132f/Tidebreaker.png"
     ]
   ],
   "Imperial Skean": [
     [
       "Divinarius",
-      10,
+      8,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0RhZ2dlcjd1bmlxdWUiLCJ3IjoxLCJoIjozLCJzY2FsZSI6MX1d/3deec3773b/Dagger7unique.png"
     ],
     [
@@ -1701,7 +1706,7 @@
     ],
     [
       "Agnerod North",
-      2,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvU3RhZmY2dW5pcXVlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/8b60f5a033/Staff6unique.png"
     ]
   ],
@@ -1766,24 +1771,24 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTGVoZXVwb2ZhbGwiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/6ea73cc7e4/Leheupofall.png"
     ],
     [
-      "Venopuncture",
-      2,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmxvb2RmcmVlemUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/8873778384/Bloodfreeze.png"
-    ],
-    [
-      "Blackheart",
-      1,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvUmluZzFVbmlxdWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/40666e2827/Ring1Unique.png"
-    ],
-    [
       "The Warden's Brand",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVGhlV2FyZGVuc0JhbmQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/5d3830d11d/TheWardensBand.png"
     ],
     [
+      "Venopuncture",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmxvb2RmcmVlemUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/8873778384/Bloodfreeze.png"
+    ],
+    [
       "Icefang Orbit",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvSWNlZmFuZ09yYml0IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/da6e5eb5aa/IcefangOrbit.png"
+    ],
+    [
+      "Blackheart",
+      0,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvUmluZzFVbmlxdWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/40666e2827/Ring1Unique.png"
     ]
   ],
   "Iron Staff": [
@@ -1794,7 +1799,7 @@
     ],
     [
       "Pillar of the Caged God",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvUGlsbGFyb2Z0aGVDYWdlZEdvZCIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/0451281624/PillaroftheCagedGod.png"
     ],
     [
@@ -1827,7 +1832,7 @@
   "Jade Amulet": [
     [
       "Hyrri's Truth",
-      3,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9TeW50aGVzaXNBY2N1cmFjeUFtdWxldCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/6062fd361e/SynthesisAccuracyAmulet.png"
     ],
     [
@@ -1849,7 +1854,7 @@
   "Jade Hatchet": [
     [
       "The Screaming Eagle",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kQXhlcy9TY3JlYW1pbmdlYWdsZSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/1fd02e9312/Screamingeagle.png"
     ]
   ],
@@ -1870,28 +1875,28 @@
   "Jasper Chopper": [
     [
       "The Harvest",
-      10,
+      5,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kQXhlcy9UaGVFeHRyYWN0b3IiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/8452349a24/TheExtractor.png"
     ]
   ],
   "Jewelled Foil": [
     [
       "Cospri's Malice",
-      6,
+      8,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kU3dvcmRzL0Nvc3ByaXNNYWxpY2UiLCJ3IjoxLCJoIjo0LCJzY2FsZSI6MX1d/e9e517220b/CosprisMalice.png"
     ]
   ],
   "Jingling Spirit Shield": [
     [
       "Light of Lunaris",
-      29,
+      21,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0x1bmFyaXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/a684af2793/Lunaris.png"
     ]
   ],
   "Judgement Staff": [
     [
       "The Grey Spire",
-      10,
+      8,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvVGhlR3JleVNwaXJlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/6e3a1c2c79/TheGreySpire.png"
     ],
     [
@@ -1910,7 +1915,7 @@
   "Karui Maul": [
     [
       "Marohi Erqi",
-      15,
+      8,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kTWFjZXMvVHdvSGFuZE1hY2UydW5pcXVlMiIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/6ae0a56923/TwoHandMace2unique2.png"
     ]
   ],
@@ -1931,7 +1936,7 @@
   "Lacquered Garb": [
     [
       "Cloak of Defiance",
-      7,
+      5,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9DbG9ha09mRGVmaWFuY2UiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/87997e3b8a/CloakOfDefiance.png"
     ],
     [
@@ -1957,7 +1962,7 @@
   "Lapis Amulet": [
     [
       "The Ephemeral Bond",
-      4,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9DaGFyZ2UgQW1wbGlmaWVyIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/a285d4c77a/Charge%20Amplifier.png"
     ],
     [
@@ -1979,7 +1984,7 @@
   "Lathi": [
     [
       "The Searing Touch",
-      2,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvU3RhZmY0dW5pcXVlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/5c7ddd5550/Staff4unique.png"
     ]
   ],
@@ -1992,9 +1997,19 @@
   ],
   "Leather Belt": [
     [
+      "Headhunter",
+      6163,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvSGVhZGh1bnRlciIsInciOjIsImgiOjEsInNjYWxlIjoxfV0/e9542ec6ee/Headhunter.png"
+    ],
+    [
       "Pyroshock Clasp",
-      3,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvUHlyb3Nob2NrQ2xhc3AiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/42b1bcc3c8/PyroshockClasp.png"
+    ],
+    [
+      "Leash of Oblation",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvTGVhc2hPZk9ibGF0aW9uIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/f865c7f643/LeashOfOblation.png"
     ],
     [
       "Umbilicus Immortalis",
@@ -2005,11 +2020,6 @@
       "Gluttony",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvR2x1dHRvbnkiLCJ3IjoyLCJoIjoxLCJzY2FsZSI6MX1d/850a3a646d/Gluttony.png"
-    ],
-    [
-      "Leash of Oblation",
-      1,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvTGVhc2hPZk9ibGF0aW9uIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/f865c7f643/LeashOfOblation.png"
     ],
     [
       "Immortal Flesh",
@@ -2051,7 +2061,7 @@
   "Legion Gloves": [
     [
       "Null and Void",
-      16,
+      12,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvTnVsbEFuZFZvaWQiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/4f851f97fc/NullAndVoid.png"
     ]
   ],
@@ -2079,7 +2089,7 @@
   "Long Bow": [
     [
       "Storm Cloud",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL1N0b3JtY2xvdWQiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/003957da0c/Stormcloud.png"
     ]
   ],
@@ -2140,17 +2150,17 @@
   "Midnight Blade": [
     [
       "Rigwald's Command",
-      3,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL1JpZ3dhcmxTd29yZCIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/90114046a7/RigwarlSword.png"
     ],
     [
       "Razor of the Seventh Sun",
-      3,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL1Jhem9yT2ZUaGVTZXZlbnRoU3VuIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/ef21dd7f97/RazorOfTheSeventhSun.png"
     ],
     [
       "Ahn's Might",
-      2,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL0FobnNNaWdodCIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/ee9d3b45a4/AhnsMight.png"
     ]
   ],
@@ -2176,43 +2186,43 @@
   "Mirrored Spiked Shield": [
     [
       "Leper's Alms",
-      3,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0xlcGVyc0FsbXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/3f9c2a1cec/LepersAlms.png"
     ]
   ],
   "Moonstone Ring": [
     [
       "Shavronne's Revelation",
-      14,
+      9,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTW9vbnN0b25lUmluZ1VuaXF1ZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/d8c1823da5/MoonstoneRingUnique.png"
+    ],
+    [
+      "Heartbound Loop",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvSGVhcnRib3VuZFJpbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/c214aff507/HeartboundRing.png"
+    ],
+    [
+      "Timeclasp",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVGltZWNsYXNwIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/b0c1b94ad1/Timeclasp.png"
     ],
     [
       "Valyrium",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVmFseXJpdW0iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/dd9261042f/Valyrium.png"
-    ],
-    [
-      "Heartbound Loop",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvSGVhcnRib3VuZFJpbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/c214aff507/HeartboundRing.png"
-    ],
-    [
-      "Timeclasp",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVGltZWNsYXNwIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/b0c1b94ad1/Timeclasp.png"
     ]
   ],
   "Mosaic Kite Shield": [
     [
       "Rise of the Phoenix",
-      1,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1Jpc2VvZnRoZXBob2VuaXgiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/965404630a/Riseofthephoenix.png"
     ]
   ],
   "Murder Mitts": [
     [
       "Machina Mitts",
-      4,
+      5,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvODU0NzkiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/360a5df732/85479.png"
     ],
     [
@@ -2243,7 +2253,7 @@
   "Necromancer Silks": [
     [
       "Fleshcrafter",
-      19,
+      20,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Fc3NlbmNlR2lmdGVyIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/3b3446e019/EssenceGifter.png"
     ],
     [
@@ -2255,7 +2265,7 @@
   "Nightmare Bascinet": [
     [
       "Devoto's Devotion",
-      4,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0hlbG1ldFN0ckRleDJ1bmlxdWUiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/65fa7daa88/HelmetStrDex2unique.png"
     ],
     [
@@ -2274,21 +2284,21 @@
   "Nubuck Gloves": [
     [
       "Oskarm",
-      1,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvWmVub0dsb3ZlcyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/a0056936c7/ZenoGloves.png"
     ]
   ],
   "Occultist's Vestment": [
     [
       "Shavronne's Wrappings",
-      92,
+      95,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Cb2R5SW50MUNVbmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/4f3e22a163/BodyInt1CUnique.png"
     ]
   ],
   "Onyx Amulet": [
     [
       "Astramentis",
-      40,
+      50,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9BbXVsZXQzNiIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/95da0d04a4/Amulet36.png"
     ],
     [
@@ -2327,7 +2337,7 @@
   "Opal Sceptre": [
     [
       "Balefire",
-      1,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9CYWVsZmlyZSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/082c0ee423/Baelfire.png"
     ]
   ],
@@ -2341,7 +2351,7 @@
   "Ornate Mace": [
     [
       "Frostbreath",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kTWFjZXMvRnJvc3RCcmVhdGgiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/8a6b305388/FrostBreath.png"
     ]
   ],
@@ -2369,7 +2379,7 @@
   "Paua Amulet": [
     [
       "Atziri's Foible",
-      5,
+      7,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9RdWlkIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/00c2b3a588/Quid.png"
     ],
     [
@@ -2381,7 +2391,7 @@
   "Paua Ring": [
     [
       "Perandus Signet",
-      4,
+      5,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTGFkeVJpbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/d696be5b25/LadyRing.png"
     ],
     [
@@ -2412,7 +2422,7 @@
   "Pinnacle Tower Shield": [
     [
       "Lioneye's Remorse",
-      83,
+      60,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NoaWVsZFN0clVuaXF1ZTYiLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/dd7ee8e1a0/ShieldStrUnique6.png"
     ]
   ],
@@ -2426,7 +2436,7 @@
   "Plank Kite Shield": [
     [
       "Springleaf",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NoaWVsZFN0ckludFVuaXF1ZTIiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/def84c6e93/ShieldStrIntUnique2.png"
     ]
   ],
@@ -2454,7 +2464,7 @@
   "Platinum Sceptre": [
     [
       "Singularity",
-      3,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9HbG9vbWV5ZSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/12d7027e18/Gloomeye.png"
     ]
   ],
@@ -2475,7 +2485,7 @@
   "Praetor Crown": [
     [
       "Memory Vault",
-      155,
+      40,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0VsZGVyR3VhcmRpYW4iLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/efcf4a9c86/ElderGuardian.png"
     ],
     [
@@ -2499,36 +2509,36 @@
   "Prophecy Wand": [
     [
       "Void Battery",
-      40,
+      38,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9Wb2lkQmF0dGVyeSIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/71a0fdc8db/VoidBattery.png"
     ]
   ],
   "Prophet Crown": [
     [
       "Crown of the Inward Eye",
-      50,
+      40,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0Nyb3duT2ZUaGVJbndhcmRFeWUiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/fdb20856e4/CrownOfTheInwardEye.png"
     ],
     [
       "The Brine Crown",
-      39,
+      24,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RoZUJyaW5lQ3Jvd24iLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/785aa5f630/TheBrineCrown.png"
+    ],
+    [
+      "The Broken Crown",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0Jyb2tlbkNyb3duIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/98b19a6cfb/BrokenCrown.png"
     ],
     [
       "Speaker's Wreath",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL01pbmlvbkhlbG1ldCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/7cf5db368e/MinionHelmet.png"
-    ],
-    [
-      "The Broken Crown",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0Jyb2tlbkNyb3duIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/98b19a6cfb/BrokenCrown.png"
     ]
   ],
   "Quartz Wand": [
     [
       "Ashcaller",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9Bc2h3YWtlciIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/a36e60acf6/Ashwaker.png"
     ]
   ],
@@ -2542,14 +2552,14 @@
   "Raven Mask": [
     [
       "The Gull",
-      3,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RoZUd1bGwiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/ca1678efd9/TheGull.png"
     ]
   ],
   "Rawhide Boots": [
     [
       "Seven-League Step",
-      60,
+      74,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9Cb290c0RleFVuaXF1ZTMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/23e4614336/BootsDexUnique3.png"
     ]
   ],
@@ -2575,7 +2585,7 @@
   "Recurve Bow": [
     [
       "Roth's Reach",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Cb3dzL1NhcmtoYW1zUmVhY2giLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/89bf0cff0b/SarkhamsReach.png"
     ]
   ],
@@ -2596,14 +2606,14 @@
   "Reinforced Tower Shield": [
     [
       "Titucius' Span",
-      2,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NoaWVsZFN0clVuaXF1ZTciLCJ3IjoyLCJoIjo0LCJzY2FsZSI6MX1d/8dd443976b/ShieldStrUnique7.png"
     ]
   ],
   "Ritual Sceptre": [
     [
       "Brutus' Lead Sprinkler",
-      2,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kTWFjZXMvVGhlTGVhZFNwcmlua2xlciIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/9a9217f832/TheLeadSprinkler.png"
     ]
   ],
@@ -2631,7 +2641,7 @@
   "Royal Axe": [
     [
       "Rigwald's Savagery",
-      6,
+      4,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kQXhlcy9SaWd3YXJsQXhlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/e2ee95737e/RigwarlAxe.png"
     ]
   ],
@@ -2652,14 +2662,14 @@
   "Royal Skean": [
     [
       "Heartbreaker",
-      1,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9EYWdnZXJzL0hlYXJ0YnJlYWtlciIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/fa73c4d5b4/Heartbreaker.png"
     ]
   ],
   "Royal Staff": [
     [
       "The Stormheart",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9TdGF2ZXMvU3RhZmY4dW5pcXVlWCIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/fa0b46bc0c/Staff8uniqueX.png"
     ]
   ],
@@ -2670,14 +2680,14 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvUmluZzEwIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/55c8711fd7/Ring10.png"
     ],
     [
-      "Mokou's Embrace",
-      1,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTW9rb3VzRW1icmFjZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/b3bd556d83/MokousEmbrace.png"
-    ],
-    [
       "Ngamahu's Sign",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTmdhbWFodXNTaWduIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/4323574c5a/NgamahusSign.png"
+    ],
+    [
+      "Mokou's Embrace",
+      0,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTW9rb3VzRW1icmFjZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/b3bd556d83/MokousEmbrace.png"
     ]
   ],
   "Rusted Sword": [
@@ -2750,7 +2760,7 @@
   "Saint's Hauberk": [
     [
       "Doryani's Prototype",
-      30,
+      15,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9TaG9ja0Nsb2FrIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/44e73cc73c/ShockCloak.png"
     ],
     [
@@ -2788,7 +2798,7 @@
   "Sapphire Ring": [
     [
       "Snakepit",
-      4,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvU2VycGVudHNlZWQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/634a5c8913/Serpentseed.png"
     ],
     [
@@ -2810,14 +2820,14 @@
   "Satin Gloves": [
     [
       "Demon Stitcher",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvRGVtb25TdGljaGVyIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/0269893a5c/DemonSticher.png"
     ]
   ],
   "Scholar Boots": [
     [
       "Shavronne's Pace",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9TaGF2cm9ubmVzUGFjZSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/065a61276a/ShavronnesPace.png"
     ]
   ],
@@ -2859,7 +2869,7 @@
   "Serpentscale Gauntlets": [
     [
       "Haemophilia",
-      3,
+      6,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvYmxlZWRnbG92ZXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/005045bec7/bleedgloves.png"
     ]
   ],
@@ -2899,7 +2909,7 @@
   "Shagreen Gloves": [
     [
       "Painseeker",
-      1,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvR3JpcE9mVW5tYWtpbmciLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/9a6348dc81/GripOfUnmaking.png"
     ]
   ],
@@ -2920,7 +2930,7 @@
   "Sharktooth Arrow Quiver": [
     [
       "Hyrri's Bite",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9Icnl5aXNCaXRlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/91937737c4/HryyisBite.png"
     ]
   ],
@@ -2934,14 +2944,14 @@
   "Siege Axe": [
     [
       "Soul Taker",
-      89,
+      160,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kQXhlcy9BbGV4YXhlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/647bb8bb63/Alexaxe.png"
     ]
   ],
   "Silk Gloves": [
     [
       "Asenath's Gentle Touch",
-      682,
+      385,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvQXNlbmF0aHNHZW50bGVUb3VjaCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/ea6e822bbe/AsenathsGentleTouch.png"
     ]
   ],
@@ -2962,24 +2972,24 @@
   "Simple Robe": [
     [
       "Tabula Rasa",
-      8,
+      9,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9UYWJ1bGFSYXNhIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/3bdbff0756/TabulaRasa.png"
     ],
     [
       "Thousand Ribbons",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9UaG91c2FuZHJpYmJvbnMiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/65a99640e9/Thousandribbons.png"
     ]
   ],
   "Sinner Tricorne": [
     [
       "Assailum",
-      274,
+      88,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1RhbmdtYXp1YXJtb3VyaGVsbWV0IiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/6e327593b9/Tangmazuarmourhelmet.png"
     ],
     [
       "Alpha's Howl",
-      4,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1dvbGZoZWFkIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/2acc10e593/Wolfhead.png"
     ]
   ],
@@ -3014,7 +3024,7 @@
   "Solaris Circlet": [
     [
       "Thundersight",
-      25,
+      9,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL0V4cGxvcmVyc1Zpc2lvbkxpZ2h0bmluZyIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/56f2f88c51/ExplorersVisionLightning.png"
     ],
     [
@@ -3031,7 +3041,7 @@
   "Soldier Boots": [
     [
       "Alberon's Warpath",
-      1,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9BbGJlcm9uc3dhcnBhdGgiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/be7b089ef3/Alberonswarpath.png"
     ]
   ],
@@ -3052,7 +3062,7 @@
   "Sorcerer Boots": [
     [
       "Skyforth",
-      151,
+      117,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9Ta3lmb3J0aCIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/56fee4545a/Skyforth.png"
     ]
   ],
@@ -3123,12 +3133,12 @@
   "Stealth Boots": [
     [
       "Garukhan's Flight",
-      15,
+      12,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9Ud29Ub25lZEJvb3RzQUxUIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/4e0bb109ae/TwoTonedBootsALT.png"
     ],
     [
       "Sin Trek",
-      3,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9TaW5UcmVrIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/84281e0f84/SinTrek.png"
     ]
   ],
@@ -3184,7 +3194,7 @@
   "Strapped Boots": [
     [
       "Nomic's Storm",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9Ob21pY3NTdG9ybSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/33fedc8e3d/NomicsStorm.png"
     ]
   ],
@@ -3198,14 +3208,14 @@
   "Strapped Mitts": [
     [
       "Facebreaker",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvR2xvdmVzRGV4SW50VW5pcXVlMSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/b97dda23b0/GlovesDexIntUnique1.png"
     ]
   ],
   "Studded Belt": [
     [
       "Ryslatha's Coil",
-      60,
+      55,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvUnl1c2xhdGhhc0NsdXRjaGVzIiwidyI6MiwiaCI6MSwic2NhbGUiOjF9XQ/5b990decd3/RyuslathasClutches.png"
     ],
     [
@@ -3217,35 +3227,35 @@
   "Studded Round Shield": [
     [
       "The Deep One's Hide",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0NoaXRpbmh1bGwiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/90921c2a19/Chitinhull.png"
     ]
   ],
   "Supreme Spiked Shield": [
     [
       "Jaws of Agony",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL0JlYXJUcmFwU2hpZWxkMiIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/4d66593647/BearTrapShield2.png"
     ]
   ],
   "Tarnished Spirit Shield": [
     [
       "Matua Tupuna",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL01hdHVhdHVwdW5hIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/db1b66f81d/Matuatupuna.png"
     ]
   ],
   "Teak Round Shield": [
     [
       "The Ghastly Theatre",
-      3,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1Ntb2tlQW5kTWlycm9ycyIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/95eb622489/SmokeAndMirrors.png"
     ]
   ],
   "Terror Claw": [
     [
       "The Scourge",
-      4,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9DbGF3cy9UaGVTY291cmdlIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/598a9f9893/TheScourge.png"
     ],
     [
@@ -3264,7 +3274,7 @@
   "Thresher Claw": [
     [
       "Cybil's Paw",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9DbGF3cy9DeWJpbHNDbGF3IiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/6da52a7519/CybilsClaw.png"
     ]
   ],
@@ -3292,7 +3302,7 @@
   "Titan Gauntlets": [
     [
       "Veruso's Battering Rams",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvVmVydXNvc0JhdHRlcmluZ1JhbXMiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/e6727320e2/VerusosBatteringRams.png"
     ]
   ],
@@ -3319,8 +3329,13 @@
   ],
   "Topaz Ring": [
     [
+      "Astral Projector",
+      231,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQXN0cmFsUHJvamVjdG9yIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/92eca463f2/AstralProjector.png"
+    ],
+    [
       "Valako's Sign",
-      2,
+      10,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvVmFsYWtvc1NpZ24iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/cd646c8c54/ValakosSign.png"
     ],
     [
@@ -3337,14 +3352,14 @@
   "Tornado Wand": [
     [
       "Piscator's Vigil",
-      2,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9XYW5kcy9QaXNjYXRvcnNWaWdpbCIsInciOjEsImgiOjMsInNjYWxlIjoxfV0/332f80f7ac/PiscatorsVigil.png"
     ]
   ],
   "Tribal Circlet": [
     [
       "Mark of the Red Covenant",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9IZWxtZXRzL1BoYW50YXNtbGFGbGFtZSIsInciOjIsImgiOjIsInNjYWxlIjoxfV0/0d222d092f/PhantasmlaFlame.png"
     ]
   ],
@@ -3365,7 +3380,7 @@
   "Turquoise Amulet": [
     [
       "Badge of the Brotherhood",
-      60,
+      43,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9Bc3Nhc3NpblVuaXF1ZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/3616219d7d/AssassinUnique.png"
     ],
     [
@@ -3374,14 +3389,14 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9UdXJxdW9pc2VBbXVsZXRVbmlxdWUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/8ba340b31f/TurquoiseAmuletUnique.png"
     ],
     [
+      "Warped Timepiece",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9XYXJwZWRUaW1lcGllY2UiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/abee67f17d/WarpedTimepiece.png"
+    ],
+    [
       "Maligaro's Cruelty",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9BbXVsZXQxNSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/f1b938bbd1/Amulet15.png"
-    ],
-    [
-      "Warped Timepiece",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQW11bGV0cy9XYXJwZWRUaW1lcGllY2UiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/abee67f17d/WarpedTimepiece.png"
     ],
     [
       "Ungil's Harmony",
@@ -3399,29 +3414,29 @@
   "Two-Point Arrow Quiver": [
     [
       "Rigwald's Quills",
-      15,
+      8,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9SaWd3YWxkc1F1aWxscyIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/b8325e5214/RigwaldsQuills.png"
     ],
     [
       "Skirmish",
-      2,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUXVpdmVycy9UaGVTa2lybWlzaCIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/9fe8813a15/TheSkirmish.png"
     ]
   ],
   "Two-Stone Ring": [
     [
       "Berek's Respite",
-      12,
+      14,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmVyZWtzUmVzcGl0ZSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/82b228798a/BereksRespite.png"
     ],
     [
       "Call of the Brotherhood",
-      11,
+      12,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQnJvdGhlcmhvb2QiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/956d645be0/Brotherhood.png"
     ],
     [
       "Berek's Grip",
-      2,
+      3,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvQmVyZWtzR3JpcCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/7abb06d839/BereksGrip.png"
     ],
     [
@@ -3461,11 +3476,6 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvRXNzZW5jZVdvcm0iLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/4455cc009b/EssenceWorm.png"
     ],
     [
-      "Malachai's Artifice",
-      1,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTWFsYWNoYWlzQXJ0aWZpY2UiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/dfbb52ebfe/MalachaisArtifice.png"
-    ],
-    [
       "Voideye",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvdW51c2VkNCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/6f0e76fbbb/unused4.png"
@@ -3484,6 +3494,11 @@
       "Profane Proxy",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvU2tpdHRlcmJvdFJpbmciLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/20b7d215dd/SkitterbotRing.png"
+    ],
+    [
+      "Malachai's Artifice",
+      0,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvUmluZ3MvTWFsYWNoYWlzQXJ0aWZpY2UiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/dfbb52ebfe/MalachaisArtifice.png"
     ]
   ],
   "Ursine Pelt": [
@@ -3496,14 +3511,14 @@
   "Vaal Axe": [
     [
       "Hezmana's Bloodlust",
-      2,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kQXhlcy9IZXptYW5hc0Jsb29kbHVzdCIsInciOjIsImgiOjQsInNjYWxlIjoxfV0/fdbd48147f/HezmanasBloodlust.png"
     ]
   ],
   "Vaal Blade": [
     [
       "Rebuke of the Vaal",
-      4,
+      8,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kU3dvcmRzL09uZUhhbmRTd29yZDdVbmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/90312b1e4a/OneHandSword7Unique.png"
     ],
     [
@@ -3515,14 +3530,14 @@
   "Vaal Buckler": [
     [
       "Thousand Teeth Temu",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9TaGllbGRzL1NoaWVsZERleFVuaXF1ZTEiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/c466a1eb2a/ShieldDexUnique1.png"
     ]
   ],
   "Vaal Claw": [
     [
       "Essentia Sanguis",
-      2,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9DbGF3cy9DbGF3NVVuaXF1ZTIiLCJ3IjoyLCJoIjoyLCJzY2FsZSI6MX1d/8041876a9e/Claw5Unique2.png"
     ],
     [
@@ -3541,7 +3556,7 @@
   "Vaal Hatchet": [
     [
       "Jack, the Axe",
-      5,
+      4,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kQXhlcy9KYWNrdGhlYXhlIiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/f1f813fe9f/Jacktheaxe.png"
     ]
   ],
@@ -3569,7 +3584,7 @@
   "Vanguard Belt": [
     [
       "Perseverance",
-      3,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQmVsdHMvUGVyc2VydmVyYW5jZSIsInciOjIsImgiOjEsInNjYWxlIjoxfV0/1ff634248a/Perserverance.png"
     ],
     [
@@ -3630,7 +3645,7 @@
   "Viridian Jewel": [
     [
       "Unnatural Instinct",
-      144,
+      163,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1VubmF0dXJhbEluc3RpbmN0IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/c37fa5c2b6/UnnaturalInstinct.png"
     ],
     [
@@ -3640,13 +3655,13 @@
     ],
     [
       "Primordial Eminence",
-      5,
+      4,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dvbGVtQXJjdGljIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/8461900064/GolemArctic.png"
     ],
     [
-      "Lioneye's Fall",
+      "Hidden Potential",
       2,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0xpb25leWVzRmFsbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/164c5c1080/LioneyesFall.png"
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL3VuaXF1ZTE3IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/c445828c50/unique17.png"
     ],
     [
       "Quickening Covenant",
@@ -3654,9 +3669,19 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL3VuaXF1ZTEwIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/46d92a634d/unique10.png"
     ],
     [
-      "Hidden Potential",
+      "Lioneye's Fall",
+      2,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0xpb25leWVzRmFsbCIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/164c5c1080/LioneyesFall.png"
+    ],
+    [
+      "The Golden Rule",
+      2,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1RoZUdvbGRlblJ1bGUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/3c5f6382fc/TheGoldenRule.png"
+    ],
+    [
+      "Grand Spectrum",
       1,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL3VuaXF1ZTE3IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/c445828c50/unique17.png"
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dyZWVuR3JhbmRTcGVjdHJ1bSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/df87965e3f/GreenGrandSpectrum.png"
     ],
     [
       "Careful Planning",
@@ -3679,9 +3704,9 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1NUUnRvREVYIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/f5a4ea844d/STRtoDEX.png"
     ],
     [
-      "Grand Spectrum",
+      "Hair Trigger",
       1,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dyZWVuR3JhbmRTcGVjdHJ1bSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/df87965e3f/GreenGrandSpectrum.png"
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dyZWVuSmV3ZWwyIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/75f171fff6/GreenJewel2.png"
     ],
     [
       "Pugilist",
@@ -3699,11 +3724,6 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dyZWVuSmV3ZWw3IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/0d56abbd9a/GreenJewel7.png"
     ],
     [
-      "Volley Fire",
-      1,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JhcnJhZ2VNb2RpZmllciIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/97cd7a8046/BarrageModifier.png"
-    ],
-    [
       "Omen on the Winds",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0ljZVNob3RUaHJlc2hvbGQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/ed9a279d5a/IceShotThreshold.png"
@@ -3714,14 +3734,14 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0Zyb3N0QmxhZGVzVGhyZXNob2xkIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/62b32a4ed2/FrostBladesThreshold.png"
     ],
     [
+      "Ring of Blades",
+      1,
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0V0aGVyZWFsS25pdmVzVGhyZXNob2xkIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/542a20ca80/EtherealKnivesThreshold.png"
+    ],
+    [
       "Might and Influence",
       1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0R1YWxTdHJpa2VUaHJlc2hvbGQiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/5b9cbffbf2/DualStrikeThreshold.png"
-    ],
-    [
-      "The Golden Rule",
-      1,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL1RoZUdvbGRlblJ1bGUiLCJ3IjoxLCJoIjoxLCJzY2FsZSI6MX1d/3c5f6382fc/TheGoldenRule.png"
     ],
     [
       "Pure Talent",
@@ -3744,14 +3764,9 @@
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0NhbGxvZlN0ZWVsQXJlYSIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/dba6c19a38/CallofSteelArea.png"
     ],
     [
-      "Hair Trigger",
+      "Volley Fire",
       0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0dyZWVuSmV3ZWwyIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/75f171fff6/GreenJewel2.png"
-    ],
-    [
-      "Ring of Blades",
-      0,
-      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0V0aGVyZWFsS25pdmVzVGhyZXNob2xkIiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/542a20ca80/EtherealKnivesThreshold.png"
+      "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL0JhcnJhZ2VNb2RpZmllciIsInciOjEsImgiOjEsInNjYWxlIjoxfV0/97cd7a8046/BarrageModifier.png"
     ],
     [
       "Seething Fury",
@@ -3769,14 +3784,14 @@
   "Void Axe": [
     [
       "Kitava's Feast",
-      8,
+      12,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kQXhlcy9LaXRhdmFzSHVuZ2VyIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/7e0b7ac41a/KitavasHunger.png"
     ]
   ],
   "Void Sceptre": [
     [
       "Augyre",
-      3,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9TY2VwdGVycy9FbGRlclNjZXB0cmUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/325c7b1591/ElderSceptre.png"
     ],
     [
@@ -3800,7 +3815,7 @@
     ],
     [
       "Lavianga's Wisdom",
-      0,
+      1,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9PbmVIYW5kV2VhcG9ucy9PbmVIYW5kTWFjZXMvT25lSGFuZE1hY2UzYSIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/3c0044c7be/OneHandMace3a.png"
     ]
   ],
@@ -3821,7 +3836,7 @@
   "Widowsilk Robe": [
     [
       "Doedre's Skin",
-      3,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Eb2VkcmVzU2tpbiIsInciOjIsImgiOjMsInNjYWxlIjoxfV0/a04f3c7a0a/DoedresSkin.png"
     ]
   ],
@@ -3835,7 +3850,7 @@
   "Woodsplitter": [
     [
       "Limbsplit",
-      1,
+      0,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvV2VhcG9ucy9Ud29IYW5kV2VhcG9ucy9Ud29IYW5kQXhlcy9Ud29IYW5kQXhlX3NwYXJlIiwidyI6MiwiaCI6NCwic2NhbGUiOjF9XQ/6cc29798f1/TwoHandAxe_spare.png"
     ]
   ],
@@ -3849,7 +3864,7 @@
   "Wool Shoes": [
     [
       "Wanderlust",
-      1,
+      2,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb290cy9XYW5kZXJsdXN0IiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/c83c1c3bdc/Wanderlust.png"
     ]
   ],
@@ -3863,7 +3878,7 @@
   "Wyrmscale Doublet": [
     [
       "Gruthkul's Pelt",
-      24,
+      26,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9XaWxlZmFuZ3NQZWx0IiwidyI6MiwiaCI6Mywic2NhbGUiOjF9XQ/e393dbd9af/WilefangsPelt.png"
     ]
   ],
@@ -3877,7 +3892,7 @@
   "Zealot Gloves": [
     [
       "Hand of the Fervent",
-      5,
+      19,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9HbG92ZXMvR3JpcG9mU2FjcmlmaWNlIiwidyI6MiwiaCI6Miwic2NhbGUiOjF9XQ/9ac4073c28/GripofSacrifice.png"
     ],
     [
@@ -3906,7 +3921,7 @@
   "Zodiac Leather": [
     [
       "Hyrri's Ire",
-      3,
+      4,
       "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvQXJtb3Vycy9Cb2R5QXJtb3Vycy9Cb2R5RGV4M0NVbmlxdWUiLCJ3IjoyLCJoIjozLCJzY2FsZSI6MX1d/fb532d6c21/BodyDex3CUnique.png"
     ]
   ]
