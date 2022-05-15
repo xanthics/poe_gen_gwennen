@@ -114,6 +114,8 @@ def scrape_ninja():
 		# Seige of the Atlas
 		"Melding of the Flesh", "Crystallised Omniscience", "Sudden Dawn", "The Annihilating Light", "Ashes of the Stars", "Dissolution of the Flesh", "Polaric Devastation", "Forbidden Flame",
 		"Forbidden Flesh", "Ceaseless Feast", "Inextricable Fate", "The Gluttonous Tide", "Black Zenith", "Dawnbreaker",
+		# Sentinel new boss drops
+		"Call of the Void", "Echoes of Creation", "Impossible Escape", "Sublime Vision", "The Burden of Truth", "The Eternal Struggle",
 	}
 
 	# for when people pull stuff out of remove only tabs in league
@@ -158,7 +160,7 @@ def scrape_ninja():
 
 	show_10 = {}
 	seen_all = set()
-	for l_str, league in [('sc', 'Archnemesis'), ('hc', 'Hardcore Archnemesis')]:
+	for l_str, league in [('sc', 'Sentinel'), ('hc', 'Hardcore Sentinel')]:
 		show_10[l_str] = 0
 		vals = defaultdict(int)
 		# keep track of uniques we have seen so variants can be noticed
