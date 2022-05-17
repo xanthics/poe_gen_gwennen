@@ -124,7 +124,9 @@ def init_page():
 					el.attrs['hidden'] = ''
 
 
+# Initialize page to match first visit
 def first_load():
+	doc['help'].style.display = 'none'
 	doc["generate"].bind("click", generate_string)
 	doc["select_matching"].bind("click", select_matching)
 	doc["select_visible"].bind("click", select_visible)

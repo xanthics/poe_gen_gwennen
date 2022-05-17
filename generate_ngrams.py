@@ -1,32 +1,16 @@
 from collections import defaultdict
-from json import load
 from gen_items import gen_bases
 
 
-def main():
+def gen_grams(unique_data):
 	# generate all possible ngrams
 	ngrams = defaultdict(set)
 	bad_ngrams = set()
-	with open('sc_unique.json') as f:
-		sc_bases = load(f)
-	with open('hc_unique.json') as f:
-		hc_bases = load(f)
-	good_bases = {x for x in sc_bases | hc_bases}
+	good_bases = {x for x in unique_data['sc'] | unique_data['hc']}
 	# seed gen_bases with bad words to match on
 	gen_bases.extend([
-		{'name': 'Implicit Modifier'},
-		{'name': 'Evasion Rating'},
-		{'name': "Energy Shield"},
-		{'name': "Armour"},
-		{'name': 'Physical Damage'},
-		{'name': 'Critical Strike Chance'},
-		{'name': 'Attacks per Second'},
-		{'name': 'Weapon Range'},
-		{'name': 'Item Level'},
-		{'name': 'Requires'},
-		{'name': 'Str'},
-		{'name': 'Dex'},
-		{'name': 'Int'}
+		{'name': x} for x in {'Implicit Modifier', 'Evasion Rating', "Energy Shield", "Armour", 'Physical Damage', 'Critical Strike Chance',
+		                      'Attacks per Second', 'Weapon Range', 'Item Level', 'Requires', 'Str', 'Dex', 'Int'}
 	])
 	# Todo: add proper support for items with base types that have multiple implicits.  EG two-stone and Call of the Brotherhood
 	for item in gen_bases:
@@ -80,7 +64,7 @@ def main():
 		for bigger_base in child[c]:
 			ngrams[f"{bigger_base}§{c}"] = ngrams[bigger_base] - ngrams[c]
 
-	with open('ngram_generated.py', 'w', encoding='utf-8') as f:
+	with open('docs/ngram_generated.py', 'w', encoding='utf-8') as f:
 		f.write('subnames = {\n')
 		for base in child:
 			f.write(f'\t"{base}": {sorted(child[base])},\n')
@@ -92,7 +76,3 @@ def main():
 			n_sort = '", "'.join(sorted(ngrams[base]))
 			f.write(f'\t"{base}": {{"{n_sort}"}},\n')
 		f.write('}')
-
-
-if __name__ == '__main__':
-	main()

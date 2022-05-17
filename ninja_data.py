@@ -1,20 +1,11 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-# Author: Jeremy Parks
-# Note: Requires Python 3.7.x or higher
-# Gets current price data from poe.ninja
-import json
 import requests
 from collections import defaultdict
+
 from gen_items import gen_bases
-from datetime import datetime
 
 
 # get price data from poe.ninja
 def scrape_ninja():
-	now = datetime.now().strftime("%Y/%m/%d, %H:%M")
-	with open('last_update.py', 'w') as f:
-		f.write(f'time = "{now}"')
 	good_bases = [x['name'] for x in gen_bases]
 	# List of items that cannot be gambled
 	bad_names = {
@@ -143,6 +134,8 @@ def scrape_ninja():
 		"Maloney's Nightfall": ["Blunt Arrow Quiver"],
 		"Scorpion's Call": ["Broadhead Arrow Quiver"],
 		"Voidfletcher": ["Penetrating Arrow Quiver"],
+		"Windripper": ["Long Bow"],
+		"Lightbane Raiment": ["Chainmail Vest"],
 	}
 
 	keys = [
@@ -159,19 +152,20 @@ def scrape_ninja():
 	}
 
 	show_10 = {}
+	unique_data = {}
 	seen_all = set()
 	for l_str, league in [('sc', 'Sentinel'), ('hc', 'Hardcore Sentinel')]:
 		show_10[l_str] = 0
+		unique_data[l_str] = defaultdict(list)
 		vals = defaultdict(int)
 		# keep track of uniques we have seen so variants can be noticed
 		seen = set()
-		price_val = defaultdict(list)
 		# add atlas bases as possible purchase targets for influence
 		for base in [
 			"Apothecary's Gloves", "Fingerless Silk Gloves", "Fugitive Boots", "Gripped Gloves", "Spiked Gloves", "Two-Toned Boots", "Convoking Wand", "Bone Helmet", "Artillery Quiver", "Marble Amulet",
 			"Seaglass Amulet", "Blue Pearl Amulet", "Iolite Ring", "Vanguard Belt", "Crystal Belt", "Cerulean Ring", "Opal Ring", "Steel Ring", "Vermillion Ring"
 		]:
-			price_val[base].append(['Influenced Base', 0, 'img/influenced_base.png'])
+			unique_data[l_str][base].append(['Influenced Base', 0, 'img/influenced_base.png'])
 
 		for key in keys:
 			missing_unhandled = []
@@ -193,7 +187,7 @@ def scrape_ninja():
 					# keep track of the 10 most expensive bases
 					if vals[i['baseType']] < i['chaosValue']:
 						vals[i['baseType']] = i['chaosValue']
-					price_val[i['baseType']].append([i['name'], int(i['chaosValue']), i['icon']])
+					unique_data[l_str][i['baseType']].append([i['name'], int(i['chaosValue']), i['icon']])
 					if i['name'] in seen:
 						seen_all.add(i['name'])
 					seen.add(i['name'])
@@ -205,24 +199,10 @@ def scrape_ninja():
 				missing_str = '\n\t'.join(missing_unhandled)
 				print(f"{key} is missing presets for the following items:\n\t{missing_str}")
 
-		# sort by value decending
-		for base in price_val:
-			price_val[base] = sorted(price_val[base], key=lambda x: x[1], reverse=True)
-		with open(f'{l_str}_unique.json', 'w') as f:
-			json.dump(price_val, f, sort_keys=True, indent=2)
-
 		# set devault value to show the 10 most valuable bases
 		show_10[l_str] = int(sorted(vals.values(), reverse=True)[9])
 
 	if seen_all:
 		print(f"Variants found for the following uniques: {seen_all}")
-	with open('show_10.json', 'w') as f:
-		json.dump(show_10, f, sort_keys=True, indent=2)
 
-
-if __name__ == '__main__':
-	scrape_ninja()
-	import generate_ngrams
-	generate_ngrams.main()
-	import gen_index
-	gen_index.main()
+	return show_10, unique_data
