@@ -6,3 +6,8 @@ auto_gen/__pycache__/
 /last_ninja_check
 geckodriver.exe
 geckodriver.log
+/docs/js/unicode.txt
+/docs/js/brython_stdlib.js
+/docs/js/demo.html
+/docs/js/README.txt
+/docs/js/index.html

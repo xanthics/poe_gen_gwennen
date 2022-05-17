@@ -52,7 +52,6 @@ ngrams = {
 	"cerulean ring": {"eru", "n ri", "ule"},
 	"chain belt": {"bel", "n be"},
 	"chain gloves": {"ain g"},
-	"chainmail vest": {"l v"},
 	"champion kite shield": {"amp", "on k"},
 	"chiming spirit shield": {"chi", "ng sp"},
 	"citrine amulet": {"amu", "e am", "itr", "ule"},

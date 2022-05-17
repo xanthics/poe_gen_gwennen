@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="description" content="PoE Gwennen regex generator." />
+        <meta name="keywords" content="best videogames, free to play, free game, online games, fantasy games, PC games, PC gaming, Path of Exile" />
+        <meta charset="UTF-8">
+        <title>{% if softcore %}Softcore{% else %}Hardcore{% endif %} Gwennen Regex Generator</title>
+        <script type="text/javascript" src="js/brython.js"></script>
+        <script type="text/javascript" src="js/brython_modules.js"></script>
+        <link href="css/layout.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    </head>
+    <body onload="brython({debug: 1})">
+        <section class="main">
+            <div id="loading">
+                This page requires javascript in order to work correctly.
+                <br><br>
+                This page may take a moment to load.
+            </div>
+            <h2>Gwennen Search String Generator</h2>
+            <div id="regex_box">
+				<div><button id='generate'>Generate String</button></div>
+				<div id="generated_strings", class='sec_div grind'>No strings generated yet.</div>
+            </div>
+            <div id="show_hide">
+				<table>
+					<tr><th></th><th>Selection</th></tr>
+					<tr><td class="right_text">Always show selected rows</td><td><select id="always_show" class="save onehundred"><option value=show>Show</option><option value=hide>Hide</option></select></td></tr>
+					<tr><td class="right_text">Show low value items in row:</td><td><select id="hide_low_value" class="save onehundred"><option value=hide>Hide</option><option value=show>Show</option></select></td></tr>
+					<tr><td class="right_text">Minimum Chaos value to show:</td><td><input type='number' min='0' step="1" value="{{ show_10 }}" id="chaos_filter" class='save'></td></tr>
+					<tr><td class="right_text">Keyword(s) Search:</td><td><input type='text' id="keywords" class='save'><button id='clear_keywords'>x</button></td></tr>
+				</table>
+				<br />
+				<div><button id='select_matching'>Select Matching Only</button></div>
+				<div><button id='select_visible'>Select Visible</button></div>
+				<div><button id='clear_selected'>Clear Selected</button></div>
+	        </div>
+            <div id="items">
+				<table class="borders onehundred">
+					<tr><th class='col_1'>Selected</th><th class='col_2'>Base</th><th>Item(s)</th></tr>
+					{% for base in unique_data %}
+						{% set base_l = base.lower() %}
+						<tr data-id="{{ base_l }}" data-value="{{ unique_data[base][0][1] }}" data-search="{{ base_l | search_string(unique_data[base]) }}"{% if unique_data[base][0][1] < show_10 %} hidden{% endif %}><td><INPUT id="check-{{ base_l.replace(' ', '_') }}" type='checkbox' data-id="{{ base_l }}" class='save'></td><td>{{ base }}</td><td>{{ base_l | gen_images(unique_data[base], show_10) }}</td></tr>
+					{% endfor %}
+				</table>
+            </div>
+        </section>
+        <footer>
+            <p>This page begins new league updates once Mageblood is on poe.ninja for softcore league.  Some rarer items may be missing from hardcore market due to league size.</p>
+            <div id="helpsection">
+            <button id='toggle_help'>Show Help and About</button>
+            <section id="help">
+            <p>This page generates simple regex search strings that are compatible with Path of Exile.  It uses price data from poe.ninja to present an initial selection that you can then personalize by changing the search filters and changing which item bases are selected.  This tool does a lot of work behind the scene to generate compact search strings while staying within PoE's character limit.</p>
+            <hr />
+            <p>Atlas bases are available to select via 'Influenced Base', they have chaos value set to 0.</p>
+            <hr />
+            <p>Default Minimum Chaos is initialized to show 10 bases for the current league.  If you would like to select other bases, use the selection filters to change what is visible.</p>
+            <p><strong>Keyword(s) search</strong> overrides all other filter settings.  Clear keyword search to use them.  Search can display an empty row if it's the combination of two or more uniques on a base that matches the search terms.  EG 'gold rim' will show Viridian Jewel base because 2 separate uniques partially match the search.</p>
+            <p>Clicking <strong>Generate String</strong> will generate search strings based on all selected rows.  This can cause many calculations and may take a bit to return a result</p>
+            <p>Due to limitations on the size of the search box in game you may be given more than 1 search string.  If this happens you have 2 choices.</p>
+            <ul>
+				<li>"Remove some items that you are looking for until the string is short enough."</li>
+				<li>"Paste each line for each page of items. Awakened PoE Trade, or win 10 multi-clipboard(built in) make it a lot less painful."</li>
+			</ul>
+            <hr />
+            <p><strong>Select Matching Only</strong> selects only rows that match current Keyword(s) Search or Minimum Chaos settings and deselects all others.</p>
+            <p><strong>Select Visible</strong> adds all rows that match current Keyword(s) Search or Minimum Chaos to current selection.</p>
+            <p><strong>Clear Selected</strong> deselects all rows.</p>
+			</section>
+            </div>
+            <p id="otherversion">
+			{% if softcore %}
+				<a href="/poe_gen_gwennen/index_hc.html" target="_blank">Hardcore Market here</a>
+			{% else %}
+				<a href="/poe_gen_gwennen/" target="_blank">Softcore Market here</a>
+			{% endif %}
+			</p>
+            <p><a href="https://github.com/xanthics/poe_gen_gwennen/discussions" target="_blank">Suggestions</a><br /><a href="https://github.com/xanthics/poe_gen_gwennen/issues" target="_blank">Bugs</a></p>
+            <p id="time">poe.ninja data last updated at {{ update }} PST</p>
+            <section class="disclaimer">
+                <h3>Notice of Non-Affiliation</h3>
+                <p>This site is not affiliated, associated, authorized, endorsed by, or in any way officially connected with Grinding Gear Games, or any of its subsidiaries or its affiliates. The official Path of Exile website can be found at https://www.pathofexile.com</p>
+                <p>The names Grinding Gear Games and Path of Exile as well as related names, marks, emblems and images are registered trademarks of their respective owners.  The use of any trade name or trademark is for clarifying purposes only and does not imply any association with the trademark holder of their product brand.</p>
+            </section>
+            <br />
+            <div id="sponsor">
+                <div id="github_image"><a href="https://github.com/sponsors/xanthics" target="_blank"><img alt="Sponsor me on Github!" src="img/github_sponsor.png" class="sponsor_img"></a></div>
+                <div id="patreon_image"><a href="https://www.patreon.com/xanthics" target="_blank"><img alt="Become a Patron!" src="img/become_a_patron_button@2x.png" class="sponsor_img"></a></div>
+            </div>
+        </footer>
+        <script type="text/python" src="ngram_generated.py"></script>
+        <script type="text/python" class="webworker" id="myworker" src="web_worker.py"></script>
+        <script type="text/python" src="main.py"></script>
+    </body>
+</html>
