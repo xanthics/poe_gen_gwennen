@@ -21,7 +21,7 @@
             <h2>Gwennen Search String Generator</h2>
             <div id="regex_box">
 				<div><button id='generate'>Generate String</button></div>
-				<div id="generated_strings", class='sec_div grind'>No strings generated yet.</div>
+				<div id="generated_strings" class='sec_div grind'>No strings generated yet.</div>
             </div>
             <div id="show_hide">
 				<table>
@@ -41,7 +41,7 @@
 					<tr><th class='col_1'>Selected</th><th class='col_2'>Base</th><th>Item(s)</th></tr>
 					{% for base in unique_data %}
 						{% set base_l = base.lower() %}
-						<tr data-id="{{ base_l }}" data-value="{{ unique_data[base][0][1] }}" data-search="{{ base_l | search_string(unique_data[base]) }}"{% if unique_data[base][0][1] < show_10 %} hidden{% endif %}><td><INPUT id="check-{{ base_l.replace(' ', '_') }}" type='checkbox' data-id="{{ base_l }}" class='save'></td><td>{{ base }}</td><td>{{ base_l | gen_images(unique_data[base], show_10) }}</td></tr>
+						<tr data-id="{{ base_l }}" data-value="{{ unique_data[base][0][1] }}" data-search="{{ base_l | search_string(unique_data[base]) }}"{% if unique_data[base][0][1] < show_10 %} hidden{% endif %}><td><input id="check-{{ base_l.replace(' ', '_') }}" type='checkbox' data-id="{{ base_l }}" class='save'></td><td>{{ base }}</td><td>{{ base_l | gen_images(unique_data[base], show_10) }}</td></tr>
 					{% endfor %}
 				</table>
             </div>

@@ -17,7 +17,7 @@ def search_string(base_l, data):
 
 def gen_images(base_l, data, show_10):
 	"""Generate a series of images"""
-	return ''.join(f'<span class="container{" hidden_class" if x[1] < show_10 else ""}", data-value={x[1]} data-search="{base_l}, {x[0].lower()}"><img src={x[2]} alt={x[0]} title={x[0]} class="item_icon" loading="lazy"><span class="bottom-right">{simple_format(x[1])}</span></span>' for x in data)
+	return ''.join(f'<span class="container{" hidden_class" if x[1] < show_10 else ""}" data-value="{x[1]}" data-search="{base_l}, {x[0].lower()}"><img src="{x[2]}" alt="{x[0]}" title="{x[0]}" class="item_icon" loading="lazy"><span class="bottom-right">{simple_format(x[1])}</span></span>' for x in data)
 
 
 def render_guide(show_10, unique_data):
