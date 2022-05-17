@@ -21,7 +21,7 @@ def main():
 	render_guide(show_10, unique_data)
 
 	# generate compact brython.js
-	# update_brython()
+	update_brython()
 	proc = subprocess.Popen(['brython-cli', '--modules'], cwd='docs')
 	proc.wait()
 
