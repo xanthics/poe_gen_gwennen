@@ -12,6 +12,7 @@
     </head>
     <body onload="brython({debug: 1})">
         <section class="main">
+            {% if not softcore %}<p>Some rarer items may be missing from hardcore market due to league size.</p>{% endif %}
             <div id="loading">
                 This page requires javascript in order to work correctly.
                 <br><br>
@@ -46,7 +47,7 @@
             </div>
         </section>
         <footer>
-            <p>This page begins new league updates once Mageblood is on poe.ninja for softcore league.  Some rarer items may be missing from hardcore market due to league size.</p>
+            <p>This page begins new league updates once Mageblood is on poe.ninja for softcore league.</p>
             <div id="helpsection">
             <button id='toggle_help'>Show Help and About</button>
             <section id="help">
