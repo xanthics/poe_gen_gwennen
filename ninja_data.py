@@ -105,7 +105,7 @@ def scrape_ninja():
 		# Seige of the Atlas
 		"Melding of the Flesh", "Crystallised Omniscience", "Sudden Dawn", "The Annihilating Light", "Ashes of the Stars", "Dissolution of the Flesh", "Polaric Devastation", "Forbidden Flame",
 		"Forbidden Flesh", "Ceaseless Feast", "Inextricable Fate", "The Gluttonous Tide", "Black Zenith", "Dawnbreaker",
-		# Sentinel new boss drops
+		# Sentinel uber boss drops
 		"Call of the Void", "Echoes of Creation", "Impossible Escape", "Sublime Vision", "The Burden of Truth", "The Eternal Struggle",
 	}
 
@@ -134,8 +134,12 @@ def scrape_ninja():
 		"Maloney's Nightfall": ["Blunt Arrow Quiver"],
 		"Scorpion's Call": ["Broadhead Arrow Quiver"],
 		"Voidfletcher": ["Penetrating Arrow Quiver"],
+		# 0 index is a bugged base
 		"Windripper": ["Long Bow"],
 		"Lightbane Raiment": ["Chainmail Vest"],
+		"Relic of the Pact": ["Carved Wand"],
+		"Divinarius": ["Carving Knife"],
+		"Grelwood Shank": ["Broad Sword"],
 	}
 
 	keys = [
