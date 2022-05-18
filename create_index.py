@@ -13,6 +13,11 @@ def update_brython():
 		f_file = f"docs/js/{file}"
 		if os.path.exists(f_file):
 			os.remove(f_file)
+	proc = subprocess.Popen(['brython-cli', '--modules'], cwd='docs')
+	proc.wait()
+	f_file = "docs/js/brython_stdlib.js"
+	if os.path.exists(f_file):
+		os.remove(f_file)
 
 
 def main():
@@ -21,9 +26,7 @@ def main():
 	render_guide(show_10, unique_data)
 
 	# generate compact brython.js
-	# update_brython()
-	proc = subprocess.Popen(['brython-cli', '--modules'], cwd='docs')
-	proc.wait()
+	update_brython()
 
 
 if __name__ == '__main__':
