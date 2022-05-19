@@ -134,12 +134,23 @@ def scrape_ninja():
 		"Maloney's Nightfall": ["Blunt Arrow Quiver"],
 		"Scorpion's Call": ["Broadhead Arrow Quiver"],
 		"Voidfletcher": ["Penetrating Arrow Quiver"],
-		# 0 index is a bugged base
+		# 0 index is a bugged royale base types that are dropping live
+		"Abyssus": ["Cone Helmet"],
+		"Actum": ["Boarding Axe"],
+		"Aurseize": ["Fishscale Gauntlets"],
+		"Bloodseeker": ["Sharktooth Claw"],
+		"Cloak of Defiance": ["Padded Vest"],
+		"Kaom's Heart": ["War Plate"],
+		"Lioneye's Paws": ["Leatherscale Boots"],
+		"Martyr of Innocence": ["Long Staff"],
+		"Rat's Nest": ["Leather Cap"],
 		"Windripper": ["Long Bow"],
 		"Lightbane Raiment": ["Chainmail Vest"],
 		"Relic of the Pact": ["Carved Wand"],
 		"Divinarius": ["Carving Knife"],
 		"Grelwood Shank": ["Broad Sword"],
+		"The Gull": ["Scare Mask"],
+		"Moonbender's Wing": ["Jade Hatchet"],
 	}
 
 	keys = [

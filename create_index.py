@@ -13,7 +13,7 @@ def update_brython():
 		f_file = f"docs/js/{file}"
 		if os.path.exists(f_file):
 			os.remove(f_file)
-	proc = subprocess.Popen(['brython-cli', '--modules'], cwd='docs')
+	proc = subprocess.Popen(['brython-cli', 'make_modules'], cwd='docs')
 	proc.wait()
 	f_file = "docs/js/brython_stdlib.js"
 	if os.path.exists(f_file):
