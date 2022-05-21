@@ -7,7 +7,7 @@ from render_guide import render_guide
 
 
 def update_brython():
-	proc = subprocess.Popen(['brython-cli', '--install'], cwd='docs/js')
+	proc = subprocess.Popen(['brython-cli', 'install'], cwd='docs/js')
 	proc.wait()
 	for file in ['demo.html', 'index.html', 'README.txt', 'unicode.txt']:
 		f_file = f"docs/js/{file}"
@@ -26,7 +26,7 @@ def main():
 	render_guide(show_10, unique_data)
 
 	# generate compact brython.js
-	update_brython()
+	# update_brython()
 
 
 if __name__ == '__main__':
