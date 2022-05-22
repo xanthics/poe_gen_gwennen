@@ -166,6 +166,12 @@ def scrape_ninja():
 		'From': 'xanthic42+ninja@gmail.com'
 	}
 
+	atlas_bases = {
+		'UniqueArmour': {"Apothecary's Gloves", "Fingerless Silk Gloves", "Fugitive Boots", "Gripped Gloves", "Spiked Gloves", "Two-Toned Boots", "Bone Helmet", "Artillery Quiver"},
+		'UniqueWeapon': {"Convoking Wand"},
+		'UniqueAccessory': {"Marble Amulet", "Seaglass Amulet", "Blue Pearl Amulet", "Iolite Ring", "Vanguard Belt", "Crystal Belt", "Cerulean Ring", "Opal Ring", "Steel Ring", "Vermillion Ring"}
+	}
+
 	show_10 = {}
 	unique_data = {}
 	seen_all = set()
@@ -176,11 +182,9 @@ def scrape_ninja():
 		# keep track of uniques we have seen so variants can be noticed
 		seen = set()
 		# add atlas bases as possible purchase targets for influence
-		for base in [
-			"Apothecary's Gloves", "Fingerless Silk Gloves", "Fugitive Boots", "Gripped Gloves", "Spiked Gloves", "Two-Toned Boots", "Convoking Wand", "Bone Helmet", "Artillery Quiver", "Marble Amulet",
-			"Seaglass Amulet", "Blue Pearl Amulet", "Iolite Ring", "Vanguard Belt", "Crystal Belt", "Cerulean Ring", "Opal Ring", "Steel Ring", "Vermillion Ring"
-		]:
-			unique_data[l_str][base].append(['Influenced Base', 0, 'img/influenced_base.png'])
+		for val in atlas_bases:
+			for base in atlas_bases[val]:
+				unique_data[l_str][base].append(('Influenced Base', 0, 'img/influenced_base.png', val))
 
 		for key in keys:
 			missing_unhandled = []
@@ -192,7 +196,7 @@ def scrape_ninja():
 				continue
 			data = req.json()
 
-			if key in ['UniqueJewel', 'UniqueWeapon', 'UniqueArmour', 'UniqueAccessory']:
+			if key in {'UniqueJewel', 'UniqueWeapon', 'UniqueArmour', 'UniqueAccessory'}:
 				for i in data['lines']:
 					if ((('links' in i and i['links']) or 'relic' in i['icon']) and i['name'] != 'Tabula Rasa') or 'Replica' in i['name'] or i['name'] in bad_names or (i['name'] in legacy_base and i['baseType'] in legacy_base[i['name']]):
 						continue
@@ -202,7 +206,7 @@ def scrape_ninja():
 					# keep track of the 10 most expensive bases
 					if vals[i['baseType']] < i['chaosValue']:
 						vals[i['baseType']] = i['chaosValue']
-					unique_data[l_str][i['baseType']].append([i['name'], int(i['chaosValue']), i['icon']])
+					unique_data[l_str][i['baseType']].append((i['name'], int(i['chaosValue']), i['icon'], key))
 					if i['name'] in seen:
 						seen_all.add(i['name'])
 					seen.add(i['name'])

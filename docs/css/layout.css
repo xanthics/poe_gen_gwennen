@@ -129,6 +129,7 @@ button:hover {
 table {
 	border-collapse: collapse;
 	table-layout: fixed;
+	margin-top: 10px;
 }
 
 .col_1 {

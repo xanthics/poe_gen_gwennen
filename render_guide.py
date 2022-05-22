@@ -1,6 +1,7 @@
 from jinja2 import Environment, FileSystemLoader
 from htmlmin import minify
 from datetime import datetime
+from collections import defaultdict
 
 
 def simple_format(value):
@@ -30,11 +31,24 @@ def render_guide(show_10, unique_data):
 
 	template = env.get_template('index.html.jinja')
 
+	keys = {
+		'UniqueJewel': 'Exceptional Broken Circle Artifact',
+		'UniqueWeapon': 'Greater Broken Circle Artifact',
+		'UniqueArmour': 'Lesser Broken Circle Artifact',
+		'UniqueAccessory': 'Grand Broken Circle Artifact'
+	}
+
 	for softcore, league in [(True, 'sc'), (False, 'hc')]:
+		# set up tables
+		table_data = {keys[k]: defaultdict(list) for k in keys}
+		for basetype in sorted(unique_data[league]):
+			key = keys[unique_data[league][basetype][0][3]]
+			table_data[key][basetype] = unique_data[league][basetype]
+
 		output = template.render(
 			softcore=softcore,
 			show_10=show_10[league],
-			unique_data=unique_data[league],
+			unique_data=table_data,
 			update=datetime.now().strftime("%Y/%m/%d, %H:%M")
 		)
 
