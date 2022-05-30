@@ -5,8 +5,8 @@
         <meta name="keywords" content="best videogames, free to play, free game, online games, fantasy games, PC games, PC gaming, Path of Exile" />
         <meta charset="UTF-8">
         <title>{% if softcore %}Softcore{% else %}Hardcore{% endif %} Gwennen Regex Generator</title>
-        <script type="text/javascript" src="js/brython.js"></script>
-        <script type="text/javascript" src="js/brython_modules.js"></script>
+        <script src="js/brython.js"></script>
+        <script src="js/brython_modules.js"></script>
         <link href="css/layout.css" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     </head>
@@ -39,7 +39,7 @@
             <div id="items">
                 {% for artifact in ['Lesser Broken Circle Artifact', 'Greater Broken Circle Artifact', 'Grand Broken Circle Artifact', 'Exceptional Broken Circle Artifact'] %}
 				<table class="borders onehundred">
-				    <tr><th colspan=3><h2>{{ artifact }}</h2></th></tr>
+				    <tr><th colspan=3><span class="title_text">{{ artifact }}</span></th></tr>
 					<tr><th class='col_1'>Selected</th><th class='col_2'>Base</th><th>Item(s)</th></tr>
 					{% for base in unique_data[artifact] %}
 						{% set base_l = base.lower() %}
@@ -53,7 +53,7 @@
             <p>This page begins new league updates once Mageblood is on poe.ninja for softcore league.</p>
             <div id="helpsection">
             <button id='toggle_help'>Show Help and About</button>
-            <section id="help">
+            <div id="help">
             <p>This page generates simple regex search strings that are compatible with Path of Exile.  It uses price data from poe.ninja to present an initial selection that you can then personalize by changing the search filters and changing which item bases are selected.  This tool does a lot of work behind the scene to generate compact search strings while staying within PoE's character limit.</p>
             <hr />
             <p>Atlas bases are available to select via 'Influenced Base', they have chaos value set to 0.</p>
@@ -70,7 +70,7 @@
             <p><strong>Select Matching Only</strong> selects only rows that match current Keyword(s) Search or Minimum Chaos settings and deselects all others.</p>
             <p><strong>Select Visible</strong> adds all rows that match current Keyword(s) Search or Minimum Chaos to current selection.</p>
             <p><strong>Clear Selected</strong> deselects all rows.</p>
-			</section>
+			</div>
             </div>
             <p id="otherversion">
 			{% if softcore %}

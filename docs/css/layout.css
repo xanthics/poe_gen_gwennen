@@ -28,6 +28,7 @@ body {
 
 header, footer,
 .sec_div,
+#help,
 section {
 	text-align: justify;
 	color: rgb(200, 200, 200);
@@ -231,4 +232,10 @@ option {
 
 .disclaimer {
     font-size: small;
+}
+
+.title_text {
+    font-size: 1.5em;
+    padding: 10px;
+    display: block;
 }
