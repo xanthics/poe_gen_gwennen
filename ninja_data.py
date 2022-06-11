@@ -7,8 +7,10 @@ from gen_items import gen_bases
 # get price data from poe.ninja
 def scrape_ninja():
 	good_bases = [x['name'] for x in gen_bases]
-	# List of items that cannot be gambled
+	# List of items that cannot be gambled -- Uniques which have a base type that cannot spawn on gwennen are included as well but commented out.  EG flasks or runic bases
 	bad_names = {
+		# Vinktar's Square
+		# Vessel of Vinktar
 		# Quest Items
 		"Survival Instincts", "Survival Secrets", "Survival Skills", "Conqueror's Longevity", "Conqueror's Potency", "Conqueror's Efficiency",
 		"Assassin's Haste", "Poacher's Aim", "Warlord's Reach",
@@ -27,11 +29,12 @@ def scrape_ninja():
 		'The Anima Stone', 'Arborix', 'Duskdawn', 'The Goddess Scorned', 'The Goddess Unleashed', 'Kingmaker', 'Magna Eclipsis', 'The Retch', 'Star of Wraeclast', 'The Taming',
 		'The Vinktar Square', 'Loreweave',
 		# incursion uniques from upgrades
-		'Transcendent Flesh', 'Transcendent Mind', 'Transcendent Spirit', 'Soul Ripper', 'Slavedriver\'s Hand', 'Coward\'s Legacy', 'Omeyocan', 'Fate of the Vaal', 'Mask of the Stitched Demon',
-		'Apep\'s Supremacy', 'Zerphi\'s Heart',
+		'Transcendent Flesh', 'Transcendent Mind', 'Transcendent Spirit', 'Slavedriver\'s Hand', 'Coward\'s Legacy', 'Omeyocan', 'Fate of the Vaal', 'Mask of the Stitched Demon', 'Apep\'s Supremacy', 'Zerphi\'s Heart',
+		# "Soul Catcher",
 		# incursion uniques
 		'Sacrificial Heart', 'String of Servitude', 'Tempered Flesh', 'Tempered Mind', 'Tempered Spirit',
 		'Shadowstitch', "Apep's Slumber", "Architect's Hand", "Coward's Chains", 'Dance of the Offered', 'Mask of the Spirit Drinker', 'Story of the Vaal',
+		# 'Soul Ripper',
 		# Breach Uniques
 		'Xoph\'s Nurture', 'The Formless Inferno', 'Xoph\'s Blood', 'Tulfall', 'The Perfect Form', 'The Pandemonius', 'Hand of Wisdom and Action', 'Esh\'s Visage', 'Choir of the Storm',
 		'Uul-Netol\'s Embrace', 'The Red Trail', 'The Surrender', 'United in Dream', 'Skin of the Lords', 'Presence of Chayula', 'The Red Nightmare', 'The Green Nightmare', 'The Blue Nightmare',
@@ -47,12 +50,14 @@ def scrape_ninja():
 		# upgraded harbinger uniques
 		"The Torrent's Reclamation", "The Shattered Divinity", "The Tempest's Liberation", "The Surging Thoughts", "The Yielding Mortality", "The Immortal Will",
 		# Guardians, Shaper, and Elder
-		"Voidwalker", "Shaper's Touch", "Starforge", "Dying Sun", 'Solstice Vigil',
+		"Voidwalker", "Shaper's Touch", "Starforge", 'Solstice Vigil',
 		"Blasphemer's Grasp", "Shimmeron", "Nebuloch", "Hopeshredder", "Impresence", "Cyclopean Coil",
 		"Indigon", "The Eternity Shroud", "Disintegrator", "Voidforge", "Mark of the Elder", "Mark of the Shaper", "Voidfletcher", "Watcher's Eye",
+		# "Dying Sun",
 		# Atziri
-		"Atziri's Step", "Doryani's Catalyst", "Doryani's Invitation", "Atziri's Promise", "Atziri's Reflection",
+		"Atziri's Step", "Doryani's Catalyst", "Doryani's Invitation", "Atziri's Reflection",
 		"The Vertex", "Atziri's Splendour", "Atziri's Acuity", "Atziri's Disfavour", "Pledge of Hands",
+		# "Atziri's Promise",
 		# Maven
 		"Arn's Anguish", "Graven's Secret", "Olesya's Delight", "Viridi's Veil", 'The Walls', 'The Claim', 'The Closest Peak', 'Atop the Atlas', 'The Vast Horizon', 'The Builder', 'Restless Cycles', 'The False Hope', 'Legacy of Fury',  'Doppelgänger Guise',
 		# Bestiary League
@@ -65,7 +70,8 @@ def scrape_ninja():
 		# Doryani's Machinarium
 		"Doryani's Delusion",
 		# Synthesis League
-		"Bottled Faith", "Perepiteia", "Mask of the Tribunal", "Garb of the Ephemeral", "Offering to the Serpent", "Storm's Gift", "Nebulis", "Circle of Guilt", "Circle of Regret", "Circle of Fear", "Circle of Anguish", "Circle of Nostalgia",
+		"Perepiteia", "Mask of the Tribunal", "Garb of the Ephemeral", "Offering to the Serpent", "Storm's Gift", "Nebulis", "Circle of Guilt", "Circle of Regret", "Circle of Fear", "Circle of Anguish", "Circle of Nostalgia",
+		# "Bottled Faith",
 		# Labyrinth
 		"Glitterdisc", "Viper's Scales", "Death's Door", "Winds of Change", "Izaro's Dilemma", "Chitus' Needle", "Spine of the First Claimant", "Xirgil's Crank", "Izaro's Turmoil",
 		"Emperor's Might", "Emperor's Cunning", "Emperor's Wit", "Emperor's Mastery",
@@ -81,7 +87,8 @@ def scrape_ninja():
 		"Ahkeli's Mountain", "Ahkeli's Meadow", "Ahkeli's Valley",
 		"Precursor's Emblem",
 		# Betrayal League
-		"Bitterbind Point", "The Devouring Diadem", "The Queen's Hunger", "Cinderswallow", "Paradoxica", "The Crimson Storm", "Hyperboreus", 'Vivinsect', "Cloak of Tawm'r Isley",
+		"Bitterbind Point", "The Devouring Diadem", "The Queen's Hunger", "Paradoxica", "The Crimson Storm", "Hyperboreus", 'Vivinsect', "Cloak of Tawm'r Isley",
+		# "Cinderswallow Urn",
 		# Blight League
 		"Breathstealer", "Cowl of the Ceraunophile", "Cowl of the Cryophile", "Cowl of the Thermophile", "Sporeguard", "The Stampede",
 		# Conqueror
@@ -101,12 +108,16 @@ def scrape_ninja():
 		"Atziri's Rule", "Cane of Kulemak", "Glimpse of Chaos", "Hateforge", "Mahuxotl's Machination", "Relic of the Pact", "Steelworm", "Temptation Step", "The Scales of Justice", "Triumvirate Authority", "Yaomac's Accord",
 		# Scourge
 		"Stranglegasp", "Uul-Netol's Vow", "Stasis Prison",
-		# Archnemesis
-		# Seige of the Atlas
+		# Archnemesis & Seige of the Atlas
 		"Melding of the Flesh", "Crystallised Omniscience", "Sudden Dawn", "The Annihilating Light", "Ashes of the Stars", "Dissolution of the Flesh", "Polaric Devastation", "Forbidden Flame",
 		"Forbidden Flesh", "Ceaseless Feast", "Inextricable Fate", "The Gluttonous Tide", "Black Zenith", "Dawnbreaker",
 		# Sentinel uber boss drops
 		"Call of the Void", "Echoes of Creation", "Impossible Escape", "Sublime Vision", "The Burden of Truth", "The Eternal Struggle",
+		# Abyss Jewels (Cannot generate bases on gwennen.. yet?)
+		# "Amanamu's Gaze", "Tecrod's Gaze", "Ulaman's Gaze", "Kurgal's Gaze",
+		# Expedition runic uniques (Cannot generate bases on gwennen.. yet?)
+		# "Cadigan's Crown", "Faithguard", "Medved's Challenge", "Nightgrip", "Olroth's Charge", "Usurper's Penance", "Vorana's March",
+		# "Elixir of the Unbroken Circle", "Olroth's Resolve", "Starlight Chalice", "Vorana's Preparation",
 	}
 
 	# for when people pull stuff out of remove only tabs in league
