@@ -91,8 +91,8 @@ def scrape_ninja():
 		# "Cinderswallow Urn",
 		# Blight League
 		"Breathstealer", "Cowl of the Ceraunophile", "Cowl of the Cryophile", "Cowl of the Thermophile", "Sporeguard", "The Stampede",
-		# Conqueror
-		'Booming Populace', 'Hands of the High Templar', 'Irresistable Temptation', 'Misinformation', 'Stalwart Defenders', 'Territories Unknown', 'Terror', 'The Saviour', 'Thread of Hope', 'War Among the Stars',
+		# Conqueror & Sirus
+		"Crown of the Inward Eye", 'Hands of the High Templar', 'The Saviour', 'Thread of Hope',
 		# Delirium
 		'One With Nothing', 'The Interrogation', "Kitava's Teachings", 'Voices', 'Split Personality',
 		# Harvest
