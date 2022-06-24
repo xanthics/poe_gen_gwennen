@@ -1,6 +1,10 @@
-Hosted at https://xanthics.github.io/poe_gen_gwennen/
+Temp Softcore: https://xanthics.github.io/poe_gen_gwennen/
 
-Hardcore version: https://xanthics.github.io/poe_gen_gwennen/index_hc.html
+Temp Hardcore: https://xanthics.github.io/poe_gen_gwennen/index_hct.html
+
+Standard Softcore: https://xanthics.github.io/poe_gen_gwennen/index_sc.html
+
+Standard Hardcore: https://xanthics.github.io/poe_gen_gwennen/index_hc.html
 
 Generate compact Search Strings for Gwennen. Prices are pulled from poe.ninja, with the last update time at the top. Simple filtering is possible by adjusting the chaos value, and the Select All Visible Only button will behave as described, selecting visible rows and unselecting hidden rows.
 

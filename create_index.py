@@ -21,9 +21,9 @@ def update_brython():
 
 
 def main():
-	show_10, unique_data = scrape_ninja()
+	show_10, unique_data, missing_data = scrape_ninja()
 	gen_grams(unique_data)
-	render_guide(show_10, unique_data)
+	render_guide(show_10, unique_data, missing_data)
 
 	# generate compact brython.js
 	# update_brython()

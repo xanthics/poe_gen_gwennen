@@ -21,13 +21,19 @@ def gen_images(base_l, data, show_10):
 	return ''.join(f'<span class="container{" hidden_class" if x[1] < show_10 else ""}" data-value="{x[1]}" data-search="{base_l}, {x[0].lower()}"><img src="{x[2]}" alt="{x[0]}" title="{x[0]}" class="item_icon" loading="lazy"><span class="bottom-right">{simple_format(x[1])}</span></span>' for x in data)
 
 
-def render_guide(show_10, unique_data):
+def gen_missing_images(data):
+	"""Generate a series of images"""
+	return ''.join(f'<span class="missing_span"><img src="{x[1]}" alt="{x[0]}" title="{x[0]}" class="item_icon" loading="lazy"></span>' for x in data)
+
+
+def render_guide(show_10, unique_data, missing_data):
 	file_loader = FileSystemLoader('templates')
 	env = Environment(loader=file_loader)
 
 	# set up helper functions
 	env.filters['search_string'] = search_string
 	env.filters['gen_images'] = gen_images
+	env.filters['gen_missing_images'] = gen_missing_images
 
 	template = env.get_template('index.html.jinja')
 
@@ -38,20 +44,25 @@ def render_guide(show_10, unique_data):
 		'UniqueAccessory': 'Grand Broken Circle Artifact'
 	}
 
-	for softcore, league in [(True, 'sc'), (False, 'hc')]:
+	for league in unique_data:
 		# set up tables
 		table_data = {keys[k]: defaultdict(list) for k in keys}
 		for basetype in sorted(unique_data[league]):
 			key = keys[unique_data[league][basetype][0][3]]
 			table_data[key][basetype] = unique_data[league][basetype]
 
+		missing_count = sum(1 for base in missing_data[league] for _ in missing_data[league][base])
+		missing_data_sorted = {base: sorted(missing_data[league][base], key=lambda x: x[0]) for base in sorted(missing_data[league])}
 		output = template.render(
-			softcore=softcore,
+			softcore='sc' in league,
+			league=league,
 			show_10=show_10[league],
 			unique_data=table_data,
-			update=datetime.now().strftime("%Y/%m/%d, %H:%M")
+			update=datetime.now().strftime("%Y/%m/%d, %H:%M"),
+			missing_count=missing_count,
+			missing=missing_data_sorted
 		)
 
 		minified = minify(output)
-		with open(f"docs/index{'_hc' if not softcore else ''}.html", 'w', encoding='utf-8') as f:
+		with open(f"docs/index{f'_{league}' if league != 'sct' else ''}.html", 'w', encoding='utf-8') as f:
 			f.write(minified)

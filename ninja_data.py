@@ -186,19 +186,28 @@ def scrape_ninja():
 	show_10 = {}
 	unique_data = {}
 	seen_all = set()
-	for l_str, league in [('sc', 'Sentinel'), ('hc', 'Hardcore Sentinel')]:
+	authority_set = set()  # basetype, name, icon, key
+	missing_data = {}
+	for l_str, league in [
+		('sct', 'Sentinel'),
+		('hct', 'Hardcore Sentinel'),
+		('sc', 'Standard'),
+		('hc', 'Hardcore')
+	]:
 		show_10[l_str] = 0
 		unique_data[l_str] = defaultdict(list)
+		missing_data[l_str] = defaultdict(list)
 		vals = defaultdict(int)
 		# keep track of uniques we have seen so variants can be noticed
 		seen = set()
+		# check if item that is in temp standard is missing
+		missing_unhandled = authority_set.copy()
 		# add atlas bases as possible purchase targets for influence
 		for val in atlas_bases:
 			for base in atlas_bases[val]:
 				unique_data[l_str][base].append(('Influenced Base', 0, 'img/influenced_base.png', val))
 
 		for key in keys:
-			missing_unhandled = []
 			request = f'https://poe.ninja/api/data/itemoverview?league={league}&type={key}'
 			req = requester.get(request, headers=header)
 			print(f"{league} {key} Status code: {req.status_code}")
@@ -214,10 +223,17 @@ def scrape_ninja():
 					elif i['baseType'] not in good_bases:
 						print(f"Skipping due to basetype: {i}")
 						continue
+					elif l_str != 'sct' and (i['baseType'], i['name'], i['icon'], key) not in authority_set:
+						print(f"Skipping, not in temp softcore: {i}")
+						continue
+					if l_str != 'sct':
+						missing_unhandled.discard((i['baseType'], i['name'], i['icon'], key))
 					# keep track of the 10 most expensive bases
 					if vals[i['baseType']] < i['chaosValue']:
 						vals[i['baseType']] = i['chaosValue']
 					unique_data[l_str][i['baseType']].append((i['name'], int(i['chaosValue']), i['icon'], key))
+					if l_str == 'sct':
+						authority_set.add((i['baseType'], i['name'], i['icon'], key))
 					if i['name'] in seen:
 						seen_all.add(i['name'])
 					seen.add(i['name'])
@@ -225,14 +241,14 @@ def scrape_ninja():
 			else:
 				print('Unhandled key: "{}"'.format(key))
 
-			if missing_unhandled:
-				missing_str = '\n\t'.join(missing_unhandled)
-				print(f"{key} is missing presets for the following items:\n\t{missing_str}")
+		for item in missing_unhandled:
+			unique_data[l_str][item[0]].append((item[1], 0, item[2], item[3]))
+			missing_data[l_str][item[0]].append((item[1], item[2], item[3]))
 
-		# set devault value to show the 10 most valuable bases
+		# set default value to show the 10 most valuable bases
 		show_10[l_str] = int(sorted(vals.values(), reverse=True)[9])
 
 	if seen_all:
 		print(f"Variants found for the following uniques: {seen_all}")
 
-	return show_10, unique_data
+	return show_10, unique_data,  missing_data

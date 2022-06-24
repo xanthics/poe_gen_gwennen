@@ -4,7 +4,7 @@
         <meta name="description" content="PoE Gwennen regex generator." />
         <meta name="keywords" content="best videogames, free to play, free game, online games, fantasy games, PC games, PC gaming, Path of Exile" />
         <meta charset="UTF-8">
-        <title>{% if softcore %}Softcore{% else %}Hardcore{% endif %} Gwennen Regex Generator</title>
+        <title>{% if 't' not in league %}Standard{% else %}Temp{% endif %} {% if softcore %}Softcore{% else %}Hardcore{% endif %} Gwennen Regex Generator</title>
         <script src="js/brython.js"></script>
         <script src="js/brython_modules.js"></script>
         <link href="css/layout.css" rel="stylesheet" type="text/css" />
@@ -12,13 +12,31 @@
     </head>
     <body onload="brython({debug: 1})">
         <section class="main">
-            {% if not softcore %}<p>Some rarer items may be missing from hardcore market due to league size.</p>{% endif %}
+            {% if missing_count %}
+				<p>This league is missing {{ missing_count}} expected items. <button id='toggle_missing'>Show Missing</button></p>
+				<div id="missing">
+					<p>Use <strong>Keyword(s) Search</strong> to find a unique in the selectable tables.</p>
+					<table class="borders onehundred twocolumn">
+						<col class="col_2">
+						<col>
+						<thead>
+						<tr><th colspan=2><span class="title_text">Missing Items</span></th></tr>
+						<tr><th>Base</th><th>Item(s)</th></tr>
+						</thead>
+						<tbody>
+						{% for base in missing %}
+							<tr><td>{{ base }}</td><td>{{ missing[base] | gen_missing_images }}</td></tr>
+						{% endfor %}
+						</tbody>
+					</table>
+				</div>
+			{% endif %}
             <div id="loading">
                 This page requires javascript in order to work correctly.
                 <br><br>
                 This page may take a moment to load.
             </div>
-            <h2>Gwennen Search String Generator</h2>
+            <h2>{% if 't' not in league %}Standard{% else %}Temp{% endif %} {% if softcore %}Softcore{% else %}Hardcore{% endif %} Gwennen Search String Generator</h2>
             <div id="regex_box">
 				<div><button id='generate'>Generate String</button></div>
 				<div id="generated_strings" class='sec_div grind'>No strings generated yet.</div>
@@ -39,24 +57,31 @@
             <div id="items">
                 {% for artifact in ['Lesser Broken Circle Artifact', 'Greater Broken Circle Artifact', 'Grand Broken Circle Artifact', 'Exceptional Broken Circle Artifact'] %}
 				<table class="borders onehundred">
+					<col class="col_1">
+					<col class="col_2">
+					<col>
+					<thead>
 				    <tr><th colspan=3><span class="title_text">{{ artifact }}</span></th></tr>
-					<tr><th class='col_1'>Selected</th><th class='col_2'>Base</th><th>Item(s)</th></tr>
+					<tr><th>Selected</th><th>Base</th><th>Item(s)</th></tr>
+					</thead>
+					<tbody>
 					{% for base in unique_data[artifact] %}
 						{% set base_l = base.lower() %}
 						<tr data-id="{{ base_l }}" data-value="{{ unique_data[artifact][base][0][1] }}" data-search="{{ base_l | search_string(unique_data[artifact][base]) }}"{% if unique_data[artifact][base][0][1] < show_10 %} hidden{% endif %}><td><input id="check-{{ base_l.replace(' ', '_') }}" type='checkbox' data-id="{{ base_l }}" class='save'></td><td>{{ base }}</td><td>{{ base_l | gen_images(unique_data[artifact][base], show_10) }}</td></tr>
 					{% endfor %}
+					</tbody>
 				</table>
 				{% endfor %}
             </div>
         </section>
         <footer>
-            <p>This page begins new league updates once Mageblood is on poe.ninja for softcore league.</p>
             <div id="helpsection">
             <button id='toggle_help'>Show Help and About</button>
             <div id="help">
-            <p>This page generates simple regex search strings that are compatible with Path of Exile.  It uses price data from poe.ninja to present an initial selection that you can then personalize by changing the search filters and changing which item bases are selected.  This tool does a lot of work behind the scene to generate compact search strings while staying within PoE's character limit.</p>
+            <p>This page begins new league updates once Mageblood is on poe.ninja for softcore league.  Temp Softcore is used as an authority to control what uniques are shown in other leagues.</p>
+			<p>This page generates simple regex search strings that are compatible with Path of Exile.  It uses price data from poe.ninja to present an initial selection that you can then personalize by changing the search filters and changing which item bases are selected.  This tool does a lot of work behind the scene to generate compact search strings while staying within PoE's character limit.</p>
             <hr />
-            <p>Atlas bases are available to select via 'Influenced Base', they have chaos value set to 0.</p>
+            <p>Atlas bases are available to select via 'Influenced Base'.  Uniques that are in Temp Softcore but not current league are included with a chaos value of 0.</p>
             <hr />
             <p>Default Minimum Chaos is initialized to show 10 bases for the current league.  If you would like to select other bases, use the selection filters to change what is visible.</p>
             <p><strong>Keyword(s) search</strong> overrides all other filter settings.  Clear keyword search to use them.  Search can display an empty row if it's the combination of two or more uniques on a base that matches the search terms.  EG 'gold rim' will show Viridian Jewel base because 2 separate uniques partially match the search.</p>
@@ -73,10 +98,17 @@
 			</div>
             </div>
             <p id="otherversion">
-			{% if softcore %}
-				<a href="/poe_gen_gwennen/index_hc.html" target="_blank">Hardcore Market here</a>
-			{% else %}
-				<a href="/poe_gen_gwennen/" target="_blank">Softcore Market here</a>
+			{% if league != 'sct' %}
+				<a href="/poe_gen_gwennen/" target="_blank">Temp Softcore Market</a><br />
+			{% endif %}
+			{% if league != 'hct' %}
+				<a href="/poe_gen_gwennen/index_hct.html" target="_blank">Temp Hardcore Market</a><br />
+			{% endif %}
+			{% if league != 'sc' %}
+				<a href="/poe_gen_gwennen/index_sc.html" target="_blank">Standard Market</a>{% if league != 'hc' %}<br />{% endif %}
+			{% endif %}
+			{% if league != 'hc' %}
+				<a href="/poe_gen_gwennen/index_hc.html" target="_blank">Standard Hardcore Market</a>
 			{% endif %}
 			</p>
             <p><a href="https://github.com/xanthics/poe_gen_gwennen/discussions" target="_blank">Suggestions</a><br /><a href="https://github.com/xanthics/poe_gen_gwennen/issues" target="_blank">Bugs</a></p>

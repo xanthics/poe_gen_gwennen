@@ -87,6 +87,13 @@ def toggle_help(ev):
 		doc['help'].style.display = 'none'
 
 
+def toggle_missing(ev):
+	if doc['missing'].style.display == 'none':
+		doc['missing'].style.display = 'block'
+	else:
+		doc['missing'].style.display = 'none'
+
+
 def generate_string(ev):
 	doc['generated_strings'].text = ''
 	good_bases = []
@@ -133,6 +140,9 @@ def first_load():
 	doc["clear_selected"].bind("click", clear_selected)
 	doc["clear_keywords"].bind("click", clear_keywords)
 	doc["toggle_help"].bind("click", toggle_help)
+	if 'toggle_missing' in doc:
+		doc['missing'].style.display = 'none'
+		doc["toggle_missing"].bind("click", toggle_missing)
 	del doc['loading']
 
 
