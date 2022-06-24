@@ -141,7 +141,6 @@ def first_load():
 	doc["clear_keywords"].bind("click", clear_keywords)
 	doc["toggle_help"].bind("click", toggle_help)
 	if 'toggle_missing' in doc:
-		doc['missing'].style.display = 'none'
 		doc["toggle_missing"].bind("click", toggle_missing)
 	del doc['loading']
 
