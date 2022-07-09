@@ -24,7 +24,7 @@ def scrape_ninja():
 		"Amplification Rod", "Asenath's Chant", "Atziri's Reflection", "Cameria's Avarice", "Chaber Cairn", "Cragfall", "Death's Opus", "Doedre's Malevolence", "Doomfletch's Prism",
 		"Dreadbeak", "Duskblight", "Frostferno", "Geofri's Devotion", "Geofri's Legacy", "Hrimburn", "Hyrri's Demise", "Kaom's Way", "Malachai's Awakening", "Queen's Escape",
 		"The Cauteriser", "The Dancing Duo", "The Iron Fortress", "The Nomad", "The Signal Fire", "The Stormwall", "The Tactician", "The Tempest", "Thirst for Horrors", "Timetwist",
-		"Whakatutuki o Matua", "Wildwrap", "Windshriek", "Winterweave",
+		"Whakatutuki o Matua", "Wildwrap", "Windshriek", "Winterweave", "Ngamahu Tiki",
 		# Vendor recipes
 		'The Anima Stone', 'Arborix', 'Duskdawn', 'The Goddess Scorned', 'The Goddess Unleashed', 'Kingmaker', 'Magna Eclipsis', 'The Retch', 'Star of Wraeclast', 'The Taming',
 		'The Vinktar Square', 'Loreweave',
