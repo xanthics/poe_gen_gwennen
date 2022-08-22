@@ -53,6 +53,7 @@ def scrape_ninja():
 		"Voidwalker", "Shaper's Touch", "Starforge", 'Solstice Vigil',
 		"Blasphemer's Grasp", "Shimmeron", "Nebuloch", "Hopeshredder", "Impresence", "Cyclopean Coil",
 		"Indigon", "The Eternity Shroud", "Disintegrator", "Voidforge", "Mark of the Elder", "Mark of the Shaper", "Voidfletcher", "Watcher's Eye",
+		"Soul Ascension",
 		# "Dying Sun",
 		# Atziri
 		"Atziri's Step", "Doryani's Catalyst", "Doryani's Invitation", "Atziri's Reflection",
@@ -113,6 +114,8 @@ def scrape_ninja():
 		"Forbidden Flesh", "Ceaseless Feast", "Inextricable Fate", "The Gluttonous Tide", "Black Zenith", "Dawnbreaker",
 		# Sentinel uber boss drops
 		"Call of the Void", "Echoes of Creation", "Impossible Escape", "Sublime Vision", "The Burden of Truth", "The Eternal Struggle",
+		# Lake of Kalandra
+		"Kalandra's Touch",
 		# Abyss Jewels (Cannot generate bases on gwennen.. yet?)
 		# "Amanamu's Gaze", "Tecrod's Gaze", "Ulaman's Gaze", "Kurgal's Gaze",
 		# Expedition runic uniques (Cannot generate bases on gwennen.. yet?)
@@ -189,8 +192,8 @@ def scrape_ninja():
 	authority_set = set()  # basetype, name, icon, key
 	missing_data = {}
 	for l_str, league in [
-		('sct', 'Sentinel'),
-		('hct', 'Hardcore Sentinel'),
+		('sct', 'Kalandra'),
+		('hct', 'Hardcore Kalandra'),
 		('sc', 'Standard'),
 		('hc', 'Hardcore')
 	]:

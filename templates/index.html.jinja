@@ -37,6 +37,7 @@
                 This page may take a moment to load.
             </div>
             <h2>{% if 't' not in league %}Standard{% else %}Temp{% endif %} {% if softcore %}Softcore{% else %}Hardcore{% endif %} Gwennen Search String Generator</h2>
+            <h3>Some rarer items, such as Mageblood or Headhunter, may be missing from this page at the start of a league.</h3>
             <div id="regex_box">
 				<div><button id='generate'>Generate String</button></div>
 				<div id="generated_strings" class='sec_div grind'>No strings generated yet.</div>
@@ -78,7 +79,7 @@
             <div id="helpsection">
             <button id='toggle_help'>Show Help and About</button>
             <div id="help">
-            <p>This page begins new league updates once Mageblood is on poe.ninja for softcore league.  Temp Softcore is used as an authority to control what uniques are shown in other leagues.</p>
+            <p><strike>This page begins new league updates once Mageblood is on poe.ninja for softcore league</strike>(Some of you are just too impatient, removing this part).  Temp Softcore is used as an authority to control what uniques are shown in other leagues.</p>
 			<p>This page generates simple regex search strings that are compatible with Path of Exile.  It uses price data from poe.ninja to present an initial selection that you can then personalize by changing the search filters and changing which item bases are selected.  This tool does a lot of work behind the scene to generate compact search strings while staying within PoE's character limit.</p>
             <hr />
             <p>Atlas bases are available to select via 'Influenced Base'.  Uniques that are in Temp Softcore but not current league are included with a chaos value of 0.</p>
