@@ -26,7 +26,7 @@ def main():
 	render_guide(show_10, unique_data, missing_data)
 
 	# generate compact brython.js
-	# update_brython()
+	update_brython()
 
 
 if __name__ == '__main__':
