@@ -10,7 +10,7 @@ def scrape_ninja():
 	# List of items that cannot be gambled -- Uniques which have a base type that cannot spawn on gwennen are included as well but commented out.  EG flasks or runic bases
 	bad_names = {
 		# Vinktar's Square
-		# Vessel of Vinktar
+		# "Vessel of Vinktar",
 		# Quest Items
 		"Survival Instincts", "Survival Secrets", "Survival Skills", "Conqueror's Longevity", "Conqueror's Potency", "Conqueror's Efficiency",
 		"Assassin's Haste", "Poacher's Aim", "Warlord's Reach",
