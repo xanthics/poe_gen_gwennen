@@ -36,7 +36,7 @@
                 <br><br>
                 This page may take a moment to load.
             </div>
-            <h3>Gwennen unique reward rates appear to be <a href="https://www.reddit.com/r/pathofexile/comments/x05dq4/psa_gwennen_heavily_nerfed_in_319/" target="blank_">recently nerfed</a>.</h3>
+            <h3>Gwennen unique reward rates were <a href="https://www.reddit.com/r/pathofexile/comments/x05dq4/psa_gwennen_heavily_nerfed_in_319/" target="blank_">nerfed</a> to match blanket unique changes.</h3>
             <h2>{% if 't' not in league %}Standard{% else %}Temp{% endif %} {% if softcore %}Softcore{% else %}Hardcore{% endif %} Gwennen Search String Generator</h2>
             <!-- <h3>Some rarer items, such as Mageblood or Headhunter, may be missing from this page at the start of a league.</h3> -->
             <div id="regex_box">
@@ -80,8 +80,15 @@
             <div id="helpsection">
             <button id='toggle_help'>Show Help and About</button>
             <div id="help">
-            <p><strike>This page begins new league updates once Mageblood is on poe.ninja for softcore league</strike>(Some of you are just too impatient, removing this part).  Temp Softcore is used as an authority to control what uniques are shown in other leagues.</p>
 			<p>This page generates simple regex search strings that are compatible with Path of Exile.  It uses price data from poe.ninja to present an initial selection that you can then personalize by changing the search filters and changing which item bases are selected.  This tool does a lot of work behind the scene to generate compact search strings while staying within PoE's character limit.</p>
+            <hr />
+            <p>Update Schedule:</p>
+            <ul>
+                <li>Daily for the first 2 weeks, starting on Sunday after league launch</li>
+                <li>Weekly for the next ~4 weeks</li>
+                <li>If needed for remainder of league.  EG patch/announcement changes unique power levels or availability.</li>
+            </ul>
+            <p>Temp Softcore is used as an authority to control what uniques are shown in other leagues.</p>
             <hr />
             <p>Atlas bases are available to select via 'Influenced Base'.  Uniques that are in Temp Softcore but not current league are included with a chaos value of 0.</p>
             <hr />

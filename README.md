@@ -1,3 +1,13 @@
+<p>Update Schedule:</p>
+<ul>
+<li>Daily for the first 2 weeks, starting on Sunday after league launch</li>
+<li>Weekly for the next ~4 weeks</li>
+<li>If needed for remainder of league.  EG patch/announcement changes unique power levels or availability.</li>
+</ul>
+<p>Temp Softcore is used as an authority to control what uniques are shown in other leagues.</p>
+
+<hr />
+
 Temp Softcore: https://xanthics.github.io/poe_gen_gwennen/
 
 Temp Hardcore: https://xanthics.github.io/poe_gen_gwennen/index_hct.html
