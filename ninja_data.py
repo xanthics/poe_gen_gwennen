@@ -75,7 +75,7 @@ def scrape_ninja():
 		# "Bottled Faith",
 		# Labyrinth
 		"Glitterdisc", "Viper's Scales", "Death's Door", "Winds of Change", "Izaro's Dilemma", "Chitus' Needle", "Spine of the First Claimant", "Xirgil's Crank", "Izaro's Turmoil",
-		"Emperor's Might", "Emperor's Cunning", "Emperor's Wit", "Emperor's Mastery",
+		"Emperor's Might", "Emperor's Cunning", "Emperor's Wit", "Emperor's Mastery", "Grand Spectrum",
 		# Breach League
 		"The Anticipation", "Esh's Mirror", "The Formless Flame", "Skin of the Loyal", "The Snowblind Grace", "The Infinite Pursuit", "Hand of Thought and Motion", "Severed in Sleep", "Xoph's Inception", "Uul-Netol's Kiss", "Xoph's Heart", "The Halcyon", "Voice of the Storm",
 		"The Red Dream", "The Green Dream", "The Blue Dream",
