@@ -29,7 +29,7 @@ def update_brython():
 
 
 def main():
-	show_10, unique_data, missing_data = scrape_ninja()
+	show_10, unique_data, missing_data = scrape_ninja("Sanctum")
 	gen_grams(unique_data)
 	render_guide(show_10, unique_data, missing_data)
 

@@ -12,6 +12,8 @@
     </head>
     <body onload="brython({debug: 1})">
         <section class="main">
+            <h2>{% if 't' not in league %}Standard{% else %}Temp{% endif %} {% if softcore %}Softcore{% else %}Hardcore{% endif %} Gwennen Search String Generator</h2>
+            <h1>Looking for someone to replace this tool.  3.20 is the last league I am updating for.</h1>
             {% if missing_count %}
 				<p>This league is missing {{ missing_count}} expected item{% if missing_count > 1 %}s{% endif %}. <button id='toggle_missing'>Show Missing</button></p>
 				<div id="missing" style="display: none;">
@@ -37,8 +39,7 @@
                 This page may take a moment to load.
             </div>
             <h3>Gwennen unique reward rates were <a href="https://www.reddit.com/r/pathofexile/comments/x05dq4/psa_gwennen_heavily_nerfed_in_319/" target="blank_">nerfed</a> to match blanket unique changes.</h3>
-            <h2>{% if 't' not in league %}Standard{% else %}Temp{% endif %} {% if softcore %}Softcore{% else %}Hardcore{% endif %} Gwennen Search String Generator</h2>
-            <!-- <h3>Some rarer items, such as Mageblood or Headhunter, may be missing from this page at the start of a league.</h3> -->
+            <h4>Some rarer items, such as Mageblood or Headhunter, may be missing from this page at the start of a league.  Please report any items that shouldn't be listed.</h4>
             <div id="regex_box">
 				<div><button id='generate'>Generate String</button></div>
 				<div id="generated_strings" class='sec_div grind'>No strings generated yet.</div>

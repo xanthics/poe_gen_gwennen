@@ -5,19 +5,32 @@ from gen_items import gen_bases
 
 
 # get price data from poe.ninja
-def scrape_ninja():
+def scrape_ninja(c_league):
 	good_bases = [x['name'] for x in gen_bases]
 	# List of items that cannot be gambled -- Uniques which have a base type that cannot spawn on gwennen are included as well but commented out.  EG flasks or runic bases
+	# NOTE: this item is a set so duplicates don't break anything.  EG having a jewel listed in the Jewels section and the incursion section
 	bad_names = {
+		# -------------------
+		# JEWELS
+		# -------------------
+		# Recipe only
+		"Combat Focus", 'The Anima Stone',
+		# Drop only
+		"Apex Mode", "Dissolution of the Flesh", "Grand Spectrum", "Impossible Escape", "Melding of the Flesh", "Nadir Mode", "Primordial Eminence", "Primordial Harmony", "Primordial Might", "Sublime Vision",
+		"Tempered Flesh", "Tempered Mind", "Tempered Spirit", "The Blue Dream", "The Blue Nightmare", "The Green Dream", "The Green Nightmare", "The Red Dream", "The Red Nightmare", "Thread of Hope", "Transcendent Flesh",
+		"Transcendent Mind", "Transcendent Spirit",
+		# Corruption only
+		"Atziri's Reign", "Brute Force Solution", "Careful Planning", "Chill of Corruption", "Efficient Training", "EnergisedArmour", "Energy From Within", "Fertile Mind", "Fevered Mind", "Fluid Motion", "Fortress Covenant",
+		"Fragility", "Healthy Mind", "Hidden Potential", "Inertia", "Pacifism", "Powerlessness", "Quickening Covenant", "Rain of Splinters",
+		"Reckless Defence", "Seething Fury", "Self-Flagellation", "Soul's Wick", "The Golden Rule", "To Dust",
+
+		# -------------------
+		# LISTED BY LEAGUE OR SOURCE
+		# -------------------
 		# Vinktar's Square
 		# "Vessel of Vinktar",
-		# Quest Items
-		"Survival Instincts", "Survival Secrets", "Survival Skills", "Conqueror's Longevity", "Conqueror's Potency", "Conqueror's Efficiency",
-		"Assassin's Haste", "Poacher's Aim", "Warlord's Reach",
 		# Corruption only
-		"Ancient Waystones", "Atziri's Reign", "Blood Sacrifice", "Brittle Barrier", "Chill of Corruption", "Combustibles", "Corrupted Energy",
-		"Fragility", "Hungry Abyss", "Mutated Growth", "Pacifism", "Powerlessness", "Sacrificial Harvest", "Self-Flagellation", "Vaal Sentencing",
-		"Weight of Sin", "Fevered Mind", 'Blood of Corruption', "Malachai's Vision",
+		'Blood of Corruption', "Malachai's Vision",
 		# Divination card only item
 		'Maw of Mischief',
 		# Fated Uniques
@@ -27,7 +40,7 @@ def scrape_ninja():
 		"Whakatutuki o Matua", "Wildwrap", "Windshriek", "Winterweave", "Ngamahu Tiki",
 		# Vendor recipes
 		'The Anima Stone', 'Arborix', 'Duskdawn', 'The Goddess Scorned', 'The Goddess Unleashed', 'Kingmaker', 'Magna Eclipsis', 'The Retch', 'Star of Wraeclast', 'The Taming',
-		'The Vinktar Square', 'Loreweave',
+		'The Vinktar Square', 'Loreweave', "Combat Focus",
 		# incursion uniques from upgrades
 		'Transcendent Flesh', 'Transcendent Mind', 'Transcendent Spirit', 'Slavedriver\'s Hand', 'Coward\'s Legacy', 'Omeyocan', 'Fate of the Vaal', 'Mask of the Stitched Demon', 'Apep\'s Supremacy', 'Zerphi\'s Heart',
 		# "Soul Catcher",
@@ -116,6 +129,10 @@ def scrape_ninja():
 		"Call of the Void", "Echoes of Creation", "Impossible Escape", "Sublime Vision", "The Burden of Truth", "The Eternal Struggle",
 		# Lake of Kalandra
 		"Kalandra's Touch",
+		# Sanctum
+		"Anathema", "Annihilation's Approach", "Dawnstrider", "Echoforge", "Entropic Devastation", "Eternal Damnation", "Nimis", "Rational Doctrine", "Sandstorm Visage", "The Balance of Terror",
+		# "The Winds of Fate ", ?? No idea yet
+		# "Oriath's End", "Progenesis",
 		# Abyss Jewels (Cannot generate bases on gwennen.. yet?)
 		# "Amanamu's Gaze", "Tecrod's Gaze", "Ulaman's Gaze", "Kurgal's Gaze",
 		# Expedition runic uniques (Cannot generate bases on gwennen.. yet?)
@@ -192,8 +209,8 @@ def scrape_ninja():
 	authority_set = set()  # basetype, name, icon, key
 	missing_data = {}
 	for l_str, league in [
-		('sct', 'Kalandra'),
-		('hct', 'Hardcore Kalandra'),
+		('sct', c_league),
+		('hct', f'Hardcore {c_league}'),
 		('sc', 'Standard'),
 		('hc', 'Hardcore')
 	]:
