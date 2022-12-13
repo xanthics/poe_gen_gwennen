@@ -14,7 +14,7 @@ def scrape_ninja(c_league):
 		# JEWELS
 		# -------------------
 		# Recipe only
-		"Combat Focus", 'The Anima Stone',
+		"Combat Focus", 'The Anima Stone', "Endless Misery",
 		# Drop only
 		"Apex Mode", "Dissolution of the Flesh", "Grand Spectrum", "Impossible Escape", "Melding of the Flesh", "Nadir Mode", "Primordial Eminence", "Primordial Harmony", "Primordial Might", "Sublime Vision",
 		"Tempered Flesh", "Tempered Mind", "Tempered Spirit", "The Blue Dream", "The Blue Nightmare", "The Green Dream", "The Green Nightmare", "The Red Dream", "The Red Nightmare", "Thread of Hope", "Transcendent Flesh",
