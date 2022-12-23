@@ -130,7 +130,7 @@ def scrape_ninja(c_league):
 		# Lake of Kalandra
 		"Kalandra's Touch",
 		# Sanctum
-		"Anathema", "Annihilation's Approach", "Dawnstrider", "Echoforge", "Entropic Devastation", "Eternal Damnation", "Nimis", "Rational Doctrine", "Sandstorm Visage", "The Balance of Terror", "The Winds of Fate",
+		"Anathema", "Annihilation's Approach", "Dawnstrider", "Echoforge", "Entropic Devastation", "Eternal Damnation", "Nimis", "Rational Doctrine", "Sandstorm Visage", "The Balance of Terror", "The Winds of Fate", "Original Sin",
 		# "Oriath's End", "Progenesis",
 		# Abyss Jewels (Cannot generate bases on gwennen.. yet?)
 		# "Amanamu's Gaze", "Tecrod's Gaze", "Ulaman's Gaze", "Kurgal's Gaze",
