@@ -1,3 +1,10 @@
+<h1>
+This tool is no longer supported
+
+Use veiset's replacement https://poe.re/#/expedition
+</h1>
+
+
 <p>Update Schedule:</p>
 <ul>
 <li>Daily for the first 2 weeks, starting on Sunday after league launch</li>
